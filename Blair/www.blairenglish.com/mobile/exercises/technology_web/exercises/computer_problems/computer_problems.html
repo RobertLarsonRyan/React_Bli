@@ -1,0 +1,1016 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/technology_web/exercises/computer_problems/computer_problems.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:52 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="../../../../../exercises/technology_web/exercises/computer_problems/computer_problems.html" >
+<title>English vocabulary to Describe Computer Problems Online Exercise | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<link rel="stylesheet" href="../../../../../javascript/SlickNav/slicknav.css" />
+<meta name="description" content="This online exercise looks at the English names & vocabulary for problems with computers and ways to resolve them." />
+
+
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/technology_web/exercises/computer_problems/computer_problems.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+<script language="javascript">
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+var correctAns = new Array;
+
+var quizWords = new Array;  
+
+quizWords[1] = "turn on"; 
+quizWords[2] = "plugged in";
+quizWords[3] = "battery";
+quizWords[4] = "socket";
+quizWords[5] = "cable";
+quizWords[6] = "wires had come loose";
+quizWords[7] = "hard drive";
+quizWords[8] = "froze";
+quizWords[9] = "pressed";
+quizWords[10] = "keys";
+quizWords[11] = "touch pad";
+quizWords[12] = "crashed";
+quizWords[13] = "reboot";
+quizWords[14] = "didn't load";
+quizWords[15] = "fault";
+quizWords[16] = "reinstalled";
+
+
+var score = 0;
+ans[1] = "PRESSED";
+ans[2] = "HARD DRIVE";
+ans[3] = "FAULT";
+ans[4] = "TURN ON";
+ans[5] = "TOUCH PAD";
+ans[6] = "CABLE";
+ans[7] = "REBOOT";
+ans[8] = "PLUGGED IN";
+ans[9] = "FROZE";
+ans[10] = "WIRES HAD COME LOOSE";
+ans[11] = "DIDN'T LOAD";
+ans[12] = "SOCKET";
+ans[13] = "KEYS";
+ans[14] = "REINSTALLED";
+ans[15] = "BATTERY";
+ans[16] = "CRASHED";
+
+
+function Score(){
+yourAns[1]= document.getElementById("q1").value;
+yourAns[2]= document.getElementById("q2").value;
+yourAns[3]= document.getElementById("q3").value;
+yourAns[4]= document.getElementById("q4").value;
+yourAns[5]= document.getElementById("q5").value;
+yourAns[6]= document.getElementById("q6").value;
+yourAns[7]= document.getElementById("q7").value;
+yourAns[8]= document.getElementById("q8").value;
+yourAns[9]= document.getElementById("q9").value;
+yourAns[10]= document.getElementById("q10").value;
+yourAns[11]= document.getElementById("q11").value;
+yourAns[12]= document.getElementById("q12").value;
+yourAns[13]= document.getElementById("q13").value;
+yourAns[14]= document.getElementById("q14").value;
+yourAns[15]= document.getElementById("q15").value;
+yourAns[16]= document.getElementById("q16").value;     
+
+setTimeout('Press(ans,yourAns )',1000);
+
+
+for(i=1;i<=yourAns.length;i++){
+    yourAns[i]=yourAns[i].trim();	
+   yourAns[i]=yourAns[i].toUpperCase();  
+   
+  if(ans[i]!=yourAns[i]){
+    
+	document.getElementById("img" + i).src = "../../../../../images/icons/cross.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("info" + i).title ="";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("audio" + i).title ="";
+  }
+  else{
+    
+    document.getElementById("img" + i).src = "../../../../../images/icons/tick.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/info_icon.gif";
+	document.getElementById("info" + i).style.display = "inherit";
+	document.getElementById("info" + i).title = "Click here for extra info about this word/phrase";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/audio_icon111.gif";
+	document.getElementById("audio" + i).style.display = "inherit"
+	document.getElementById("audio" + i).title = "Click here to listen and practise the pronunciation of this word/phrase";
+	
+	var answer = ans[i];
+	answer = answer.toLowerCase();
+	
+	var thespan = document.getElementById(answer);
+	thespan.textContent = "";	
+	
+  }
+}
+}
+
+function spell(question,text) {
+	
+	var i = question;
+	var checkSpell = text;
+	checkSpell = checkSpell.trim();
+	checkSpell = checkSpell.toUpperCase();
+	
+	if (checkSpell == ""){
+		
+		return;}
+		
+		else if (checkSpell != ""){
+	
+	if (checkSpell == ans[1]){
+		
+		
+		return;
+	}
+	else if (checkSpell != ans[1]) {
+		if (checkSpell == ans[2]){
+			
+		
+		return;}
+		
+		else if (checkSpell != ans[2]){
+			if (checkSpell == ans[3]) {
+				
+				
+				return;}
+				
+				else if(checkSpell != ans[3]) {
+		            if (checkSpell == ans[4]){
+			
+		
+		         return;}
+		
+		           else if (checkSpell != ans[4]){
+			             if (checkSpell == ans[5]) {
+				
+				
+				  return;}
+				
+				     else if(checkSpell != ans[5]) {
+		                 if (checkSpell == ans[6]){
+				     return;}
+				
+				       else if(checkSpell != ans[6]) {
+		                  if (checkSpell == ans[7]){
+			
+		
+		               return;}
+		
+		                else if (checkSpell != ans[7]){
+			                if (checkSpell == ans[8]) {
+				
+				
+				          return;}
+				
+				          else if(checkSpell != ans[8]) {
+		                       if (checkSpell == ans[9]){
+				
+				             return;}
+				
+				            else if(checkSpell != ans[9]) {
+		                      if (checkSpell == ans[10]){
+				             return;}
+							 
+							 else if(checkSpell != ans[10]) {
+		                       if (checkSpell == ans[11]){
+				              return;}
+							  
+							   else if(checkSpell != ans[11]) {
+		                        if (checkSpell == ans[12]){
+				               return;}
+							   
+							     else if(checkSpell != ans[12]) {
+		                          if (checkSpell == ans[13]){
+				                 return;}
+								 
+								  else if(checkSpell != ans[13]) {
+		                            if (checkSpell == ans[14]){
+				                  return;}
+								  
+								    else if(checkSpell != ans[14]) {
+		                              if (checkSpell == ans[15]){
+				                    return;}
+									
+									  else if(checkSpell != ans[15]) {
+		                                if (checkSpell == ans[16]){
+				                      return;}
+				
+				                      else if(checkSpell != ans[16]) {
+		                  
+							   alert("There is a mistake in this answer. Check the spelling and if there is an extra space in the word/phrase you have written.");
+							   setTimeout(function() {
+    document.getElementById("q" + i).focus();
+}, 10);
+							 }
+		                    }
+						  }
+					  }
+		     		}
+				 }
+			 }
+	      }
+       }
+	}
+}
+}
+}
+}
+}
+}
+}
+}
+
+</script>
+
+
+
+</HEAD>
+
+
+
+<BODY>
+<div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a> 
+       
+   </div><!-- /end #logo -->
+
+  <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+  
+<div id="navigation_css" ><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../../exercises/technology_web/technology_web_selectionpage.html">more tech English exercises</a></li> 
+     
+   <li><a href="../../../../../extras/exercise_menu.html">other exercises</a></li>
+   
+   <li><a href="../../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../../extras/contact_page.html">contact us</a></li>
+   
+    </ul>
+ 
+ </nav>
+ 
+  </div><!-- /end #navigation_css -->
+ 
+
+     
+   <div id="header">
+     <h1>Vocabulary to describe computer problems exercise</h1>
+  </div><!-- /end #header -->
+   
+ 
+
+ 
+ 
+
+<div id="body">
+<div id="exerciseBody">
+   
+   <div id="introduction">
+
+<p class="openParaArticle">Information Technology (IT) now dominate our lives. Both at home and at work we use computers, the internet, printers and mobile phones to make our lives a lot easier. But sometimes they actually make our life worse. There is nothing more frustrating than when a computer isn't working properly (e.g. when you can't move the cursor (the arrow) on the screen) or isn't working at all.</p>
+<p>In this online exercise on computers, we will look at the vocabulary in English connected to computers and laptops (portable computers) when they have problems and ways to solve/fix them.</p> 
+
+<p><a href="../../../../../exercises/technology_web/technology_web_selectionpage.html"><b>Click here to see more online exercises on English computer vocabulary</b></a>. For example, our exercise on '<a href="../../../../../exercises/technology_web/exercises/technology_computer_networks/technology_computer_networks.html"><b>computer network vocabulary</b></a>' or on '<a href="../../../../../exercises/technology_web/exercises/technology_using_computers/technology_using_computers.html"><b>vocabulary for using computers at work</b></a>'.</p><br>    
+
+</div> <!-- /end #introduction -->
+
+<hr>
+
+<div id="exercise_content">
+
+<h2>Exercise: Technical problems before a meeting</h2>
+ 
+ <p>Read the following conversation between Juan and Peter. Peter is having problems with his laptop before giving a short Power Point presentation in a meeting.</p>
+<p>From the context, try to guess what the meaning of the words/phrases in <strong>bold</strong> are. Then do the quiz at the end to check if you are right.</p>
+ 
+
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'What's happening Peter, you look frustrated?'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'My laptop won't <strong>turn on</strong>. It was working before, I don't know what's wrong!'
+    </span></p>
+    
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'Is it <strong>plugged in</strong>?'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'Yeah, I have connected it to the mains electricity, but that shouldn't be important because the laptop's <strong>battery</strong> still has charge or power.'
+    </span></p>
+    
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'Are you sure that the <strong>socket</strong> in the wall has power? Try to plug it into another socket.'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'I've tried that already and the socket has power. I thought that there may be a problem with the power <strong>cable</strong>, but it's working fine with the other laptop here.'
+    </span></p>
+    
+    
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'I had a problem with my desktop computer last year where the <strong>wires had come loose</strong> in the power cable. So I had to replace the power cable. You can use my laptop to show it.'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'Thanks Juan, but I only saved the presentation to my <strong>hard drive</strong>. So I can't show the presentation on your laptop.'
+    </span></p>
+    
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'Can you remember when I had that problem with my laptop in July. When suddenly the screen <strong>froze</strong> and the laptop wouldn't respond when I <strong>pressed</strong> any of the <strong>keys</strong> on the keyboard or when I moved my finger on the <strong>touch pad</strong>. Sometimes it recovered and I could continue to use the application, but other times it <strong>crashed</strong> and stopped working completely. So, I had to <strong>reboot</strong> the laptop. It was so frustrating, because I sometimes lost all of the work I'd been doing. Then the application <strong>didn't load</strong> at all, so I couldn't even use it then. The IT Engineer told me it was a software <strong>fault</strong> with the application. So she just <strong>reinstalled</strong> the application and it's been working fine.'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'I'm happy for you, but I don't have any power to the laptop, so it's not a software fault. It seems like a hardware fault.'
+    </span></p>
+    
+   
+ 
+    
+    
+
+    
+
+ 
+ 
+
+ 
+
+ <br>
+ 
+   <div id="amazon_block">
+<div id="amazon_block_business_numbers">
+
+ 
+</div><!-- /end #amazon_block_business_number-->  
+</div><!-- /end #amazon_block -->
+<br> 
+
+
+<div id="siteAds">
+</div><!-- /end #siteAds -->    
+     
+ 
+ </div><!-- /end #exercise_content -->
+ 
+
+
+<div id="test">
+
+ 
+<hr> 
+ 
+<h2>Quiz:</h2>
+<p>Below is a definition/description of each of the words/phrases in <b>bold</b> from the above text (which you can also find in the grey box below). Answer each question with one of these words/phrases in <b>bold</b>. Only use one word/phrase once and write it as it is in the text. Click on the <b>"Check"</b> button at the bottom of the quiz to check your answers.</p>   
+<p>When the answer is correct, two icons will appear below the answer. The "<img src="../../../../../images/icons/info_icon.gif" class="testImage25" align="absmiddle" id="infoInstruct" />" icon contains <b>extra information</b> on the word/phrase. In the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon, you can listen to the <b>pronunciation</b> of the word/phrase.</p>
+<h3 id="QuizWordsBoxTitle">Words/phrases to use in the quiz</h3>   
+<div id="QuizWordsBox">
+
+</div><!-- /end #QuizWordsBox -->
+
+
+<FORM>
+<p>1. Another way to say 'touch' or 'push' a button or a key, is
+<div id="textBoxPositioning1"><input  type="text" ID="q1" class="ansInput" onBlur="spell(1,this.value)"/><input type="text" id="autocomplete_q1" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img1"> &nbsp; &nbsp;
+<a href="javascript:showObject1();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info1" border="0" onClick="changeZindex('n1')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(1);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio1" border="0" onClick="changeZindex('p1')" /></a>
+<div id="n1">
+<table onMouseDown="changeZindex('n1')"> 
+<tr> 
+<td> 
+  <p><strong>Pressed:</strong><br><em>(verb)</em> 'to press' is used when you 'push' or 'touch' buttons to make them work. For example, you have to 'press' a button to make a doorbell ring/make a sound or when writing on a computer keyboard you have to 'press' the keys. In Spanish: <em><b>"pulsar/presionar"</b></em>.</p>
+  <a href="javascript:hideObject1();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p1">
+<table onMouseDown="changeZindex('p1')"> 
+<tr > 
+<td id="table1">
+
+ <p><strong>Pressed</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/pressed1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/pressed1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(1);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>2. The name of the part of a computer where you save/store your applications and documents, is the
+<div id="textBoxPositioning2"><input  type="text" ID="q2" class="ansInput" onBlur="spell(2,this.value)"/> <input  type="text" id="autocomplete_q2" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img2"> &nbsp; &nbsp;
+<a href="javascript:showObject2();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info2" border="0" onClick="changeZindex('n2')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(2);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio2" border="0" onClick="changeZindex('p2')" /></a>
+<div id="n2">
+<table onMouseDown="changeZindex('n2')"> 
+<tr> 
+<td>  
+  <p><strong>Hard drive:</strong><br><em>(noun)</em> The 'hard drive' is the part of a computer where all the applications, documents and files are stored or saved locally (on the computer). The size of a hard drive is measured in 'gigabites', but most people call them 'gig', e.g. 'my laptop has a 500 gig hard drive'. In Spanish: <em><b>"disco duro"</b></em>.</p> 
+  <a href="javascript:hideObject2();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p2">
+<table onMouseDown="changeZindex('p2')"> 
+<tr > 
+<td id="table2">
+
+ <p><strong>Hard drive</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/hard%20drive1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/hard%20drive1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(2);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>3. When talking about computers, people call an electrical, software or hardware 'problem' a
+<div id="textBoxPositioning3"><input  type="text" ID="q3" class="ansInput" onBlur="spell(3,this.value)"/> <input  type="text" id="autocomplete_q3" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img3"> &nbsp; &nbsp;
+<a href="javascript:showObject3();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info3" border="0" onClick="changeZindex('n3')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(3);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio3" border="0" onClick="changeZindex('p3')" /></a>
+<div id="n3">
+<table onMouseDown="changeZindex('n3')">  
+<tr> 
+<td> 
+  <p><strong>Fault:</strong><br><em>(noun)</em>  'fault' is used with machines or computers to mean that a part of it has a mechanical or electrical problem, e.g. 'there's a fault with the screen, it's gone red'. It is also used to talk about a problem with the design. This is used for applications and software, e.g. 'there's a fault with the database, it won't save'. In Spanish: <em><b>"falla/defecto"</b></em>.</p> 
+  <a href="javascript:hideObject3();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p3">
+<table onMouseDown="changeZindex('p3')" > 
+<tr > 
+<td id="table3">
+
+ <p><strong>Fault</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/fault1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/fault1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(3);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>4. Another way to say 'switch on' or 'start' a computer, is
+<div id="textBoxPositioning4"><input  type="text" ID="q4" class="ansInput" onBlur="spell(4,this.value)"/> <input  type="text" id="autocomplete_q4" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img4"> &nbsp; &nbsp;
+<a href="javascript:showObject4();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info4" border="0" onClick="changeZindex('n4')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(4);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio4" border="0" onClick="changeZindex('p4')" /></a>
+<div id="n4">
+<table onMouseDown="changeZindex('n4')"> 
+<tr> 
+<td>  
+  <p><strong>Turn on:</strong><br><em>(phrasal verb)</em>  'to turn something on' in this context means 'to start' or 'to switch on' something electrical like the lights, a TV,  a computer etc... It is a transitive phrase verb where an object can go between the two different parts, e.g. 'can you turn the lights on please?'. The opposite of 'to turn on' is 'to turn off' or 'to switch off'. In Spanish: <em><b>"encender"</b></em>.</p> 
+  <a href="javascript:hideObject4();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p4">
+<table onMouseDown="changeZindex('p4')" > 
+<tr > 
+<td id="table4">
+
+ <p><strong>Turn on</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/turn%20on1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/turn%20on1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(4);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>5. The part of a laptop where you move the cursor on the screen with a finger, is called the
+<div id="textBoxPositioning5"><input  type="text" ID="q5" class="ansInput" onBlur="spell(5,this.value)"/> <input  type="text" id="autocomplete_q5" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img5"> &nbsp; &nbsp;
+<a href="javascript:showObject5();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info5" border="0" onClick="changeZindex('n5')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(5);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio5" border="0" onClick="changeZindex('p5')"/></a>
+<div id="n5">
+<table onMouseDown="changeZindex('n5')"> 
+<tr> 
+<td> 
+  <p><strong>Touch pad:</strong><br><em>(noun)</em>  A 'touch pad' is also called a 'track pad'. All laptops have a 'touch pad'. It is normally a rectangular area below a keyboard with one or two buttons, where you can move the cursor on the screen with your fingers. Normally, desktop computers (non-portable computers) don't have a 'touch pad', but have a mouse to move the cursor. In Spanish: <em><b>"panel táctil"</b></em>.</p> 
+  <a href="javascript:hideObject5();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p5">
+<table onMouseDown="changeZindex('p5')" > 
+<tr > 
+<td id="table5">
+
+ <p><strong>Touch pad</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/touch%20pad1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/touch%20pad1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(5);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>6. A 'lead' or 'wire' which connects a computer to a printer or a power supply, is called a 
+<div id="textBoxPositioning6"><input  type="text" ID="q6" class="ansInput" onBlur="spell(6,this.value)"/> <input  type="text" id="autocomplete_q6" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img6"> &nbsp; &nbsp;
+<a href="javascript:showObject6();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info6" border="0" onClick="changeZindex('n6')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(6);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio6" border="0" onClick="changeZindex('p6')" /></a>
+<div id="n6">
+<table onMouseDown="changeZindex('n6')"> 
+<tr> 
+<td>  
+  <p><strong>Cable:</strong><br><em>(noun)</em>  A 'cable' is 'wires' covered in rubber or plastic that is used to connect a computer, TV etc... to something else (e.g. a DVD player, printer, internet, for power). When a 'cable' is used to connect to a power supply, it is called a 'power cable' or 'power lead'.  In Spanish: <em><b>"cable"</b></em>.</p> 
+  <a href="javascript:hideObject6();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p6">
+<table onMouseDown="changeZindex('p6')"> 
+<tr > 
+<td id="table6">
+
+ <p><strong>Cable</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/cable1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/cable1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(6);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>7. A different way to say 'restart' a computer, is 
+<div id="textBoxPositioning7"><input  type="text" ID="q7" class="ansInput" onBlur="spell(7,this.value)"/> <input  type="text" id="autocomplete_q7" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img7"> &nbsp; &nbsp;
+<a href="javascript:showObject7();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info7" border="0" onClick="changeZindex('n7')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(7);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio7" border="0" onClick="changeZindex('p7')" /></a>
+<div id="n7">
+<table onMouseDown="changeZindex('n7')"> 
+<tr> 
+<td>  
+  <p><strong>Reboot:</strong><br><em>(verb)</em> 'to reboot' is a different way to say 'turn off and then turn on' or 'restart'. It is only used for computers or information technology devices/products like servers. This verb is normally used when there is a problem with the computer or after you have just installed some software or hardware, e.g. 'the computer now has a new version of the software, you now have to reboot the computer to make it work'. In Spanish: <em><b>"reiniciar"</b></em>.</p> 
+  <a href="javascript:hideObject7();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p7">
+<table onMouseDown="changeZindex('p7')" > 
+<tr > 
+<td id="table7">
+
+ <p><strong>Reboot</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/reboot1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/reboot1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(7);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>8. A two word verb that means to connect a 'cable' to a computer or to an electrical power supply, is 
+<div id="textBoxPositioning8"><input  type="text" ID="q8" class="ansInput" onBlur="spell(8,this.value)"/> <input  type="text" id="autocomplete_q8" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img8">&nbsp; &nbsp;
+<a href="javascript:showObject8();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info8" border="0" onClick="changeZindex('n8')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(8);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio8" border="0" onClick="changeZindex('p8')" /></a>
+<div id="n8">
+<table onMouseDown="changeZindex('n8')"> 
+<tr> 
+<td> 
+  <p><strong>Plugged in:</strong><br><em>(phrasal verb)</em> 'to plug something in' means to connect a cable to a computer/machine or electrical power supply. A 'plug' is the name of the connector that is at the end of a power cable/lead and is used to give the electrical machine (TV, computer, washing machine etc...) power from the mains electricity.  It is a transitive phrase verb where an object can go between the two different parts, e.g. 'yes, I have plugged the printer cable in'. In Spanish: <em><b>"estar conectado/enchufado"</b></em>.</p> 
+  <a href="javascript:hideObject8();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p8">
+<table onMouseDown="changeZindex('p8')" > 
+<tr > 
+<td id="table8">
+
+ <p><strong>Plugged in</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/plugged%20in1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/plugged%20in1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(8);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>9. When you can't move the cursor on the screen, the screen is 
+<div id="textBoxPositioning9"><input  type="text" ID="q9" class="ansInput" onBlur="spell(9,this.value)"/> <input  type="text" id="autocomplete_q9" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img9">&nbsp; &nbsp;
+<a href="javascript:showObject9();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info9" border="0" onClick="changeZindex('n9')"/></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(9);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio9" border="0" onClick="changeZindex('p9')" /></a>
+<div id="n9">
+<table onMouseDown="changeZindex('n9')"> 
+<tr> 
+<td> 
+  <p><strong>Froze:</strong><br><em>(verb)</em> 'to freeze' means that although the computer is turned on, the screen isn't responding when you try to enter information or move the cursor. It is common to use 'screen' before the verb, e.g. 'I can't do anything, the screen has frozen'. People also use the verb 'to hang' with a similar meaning. With 'to hang', you use the name of application before the verb e.g. 'the web browser is just hanging, it's not responding'. In Spanish: <em><b>"bloquearse/congelarse"</b></em>.</p> 
+  <a href="javascript:hideObject9();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p9">
+<table onMouseDown="changeZindex('p9')" > 
+<tr > 
+<td id="table9">
+
+ <p><strong>Froze</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/froze1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/froze1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(9);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>10. A possible reason why a cable isn't working, is 
+<div id="textBoxPositioning10"><input  type="text" ID="q10" class="ansInput" onBlur="spell(10,this.value)"/> <input  type="text" id="autocomplete_q10" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img10">&nbsp; &nbsp;
+<a href="javascript:showObject10();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info10" border="0" onClick="changeZindex('n10')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(10);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio10" border="0" onClick="changeZindex('p10')" /></a>
+<div id="n10">
+<table onMouseDown="changeZindex('n10')"> 
+<tr> 
+<td> 
+  <p><strong>Wires had come loose:</strong><br><em>(phrase)</em> 'wires have come loose' means that a cable 'damaged' and is a reason why the cable isn't working. Inside cables are lots of copper wires that transfer the electricity or data. People use 'wires have come loose' to mean that there is a break in the wires inside the cable or they're not touching the connector or plug, e.g. 'there's no power' 'have you checked to see if the wires have come loose?'. In Spanish: <em><b>"cable suelto/dañado"</b></em>.</p>
+  <a href="javascript:hideObject10();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p10">
+<table onMouseDown="changeZindex('p10')" > 
+<tr > 
+<td id="table10">
+
+ <p><strong>Wires had come loose</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/wires%20had%20come%20loose1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/wires%20had%20come%20loose1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(10);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>11. Another way to say that an application 'doesn't start', is 
+<div id="textBoxPositioning11"><input  type="text" ID="q11" class="ansInput" onBlur="spell(11,this.value)"/> <input  type="text" id="autocomplete_q11" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img11">&nbsp; &nbsp;
+<a href="javascript:showObject11();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info11" border="0" onClick="changeZindex('n11')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(11);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio11" border="0" onClick="changeZindex('p11')" /></a>
+<div id="n11">
+<table onMouseDown="changeZindex('n11')"> 
+<tr> 
+<td> 
+  <p><strong>Didn't load:</strong><br><em>(verb)</em> 'to not load' means that an application/software isn't starting or opening. This is only used for computer based machines (laptops, smart phones, servers, computers etc...), e.g. 'the game isn't loading, I'll need to re-install it'. The opposite is 'to load'. In Spanish: <em><b>"no cargar"</b></em>.</p>
+  <a href="javascript:hideObject11();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p11">
+<table onMouseDown="changeZindex('p11')" > 
+<tr > 
+<td id="table11">
+
+ <p><strong>Didn't load</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/didnt%20load1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/didnt%20load1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(11);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>12. The hole/holes where a cable is connected to , is called a 
+<div id="textBoxPositioning12"><input  type="text" ID="q12" class="ansInput" onBlur="spell(12,this.value)"/> <input  type="text" id="autocomplete_q12" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img12">&nbsp; &nbsp;
+<a href="javascript:showObject12();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info12" border="0" onClick="changeZindex('n12')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(12);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio12" border="0" onClick="changeZindex('p12')" /></a>
+<div id="n12">
+<table onMouseDown="changeZindex('n12')"> 
+<tr> 
+<td>
+  <p><strong>Socket:</strong><br><em>(noun)</em> A 'socket' is the place where the connector or plug of a cable/lead is manually 'pluggued in' or 'connected to'. Computers have lots of sockets, where you can connect cables or 'USB sticks' to. Every house also has sockets in walls to give power to electrical machines, e.g. 'there's a socket behind the sofa, so you can charge your mobile phone'. In Spanish: <em><b>"enchufe"</b></em>.</p>
+   <a href="javascript:hideObject12();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p12">
+<table onMouseDown="changeZindex('p12')" > 
+<tr > 
+<td id="table12">
+
+ <p><strong>Socket</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/socket1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/socket1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(12);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>13. The buttons on a keyboard that have letters or numbers on them, are called 
+<div id="textBoxPositioning13"><input  type="text" ID="q13" class="ansInput" onBlur="spell(13,this.value)"/> <input  type="text" id="autocomplete_q13" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img13">&nbsp; &nbsp;
+<a href="javascript:showObject13();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info13" border="0" onClick="changeZindex('n13')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(13);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio13" border="0" onClick="changeZindex('p13')" /></a>
+<div id="n13">
+<table onMouseDown="changeZindex('n13')"> 
+<tr> 
+<td>
+  <p><strong>Keys:</strong><br><em>(noun)</em>  A 'key' is the name for a type of button on a keyboard which people use to type/enter information. Computers also have buttons whose purpose it is not to enter information but to turn something on or off (e.g. the power button). In Spanish: <em><b>"teclas"</b></em>.</p>
+  <a href="javascript:hideObject13();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p13">
+<table onMouseDown="changeZindex('p13')" > 
+<tr > 
+<td id="table13">
+
+ <p><strong>Keys</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/keys1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/keys1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(13);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>14. When an application/program on a computer is damaged/not working correctly, it normally has to be 
+<div id="textBoxPositioning14"><input  type="text" ID="q14" class="ansInput" onBlur="spell(14,this.value)"/> <input  type="text" id="autocomplete_q14" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img14">&nbsp; &nbsp;
+<a href="javascript:showObject14();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info14" border="0" onClick="changeZindex('n14')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(14);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio14" border="0" onClick="changeZindex('p14')" /></a>
+<div id="n14">
+<table onMouseDown="changeZindex('n14')"> 
+<tr> 
+<td> 
+  <p><strong>Reinstalled:</strong><br><em>(verb)</em> 'to reinstall' means to delete/deinstall some software/application from your computer/mobile phone and install it again. You normally have to do this when there is a big problem/fault with the software, 'the game isn't working, it's best to reinstall it'. The verb can also be used with a similar meaning for hardware (graphics card, hard drive etc...). In Spanish: <em><b>"reinstalar"</b></em>.</p>
+  <a href="javascript:hideObject14();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p14">
+<table onMouseDown="changeZindex('p14')" > 
+<tr > 
+<td id="table14">
+
+ <p><strong>Reinstalled</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/reinstalled1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/reinstalled1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(14);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>15. The name of the power supply for a laptop or a mobile phone, is called the 
+<div id="textBoxPositioning15"><input  type="text" ID="q15" class="ansInput" onBlur="spell(15,this.value)"/> <input  type="text" id="autocomplete_q15" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img15">&nbsp; &nbsp;
+<a href="javascript:showObject15();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info15" border="0" onClick="changeZindex('n15')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(15);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio15" border="0" onClick="changeZindex('p15')" /></a>
+<div id="n15">
+<table onMouseDown="changeZindex('n15')"> 
+<tr> 
+<td> 
+  <p><strong>Battery:</strong><br><em>(noun)</em> A 'battery' is the name of the power supply that is used in mobile devices (e.g. laptops, mobile phones, torches, cameras etc...). It is also called in the US and Canada a 'cell'. Modern batteries can now be recharged by connecting them to the mains electricity supply (the sockets in walls). In Spanish: <em><b>"batería"</b></em>.</p>
+  <a href="javascript:hideObject15();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p15">
+<table onMouseDown="changeZindex('p15')" > 
+<tr > 
+<td id="table15">
+
+ <p><strong>Battery</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/battery1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/battery1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(15);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>16. When a computer or application fails or stops working, it 
+<div id="textBoxPositioning16"><input  type="text" ID="q16" class="ansInput" onBlur="spell(16,this.value)"/> <input  type="text" id="autocomplete_q16" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img16">&nbsp; &nbsp;
+<a href="javascript:showObject16();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info16" border="0" onClick="changeZindex('n16')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(16);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio16" border="0" onClick="changeZindex('p16')" /></a>
+<div id="n16">
+<table onMouseDown="changeZindex('n16')"> 
+<tr> 
+<td> 
+  <p><strong>Crashed:</strong><br><em>(verb)</em> 'to crash' means when a computer or an application 'stops working' or 'closes' when somebody is using it. Sometimes, you will see technical 'error messages' on the screen. If a computer 'crashes' it will often automatically reboot/restart. If an application 'crashes', you either have to reopen the application or reboot/restart the computer. In Spanish: <em><b>"fallar"</b></em>.</p>
+  <a href="javascript:hideObject16();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p16">
+<table onMouseDown="changeZindex('p16')" > 
+<tr > 
+<td id="table16">
+
+ <p><strong>Crashed</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/crashed1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computer_problems/pronunciation/crashed1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(16);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+
+<input class="submitResults" type=button onClick="Score()" value="Check">
+</CENTER>
+</FORM>
+</div> <!-- /end #test -->
+<br /><br />
+<div id="links">
+
+<!-- change to menu page of the section  -->
+<a href="../../../../../exercises/technology_web/technology_web_selectionpage.html"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more exercises on the web, technology & computer vocabulary</span></a>
+</div><!-- /end #links -->
+<br /><br />
+
+
+
+
+
+<h2>Practice</h2>
+<p>Now that you understand the meaning of the words/phrases and when to use them, practise using them by creating your own sentences with them in English. Also click on the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon under each correct answer and listen how each is pronounced correctly.</p>
+
+<div id="blairClassAd">
+</div><!-- /end #blairClassAd -->
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+<SCRIPT language="JavaScript" SRC="../../../../../javascript/box_call_write_1_autocomplete_mobile.js"></SCRIPT>
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+
+
+<script language="JavaScript">
+
+window.onload = function() {
+	attachEvents();
+}
+
+document.addEventListener("DOMContentLoaded", populateWordBox());
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/technology_web/exercises/computer_problems/computer_problems.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:52 GMT -->
+</html>

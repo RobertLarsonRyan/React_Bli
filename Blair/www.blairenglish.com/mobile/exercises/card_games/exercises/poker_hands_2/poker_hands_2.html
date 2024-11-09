@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/card_games/exercises/poker_hands_2/poker_hands_2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:53 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="../../../../../exercises/card_games/exercises/poker_hands_2/poker_hands_2.html" >
+<title>Types of poker hands exercise part 2 | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Francois+One' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<link rel="stylesheet" href="../../../../../javascript/SlickNav/slicknav.css" />
+<meta name="description" content="Practise that you know the 10 different hands that are used in poker and which are the strongest and weakest to have in this online interactive exercise." />
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/card_games/exercises/poker_hands_2/poker_hands_2.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+
+<script language="javascript">
+
+  /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-svg
+ */
+;window.Modernizr=function(a,b,c){function u(a){i.cssText=a}function v(a,b){return u(prefixes.join(a+";")+(b||""))}function w(a,b){return typeof a===b}function x(a,b){return!!~(""+a).indexOf(b)}function y(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:w(f,"function")?f.bind(d||b):f}return!1}var d="2.6.2",e={},f=b.documentElement,g="modernizr",h=b.createElement(g),i=h.style,j,k={}.toString,l={svg:"http://www.w3.org/2000/svg"},m={},n={},o={},p=[],q=p.slice,r,s={}.hasOwnProperty,t;!w(s,"undefined")&&!w(s.call,"undefined")?t=function(a,b){return s.call(a,b)}:t=function(a,b){return b in a&&w(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=q.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(q.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(q.call(arguments)))};return e}),m.svg=function(){return!!b.createElementNS&&!!b.createElementNS(l.svg,"svg").createSVGRect};for(var z in m)t(m,z)&&(r=z.toLowerCase(),e[r]=m[z](),p.push((e[r]?"":"no-")+r));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)t(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof enableClasses!="undefined"&&enableClasses&&(f.className+=" "+(b?"":"no-")+a),e[a]=b}return e},u(""),h=j=null,e._version=d,e}(this,this.document);
+
+
+
+function svgTest(){
+	
+	for(i=1;i<=12;i++){
+	
+	
+		
+	
+	if (!Modernizr.svg) {
+		
+
+		document.getElementById("hand_" + i).src = "../../../../../images/svg/hand_" + i + ".png";
+		document.getElementById("hand_" + i).style.verticalAlign = "middle";
+	}
+	}
+}
+window.onload = function() {
+	svgTest();
+}
+	
+
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+
+
+var correctAns = new Array;
+
+
+var score = 0;
+ans[1] = "11th";
+ans[2] = "7th";
+ans[3] = "3rd";
+ans[4] = "9th";
+ans[5] = "4th";
+ans[6] = "12th";
+ans[7] = "1st";
+ans[8] = "8th";
+ans[9] = "5th";
+ans[10] = "2nd";
+ans[11] = "10th";
+ans[12] = "6th";
+
+
+
+function Score(){
+yourAns[1]= document.getElementById("q1").value;
+yourAns[2]= document.getElementById("q2").value;
+yourAns[3]= document.getElementById("q3").value;
+yourAns[4]= document.getElementById("q4").value;
+yourAns[5]= document.getElementById("q5").value;
+yourAns[6]= document.getElementById("q6").value;
+yourAns[7]= document.getElementById("q7").value;
+yourAns[8]= document.getElementById("q8").value;
+yourAns[9]= document.getElementById("q9").value;
+yourAns[10]= document.getElementById("q10").value;
+yourAns[11]= document.getElementById("q11").value;
+yourAns[12]= document.getElementById("q12").value;
+
+
+setTimeout('Press(ans,yourAns )',1000);
+
+
+
+for(i=1;i<=yourAns.length;i++){
+   
+  if(ans[i]!=yourAns[i]){
+    
+	document.getElementById("img" + i).src = "../../../../../images/icons/cross.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("info" + i).title ="";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("audio" + i).title ="";
+  }
+  else{
+    
+    document.getElementById("img" + i).src = "../../../../../images/icons/tick.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/info_icon.gif";
+	document.getElementById("info" + i).style.display = "inherit";
+	document.getElementById("info" + i).title = "Click here for extra info about this word/phrase";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/audio_icon111.gif";
+	document.getElementById("audio" + i).style.display = "inherit"
+	document.getElementById("audio" + i).title = "Click here to listen and practise the pronunciation of this word/phrase";
+	document.getElementById("q" + i).disabled = true;
+	document.getElementById("q" + i).style.color = "black";
+	
+	
+	var passVal = ans[i];
+	var questNum = "q" + i;
+	
+	setTimeout(removeSelectOption, 1000, passVal, questNum);
+  }
+}
+}
+
+function removeSelectOption(fish, questNum) {
+	
+
+	for(i=1;i<ans.length;i++){
+	
+	var gone = document.getElementById("q" + i);
+	var questNum2 = "q" + i;
+	
+	var option = gone.getElementsByTagName("option");
+	
+	for (var q=0;q<option.length;q++) {
+	
+	
+	if(option[q].value == fish && questNum2!= questNum) {
+	
+	option[q].parentNode.removeChild(option[q]);
+	
+	}
+	}
+}
+	
+}
+
+</script>  
+</HEAD>
+
+
+
+<BODY>
+<div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a> 
+       
+   </div><!-- /end #logo -->
+
+
+   
+<div id="navigation_css"><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../extras/exercise_menu.html">exercise menu</a></li>  
+  
+   <li><a href="../../card_games_selectionpage.html">card exs</a></li>
+   
+   <li><a href="../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../teachers/teacher-article-worksheet-selectionpage.html">teaching</a></li>
+   
+   <li><a href="../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../extras/contact_page.html">contact</a></li>
+   
+     
+ </ul>
+ 
+ </nav></div><!-- /end #navigation_css -->
+     
+   <div id="header">
+    <h1>Types of poker hands exercise part 2</h1>
+  </div><!-- /end #header -->
+   
+ 
+
+ 
+ 
+
+
+
+
+
+<div id="body">
+<div id="exerciseBody">
+   
+   <div id="introduction">
+
+<p class="openParaArticle">In the first part of this exercise on poker hands, you learnt the names, what cards they are made from and strength (from which is the best to which is the worst) of the 10 groups of hands which you can have in poker. In this second part, you are going to be tested if you can order 12 different sets of 5 cards (called 'hands') from the best to the worst.</p>
+
+<p>Being able to do this is essential when playing a game of poker. Because if you don't, it is very easy to get confused and make mistakes (which I have done on several occasions).</p>
+
+
+<p>If you haven't done the first part of exercise, <a href="../../../../../exercises/card_games/exercises/poker_hands/poker_hands.html"><b><u>I would strongly recommend that you do that</u></b></a> before you try this exercise. It will help to do this exercise better and quicker.<p>
+
+
+
+<p>To learn more poker and card game vocabulary <a href="../../../../../exercises/card_games/card_games_selectionpage.html"><b><u>go to our card games exercise menu</u></b></a></p>  
+
+</div> <!-- /end #introduction -->
+
+
+
+<hr>
+
+<div id="exercise_content">
+
+ 
+ <h2>Poker Hands: The best to the worst</h2>
+ 
+ <p>To help you do this exercise, below is the order/rank of the ten different hands/combination of cards in Poker which you read in the first part of this exercise. If you do the first part of this exercise, you don't need to read it again. I would only use this if you are unsure about where to rank/order the cards in the quiz/test that comes after it.</p>
+ 
+ 
+ <p><div class="hand_titles">THE BEST HAND:</div> Five cards which are all of the same suit (all &spades;, or all &clubs;, or all <span class="cardRed">&diams;</span>, or all <span class="cardRed">&hearts;</span>) and are an Ace, a
+King, a Queen, a Jack and a 10. This is called a <strong>Royal Flush</strong>. If you have a 'royal
+flush', you will win the poker game, nothing is better.</p><br>
+
+
+<p><div class="hand_titles">THE 2nd BEST HAND:</div> Five cards which are all of the same suit (all &spades;, or all &clubs;, or all <span class="cardRed">&diams;</span>, or all <span class="cardRed">&hearts;</span>) and all five
+cards are in numerical order (e.g. 7,6,5,4,3). This is called a <strong>Straight Flush</strong>. The
+higher/stronger the type/number of the cards, the better is the hand. For example, a 'straight
+flush' of Q<span class="cardRed">&diams;</span>, J<span class="cardRed">&diams;</span>, 10<span class="cardRed">&diams;</span>, 9<span class="cardRed">&diams;</span>, 8<span class="cardRed">&diams;</span> is better than J&spades;, 10&spades;, 9&spades;, 8&spades;, 7&spades; because a Queen(Q) is
+a higher card than a Jack(J).
+</p><br>
+ 
+<p><div class="hand_titles">THE 3rd BEST HAND:</div> Five cards where four of the cards are all of the same type/kind (e.g. four
+Queens, four number 6s etc...). This is called a <strong>4 of a Kind</strong>. The higher/stronger
+the type/number of the card, the better is the hand. For example, a '4 of a kind' of Jacks is
+better than a '4 of a kind' of 8s, because a Jack is a higher card than an 8.
+</p><br>
+ 
+<p><div class="hand_titles">THE 4th BEST HAND:</div> Five cards where there are three cards of one type/number (e.g. three Kings,
+three number 7s etc...) and two cards of another type/kind (e.g. two Aces, two number 5s
+etc...). This is called a <strong>Full House</strong>. The higher/stronger the type/number of the card,
+the better is the hand. For example, a 'full house' of three Jacks and two 9s is better than a
+'full house' of three 10s and two 8s, because a Jack is a higher card than a 10.
+</p><br>
+ 
+<p><div class="hand_titles">THE 5th BEST HAND:</div> Five cards which are all of the same suit (all &spades;, or all &clubs;, or all <span class="cardRed">&diams;</span>, or all <span class="cardRed">&hearts;</span>) but are not in
+numerical order (e.g. Q , 10, 9, 4, 2). This is called a <strong>Flush</strong>. The higher/stronger
+the type/number of the cards, the better is the hand. For example, a 'flush' that has a K&spades;, 9&spades;, 7&spades;,
+6&spades; and 3&spades; is better than a 'flush' that has a J<span class="cardRed">&hearts;</span>, 10<span class="cardRed">&hearts;</span>, 6<span class="cardRed">&hearts;</span>, 5<span class="cardRed">&hearts;</span> and 3<span class="cardRed">&hearts;</span> because a King(K) is a higher card than a Jack(J).
+</p><br>
+
+
+ 
+<p><div class="hand_titles">THE 6th BEST HAND:</div> Five cards which are not of the same suit (not all &spades;, or not all &clubs;, or not all <span class="cardRed">&diams;</span>, or not all <span class="cardRed">&hearts;</span>), but are in
+numerical order (e.g. J, 10, 9, 8, 7 symbols). This is called a <strong>Straight</strong>. The higher/stronger the type/number of the cards, the better is the hand. For example, a 'straight' of a Q&spades;, J<span class="cardRed">&hearts;</span>, 10<span class="cardRed">&diams;</span>, 9<span class="cardRed">&hearts;</span>, 8&clubs; is better than a 'straight' of a 10<span class="cardRed">&hearts;</span>, 9&spades;, 8<span class="cardRed">&hearts;</span>, 7&clubs;, 6<span class="cardRed">&diams;</span> because a Queen(Q) is a
+higher card than a 10.
+</p><br>
+ 
+<p><div class="hand_titles">THE 7th BEST HAND:</div> Five cards where three of the cards are of one type/number (e.g. three
+Queens, three number 2s etc...). This is called a <strong>3 of a Kind</strong>. The higher/stronger
+the type/number of the card, the better is the hand. For example, a '3 of a kind' of three Jacks
+is better than a '3 of a kind' of three 10s, because a Jack is a higher card than a 10.
+</p><br>
+ 
+<p><div class="hand_titles">THE 8th BEST HAND:</div> Five cards where two of the cards are of one type/number (e.g. two Aces) and
+another two of the cards are of another type/number (e.g. two number 6s). This is called a <strong>2
+Pair</strong>. The higher/stronger the type/number of the cards, the better is the hand. For
+example, a '2 pair' of two Jacks and two 8s is better than a '2 pair' of two 10s and two 9s,
+because a Jack is a higher card than a 10.
+</p><br>
+ 
+<p><div class="hand_titles">THE 9th BEST HAND:</div> Five cards where two of the cards are of one type/number (e.g. two number
+7s). This is called a <strong>1 Pair</strong>. The higher/stronger the type/number of the card, the better
+is the hand. For example, a '1 pair' of two Kings is better than a '1 pair' of two 9s, because
+a King is a higher card than a 9.
+</p><br>
+ 
+<p><div class="hand_titles">THE WORST HAND:</div> Five cards where the cards are all of different types/numbers and are in
+different suits and are not in numerical order (e.g. K&clubs;, J<span class="cardRed">&diams;</span>, 8<span class="cardRed">&hearts;</span>, 7&clubs;, 2&spades; symbols). This is called a
+<strong>No Pair</strong> or a High Card. This is the worst hand that a poker player can have. The
+higher/stronger the type/number of the card, the better is the hand. For example, a 'no pair'
+where the highest card is an Ace is better than a 'no pair' where the highest card is a Jack,
+because an Ace is a higher card than a Jack.
+</p><br>
+ 
+ 
+
+ 
+
+ <br>
+ 
+   
+     
+ 
+ </div><!-- /end #exercise_content -->
+ 
+
+
+<div id="test">
+
+ 
+<hr> 
+ 
+<h2>Quiz:</h2>
+<p>In the following quiz you will find images of 12 different poker hands. You have to rate/rank how good the poker hand is in comparison with the other 12 poker hands that are shown in the quiz. '1st' is for the best poker hand and '12th' is for the worst poker hand.</p>
+
+<p>To start this quiz, I would recommend that you look for the best (the Royal Flush) and worst hands (a No Pair) first and then continue from there.</p> 
+
+<p>Remember high cards (e.g. 10, Queens, Aces etc...) are better than low cards (e.g. 3, 4 etc...). Click on the <b>"Check"</b> button at the bottom of the quiz to check your answers.</p> 
+
+
+<p>When the answer is correct, two icons will appear next to the question. The first is an Additional Information Icon "<img src="../../../../../images/icons/info_icon.gif" class="testImage25" align="absmiddle" id="infoInstruct" />". Click on this for <b>extra information</b> (e.g. what the hand is called and what you say when you have it in a game etc...) and for a <b>translation</b>. The second is a Pronunciation Icon "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />". Click on this to listen to the <b>pronunciation</b> of the name of the hand.</p>
+<br>
+
+<FORM>
+<p><img id="hand_1" class="card_images" src="../../../../../images/svg/hand_1.svg" ><div class="photoQuestion">1. Its rank here is</div>
+<select name="s1"  ID="q1"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img1"> &nbsp; &nbsp;
+<a href="javascript:showObject1();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info1" border="0" onClick="changeZindex('n1')" /></a>&nbsp;  <a href="javascript:showObjectAudio(1);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio1" border="0" onClick="changeZindex('p1')" /></a>
+<div id="n1">
+<table onMouseDown="changeZindex('n1')"> 
+<tr> 
+<td> 
+  <p><strong>1 Pair:</strong><br><em>(noun)</em> This is also called 'a pair'. This is not a very good hand. In poker, if two players have a '1 pair' hand, the hand with the highest pair will win (e.g. a '1 pair' where the two cards are both 7s will beat a '1 pair' where the two cards are both 5s). In English, if you want to say what the 'pair' is, you say 'a pair of' followed by the name of the card in the plural. For example, 'I have 1 pair. A pair of Jacks' or 'I have a pair of Jacks'. In Spanish: <em><b>"par"</b></em>.</p>
+  <a href="javascript:hideObject1();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p1">
+<table onMouseDown="changeZindex('p1')"> 
+<tr > 
+<td id="table1">
+
+ <p><strong>1 Pair</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/1%20Pair.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/1%20Pair.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(1);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p><img id="hand_2" class="card_images" src="../../../../../images/svg/hand_2.svg" ><div class="photoQuestion">Its rank here is</div>
+<select name="s2"  ID="q2"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img2"> &nbsp; &nbsp;
+
+<a href="javascript:showObject2();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info2" border="0" onClick="changeZindex('n2')" /></a>&nbsp;  <a href="javascript:showObjectAudio(2);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio2" border="0" onClick="changeZindex('p2')" /></a>
+<div id="n2">
+<table onMouseDown="changeZindex('n2')"> 
+<tr> 
+<td>  
+  <p><strong>Straight:</strong><br><em>(noun)</em> This is a good hand. In poker, if two players have a 'straight' hand, the hand with the highest card will win (e.g. a 'straight' where the cards are '6<span class="cardRed">&diams;</span>, 7<span class="cardRed">&hearts;</span>, 8&spades;, 9<span class="cardRed">&diams;</span>, 10<span class="cardRed">&hearts;</span>' will beat a 'straight' where the cards are '4&spades;, 5<span class="cardRed">&diams;</span>, 6<span class="cardRed">&hearts;</span>, 7&clubs;, 8<span class="cardRed">&diams;</span>'). In English, a 'straight' is described by saying what the highest card in the 'straight' is. For example, a 'straight' of '6<span class="cardRed">&diams;</span>, 7<span class="cardRed">&hearts;</span>, 8&spades;, 9<span class="cardRed">&diams;</span>, 10<span class="cardRed">&hearts;</span>' is called a 'ten-high straight' or a 'straight to the ten', because the highest card in the 'straight' is a 10. In Spanish: <em><b>"escalera"</b></em>.</p> 
+  <a href="javascript:hideObject2();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p2">
+<table onMouseDown="changeZindex('p2')"> 
+<tr > 
+<td id="table2">
+
+ <p><strong>Straight</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Straight.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Straight.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(2);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p><img id="hand_3" class="card_images" src="../../../../../images/svg/hand_3.svg" ><div class="photoQuestion">3. Its rank here is</div>
+<select name="s3"  ID="q3"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img3"> &nbsp; &nbsp;
+<a href="javascript:showObject3();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info3" border="0" onClick="changeZindex('n3')" /></a>&nbsp;  <a href="javascript:showObjectAudio(3);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio3" border="0" onClick="changeZindex('p3')" /></a>
+<div id="n3">
+<table onMouseDown="changeZindex('n3')">  
+<tr> 
+<td> 
+  <p><strong>4 of a Kind:</strong><br><em>(noun)</em> This is an excellent hand. In poker, if two players have a '4 of a kind' hand, the hand with the highest '4 of a kind' will win (e.g. a '4 of a kind' where the four cards are all Queens will beat a '4 of a kind' where the four cards are all 10s). In poker in English, it is common to hear people just say '4 Queens' instead of saying '4 of a kind of Queens', e.g. 'I have four 8's'. In Spanish: <em><b>"póquer"</b></em>.</p> 
+  <a href="javascript:hideObject3();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p3">
+<table onMouseDown="changeZindex('p3')" > 
+<tr > 
+<td id="table3">
+
+ <p><strong>4 of a Kind</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/4%20of%20a%20Kind.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/4%20of%20a%20Kind.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(3);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p><img id="hand_4" class="card_images" src="../../../../../images/svg/hand_4.svg" ><div class="photoQuestion">4. Its rank here is</div>
+<select name="s4"  ID="q4"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img4"> &nbsp; &nbsp
+<a href="javascript:showObject4();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info4" border="0" onClick="changeZindex('n4')" /></a>&nbsp;  <a href="javascript:showObjectAudio(4);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio4" border="0" onClick="changeZindex('p4')" /></a>
+<div id="n4">
+<table onMouseDown="changeZindex('n4')"> 
+<tr> 
+<td>  
+  <p><strong>2 Pair:</strong><br><em>(noun)</em> This is an ok hand. In poker, if two players have a '2 pair' hand, the hand with the highest pair will win (e.g. a '2 pair' where the highest pair is a pair of Queens will beat a '2 pair' where the highest pair is a pair of 10s). In English, if you want to say what the 'pairs' are, you say 'a pair of' followed by the name of the card in the plural. For example, 'I have 2 pair. A pair of 5s and a pair of Jacks'. In Spanish: <em><b>"doble par"</b></em>.</p> 
+ <a href="javascript:hideObject4();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p4">
+<table onMouseDown="changeZindex('p4')" > 
+<tr > 
+<td id="table4">
+
+ <p><strong>2 Pair</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/2%20Pair.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/2%20Pair.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(4);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p><img id="hand_5" class="card_images" src="../../../../../images/svg/hand_5.svg" ><div class="photoQuestion">5. Its rank here is</div>
+<select name="s5"  ID="q5"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img5"> &nbsp; &nbsp
+<a href="javascript:showObject5();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info5" border="0" onClick="changeZindex('n5')" /></a>&nbsp;  <a href="javascript:showObjectAudio(5);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio5" border="0" onClick="changeZindex('p5')"/></a>
+<div id="n5">
+<table onMouseDown="changeZindex('n5')"> 
+<tr> 
+<td> 
+  <p><strong>Full House:</strong><br><em>(noun)</em> This is a very good hand. In poker, if two players have a 'full house' hand, the hand with the highest '3 of a kind' in the 'full house' wins (e.g. a 'full house' where the cards are 'three Queens' and 'two 7s'  will beat a 'full house' where the cards are 'three 10s' and 'two 9s'). In English, a 'full house' is often described by saying what the '3 of a kind' and the 'pair' are. For example, a 'full house' of 'three Queens' and 'two 7s' is often called (especially by dealers) 'Queens full of sevens' or 'Queens over sevens'. In Spanish: <em><b>"full"</b></em>.</p> 
+ <a href="javascript:hideObject5();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p5">
+<table onMouseDown="changeZindex('p5')" > 
+<tr > 
+<td id="table5">
+
+ <p><strong>Full House</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Full%20House.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Full%20House.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(5);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p><img id="hand_6" class="card_images" src="../../../../../images/svg/hand_6.svg" ><div class="photoQuestion">6. Its rank here is</div>
+<select name="s6"  ID="q6"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img6"> &nbsp; &nbsp
+<a href="javascript:showObject6();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info6" border="0" onClick="changeZindex('n6')" /></a>&nbsp;  <a href="javascript:showObjectAudio(6);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio6" border="0" onClick="changeZindex('p6')" /></a>
+<div id="n6">
+<table onMouseDown="changeZindex('n6')"> 
+<tr> 
+<td>  
+  <p><strong>No Pair:</strong><br><em>(noun)</em> This is also called a 'high card' and is the worst hand you can have in poker. In poker, if two players have a 'high card'/'no pair' hand, the hand with the highest card will win. In Spanish: <em><b>"carta más alta"</b></em>.</p> 
+  <a href="javascript:hideObject6();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p6">
+<table onMouseDown="changeZindex('p6')"> 
+<tr > 
+<td id="table6">
+
+ <p><strong>No Pair</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/No%20Pair.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/No%20Pair.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(6);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p><img id="hand_7" class="card_images" src="../../../../../images/svg/hand_7.svg" ><div class="photoQuestion">7. Its rank here is</div>
+<select name="s7"  ID="q7"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img7"> &nbsp; &nbsp
+<a href="javascript:showObject7();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info7" border="0" onClick="changeZindex('n7')" /></a>&nbsp; <a href="javascript:showObjectAudio(7);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio7" border="0" onClick="changeZindex('p7')" /></a>
+<div id="n7">
+<table onMouseDown="changeZindex('n7')"> 
+<tr> 
+<td>  
+  <p><strong>Royal Flush:</strong><br><em>(noun)</em> This is the best hand a player can have in a poker game. Nothing can beat this poker hand. This is also called an 'Ace-high straight flush'. In Spanish: <em><b>"flor imperial/escalera real"</b></em>.</p> 
+  <a href="javascript:hideObject7();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p7">
+<table onMouseDown="changeZindex('p7')" > 
+<tr > 
+<td id="table7">
+
+ <p><strong>Royal Flush</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Royal%20Flush.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Royal%20Flush.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(7);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p><img id="hand_8" class="card_images" src="../../../../../images/svg/hand_8.svg" ><div class="photoQuestion">8. Its rank here is</div>
+<select name="s8"  ID="q8"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img8"> &nbsp; &nbsp
+<a href="javascript:showObject8();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info8" border="0" onClick="changeZindex('n8')" /></a>&nbsp;  <a href="javascript:showObjectAudio(8);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio8" border="0" onClick="changeZindex('p8')" /></a>
+<div id="n8">
+<table onMouseDown="changeZindex('n8')"> 
+<tr> 
+<td> 
+  <p><strong>3 of a Kind:</strong><br><em>(noun)</em> This is an ok hand. In poker, if two players have a '3 of a kind' hand, the hand with the highest '3 of a kind'
+will win (e.g. a '3 of a kind' where the three cards are all Queens will beat a '3 of a kind' where the three cards are all 10s). In poker in English, it is common to hear people just say '3 Queens' instead of saying '3 of a kind of Queens', e.g. 'the player has three 8's'. In Spanish: <em><b>"tercia/trío"</b></em>.</p> 
+  <a href="javascript:hideObject8();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p8">
+<table onMouseDown="changeZindex('p8')" > 
+<tr > 
+<td id="table8">
+
+ <p><strong>3 of a Kind</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/3%20of%20a%20Kind.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/3%20of%20a%20Kind.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(8);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p><img id="hand_9" class="card_images" src="../../../../../images/svg/hand_9.svg" ><div class="photoQuestion">9. Its rank here is</div>
+<select name="s9"  ID="q9"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img9"> &nbsp; &nbsp
+<a href="javascript:showObject9();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info9" border="0" onClick="changeZindex('n9')"/></a>&nbsp;  <a href="javascript:showObjectAudio(9);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio9" border="0" onClick="changeZindex('p9')" /></a>
+<div id="n9">
+<table onMouseDown="changeZindex('n9')"> 
+<tr> 
+<td> 
+  <p><strong>Flush:</strong><br><em>(noun)</em> This is a good hand. In poker, if two players have a 'flush' hand, the hand with the highest card will win (e.g. a 'flush' where the cards are '2&spades;, 5&spades;, 7&spades;, 8&spades;, Q&spades;' will beat a 'flush' where the cards are '3<span class="cardRed">&diams;</span>, 5<span class="cardRed">&diams;</span>, 7<span class="cardRed">&diams;</span>, 10<span class="cardRed">&diams;</span>, J<span class="cardRed">&diams;</span>'). The suit of the card makes no difference. In English, a 'flush' is described by saying what the highest card in the 'flush' is. For example, a 'flush' of '2&spades;, 5&spades;, 7&spades;, 8&spades;, Q&spades;' is called a 'Queen-high flush' because the highest card in the 'flush' is a Queen. In Spanish: <em><b>"color"</b></em>.</p> 
+  <a href="javascript:hideObject9();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p9">
+<table onMouseDown="changeZindex('p9')" > 
+<tr > 
+<td id="table9">
+
+ <p><strong>Flush</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Flush.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Flush.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(9);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p><img id="hand_10" class="card_images" src="../../../../../images/svg/hand_10.svg" ><div class="photoQuestion">10. Its rank here is</div>
+<select name="s10"  ID="q10"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img10"> &nbsp; &nbsp
+<a href="javascript:showObject10();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info10" border="0" onClick="changeZindex('n10')" /></a>&nbsp;  <a href="javascript:showObjectAudio(10);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio10" border="0" onClick="changeZindex('p10')" /></a>
+<div id="n10">
+<table onMouseDown="changeZindex('n10')"> 
+<tr> 
+<td> 
+  <p><strong>Straight Flush:</strong><br><em>(noun)</em> This is an excellent hand. In poker, if two players have a 'straight flush' hand, the hand with the highest card will win (e.g. a 'straight flush' where the cards are '8&spades;, 9&spades;, 10&spades;, J&spades;, Q&spades;' will beat a 'straight flush' where the cards are '7<span class="cardRed">&diams;</span>, 8<span class="cardRed">&diams;</span>, 9<span class="cardRed">&diams;</span>, 10<span class="cardRed">&diams;</span>, J<span class="cardRed">&diams;</span>'). The suit of the card makes no difference. In English, a 'straight flush' is described by saying what the highest card in the 'straight flush' is. For example, a 'straight flush' of '7<span class="cardRed">&diams;</span>, 8<span class="cardRed">&diams;</span>, 9<span class="cardRed">&diams;</span>, 10<span class="cardRed">&diams;</span>, J<span class="cardRed">&diams;</span>' is called a 'Jack-high straight flush' because the highest card in the 'straight flush' is a Jack. In Spanish: <em><b>"escalera de color"</b></em>.</p>
+  <a href="javascript:hideObject10();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p10">
+<table onMouseDown="changeZindex('p10')" > 
+<tr > 
+<td id="table10">
+
+ <p><strong>Straight Flush</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Straight%20Flush.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Straight%20Flush.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(10);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p><img id="hand_11" class="card_images" src="../../../../../images/svg/hand_11.svg" ><div class="photoQuestion">11. Its rank here is</div>
+<select name="s11"  ID="q11"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img11"> &nbsp; &nbsp
+<a href="javascript:showObject11();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info11" border="0" onClick="changeZindex('n11')" /></a>&nbsp;  <a href="javascript:showObjectAudio(11);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio11" border="0" onClick="changeZindex('p11')" /></a>
+<div id="n11">
+<table onMouseDown="changeZindex('n11')"> 
+<tr> 
+<td>
+  <p><strong>2 Pair:</strong><br><em>(noun)</em> This is an ok hand. In poker, if two players have a '2 pair' hand, the hand with the highest pair will win (e.g. a '2 pair' where the highest pair is a pair of Queens will beat a '2 pair' where the highest pair is a pair of 10s). In English, if you want to say what the 'pairs' are, you say 'a pair of' followed by the name of the card in the plural. For example, 'I have 2 pair. A pair of 5s and a pair of Jacks'. In Spanish: <em><b>"doble par"</b></em>.</p> 
+<a href="javascript:hideObject11();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p11">
+<table onMouseDown="changeZindex('p11')" > 
+<tr > 
+<td id="table11">
+
+ <p><strong>2 Pair</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/2%20Pair.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/2%20Pair.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(11);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p><img id="hand_12" class="card_images" src="../../../../../images/svg/hand_12.svg" ><div class="photoQuestion">12. Its rank here is</div>
+<select name="s12"  ID="q12"  onClick="Engine(1)" > 
+<option value="0"></option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+<option value="9th">9th</option>
+<option value="10th">10th</option>
+<option value="11th">11th</option>
+<option value="12th">12th</option>
+</select>
+
+
+&nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img12"> &nbsp; &nbsp
+<a href="javascript:showObject12();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info12" border="0" onClick="changeZindex('n12')" /></a>&nbsp;  <a href="javascript:showObjectAudio(12);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio12" border="0" onClick="changeZindex('p12')" /></a>
+<div id="n12">
+<table onMouseDown="changeZindex('n12')"> 
+<tr> 
+<td>
+  <p><strong>Flush:</strong><br><em>(noun)</em> This is a good hand. In poker, if two players have a 'flush' hand, the hand with the highest card will win (e.g. a 'flush' where the cards are '2&spades;, 5&spades;, 7&spades;, 8&spades;, Q&spades;' will beat a 'flush' where the cards are '3<span class="cardRed">&diams;</span>, 5<span class="cardRed">&diams;</span>, 7<span class="cardRed">&diams;</span>, 10<span class="cardRed">&diams;</span>, J<span class="cardRed">&diams;</span>'). The suit of the card makes no difference. In English, a 'flush' is described by saying what the highest card in the 'flush' is. For example, a 'flush' of '2&spades;, 5&spades;, 7&spades;, 8&spades;, Q&spades;' is called a 'Queen-high flush' because the highest card in the 'flush' is a Queen. In Spanish: <em><b>"color"</b></em>.</p>
+ <a href="javascript:hideObject12();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p12">
+<table onMouseDown="changeZindex('p12')" > 
+<tr > 
+<td id="table12">
+
+ <p><strong>Flush</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Flush.mp3">
+ <source src="../../../../../exercises/card_games/exercises/poker_hands/pronunciation/Flush.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(12);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+
+<input class="submitResults" type=button onClick="Score()" value="Check">
+</CENTER>
+</FORM>
+</div> <!-- /end #test -->
+<br /><br />
+<div id="links">
+<a href="../../../../../exercises/card_games/card_games_selectionpage.html"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more card game vocabulary exercises</span></a>
+</div><!-- /end #links -->
+<br /><br />
+
+
+
+<h2>Practice</h2>
+<p>Now that you understand these, practise by dealing yourself 5 cards and saying what poker hand you have.
+</p>
+
+
+
+<div id="blairClassAd">
+</div><!-- /end #blairClassAd -->
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+    <p align="center">&copy;2024, Blair English</p>
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+<SCRIPT language="JavaScript" SRC="../../../../../javascript/box_call_selectionlist_1_mobile.js"></SCRIPT>
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/card_games/exercises/poker_hands_2/poker_hands_2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:53 GMT -->
+</html>

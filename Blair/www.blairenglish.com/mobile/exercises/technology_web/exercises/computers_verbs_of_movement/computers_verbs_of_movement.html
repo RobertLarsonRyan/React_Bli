@@ -1,0 +1,860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/technology_web/exercises/computers_verbs_of_movement/computers_verbs_of_movement.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:52 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/computers_verbs_of_movement.html" >
+<title>English verbs of movement on computers online exercise | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<link rel="stylesheet" href="../../../../../javascript/SlickNav/slicknav.css" />
+<meta name="description" content="Learn the English verbs in this online exercise that are used to do different types of movements on a computer, tablet, smart phone or touch screen device." />
+
+
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/computers_verbs_of_movement.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+<script language="javascript">
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+var correctAns = new Array;
+
+var quizWords = new Array;  
+
+quizWords[1] = "click"; 
+quizWords[2] = "type in";
+quizWords[3] = "tab down";
+quizWords[4] = "press";
+quizWords[5] = "drag";
+quizWords[6] = "drop";
+quizWords[7] = "scroll";
+quizWords[8] = "highlight";
+quizWords[9] = "release";
+quizWords[10] = "hold down";
+quizWords[11] = "tap";
+quizWords[12] = "slide";
+
+
+var score = 0;
+ans[1] = "HOLD DOWN";
+ans[2] = "SLIDE";
+ans[3] = "TAB DOWN";
+ans[4] = "CLICK";
+ans[5] = "DRAG";
+ans[6] = "RELEASE";
+ans[7] = "TAP";
+ans[8] = "SCROLL";
+ans[9] = "DROP";
+ans[10] = "TYPE IN";
+ans[11] = "HIGHLIGHT";
+ans[12] = "PRESS";
+
+function Score(){
+yourAns[1]= document.getElementById("q1").value;
+yourAns[2]= document.getElementById("q2").value;
+yourAns[3]= document.getElementById("q3").value;
+yourAns[4]= document.getElementById("q4").value;
+yourAns[5]= document.getElementById("q5").value;
+yourAns[6]= document.getElementById("q6").value;
+yourAns[7]= document.getElementById("q7").value;
+yourAns[8]= document.getElementById("q8").value;
+yourAns[9]= document.getElementById("q9").value;
+yourAns[10]= document.getElementById("q10").value;
+yourAns[11]= document.getElementById("q11").value;
+yourAns[12]= document.getElementById("q12").value;
+
+setTimeout('Press(ans,yourAns )',1000);
+
+
+for(i=1;i<=yourAns.length;i++){
+    yourAns[i]=yourAns[i].trim();	
+   yourAns[i]=yourAns[i].toUpperCase();  
+   
+  if(ans[i]!=yourAns[i]){
+    
+	document.getElementById("img" + i).src = "../../../../../images/icons/cross.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("info" + i).title ="";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("audio" + i).title ="";
+  }
+  else{
+    
+    document.getElementById("img" + i).src = "../../../../../images/icons/tick.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/info_icon.gif";
+	document.getElementById("info" + i).style.display = "inherit";
+	document.getElementById("info" + i).title = "Click here for extra info about this word/phrase";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/audio_icon111.gif";
+	document.getElementById("audio" + i).style.display = "inherit"
+	document.getElementById("audio" + i).title = "Click here to listen and practise the pronunciation of this word/phrase";
+	
+	var answer = ans[i];
+	answer = answer.toLowerCase();
+	
+	var thespan = document.getElementById(answer);
+	thespan.textContent = "";	
+	
+  }
+}
+}
+
+function spell(question,text) {
+	
+	var i = question;
+	var checkSpell = text;
+	checkSpell = checkSpell.trim();
+	checkSpell = checkSpell.toUpperCase();
+	
+	if (checkSpell == ""){
+		
+		return;}
+		
+		else if (checkSpell != ""){
+	
+	if (checkSpell == ans[1]){
+		
+		
+		return;
+	}
+	else if (checkSpell != ans[1]) {
+		if (checkSpell == ans[2]){
+			
+		
+		return;}
+		
+		else if (checkSpell != ans[2]){
+			if (checkSpell == ans[3]) {
+				
+				
+				return;}
+				
+				else if(checkSpell != ans[3]) {
+		            if (checkSpell == ans[4]){
+			
+		
+		         return;}
+		
+		           else if (checkSpell != ans[4]){
+			             if (checkSpell == ans[5]) {
+				
+				
+				  return;}
+				
+				     else if(checkSpell != ans[5]) {
+		                 if (checkSpell == ans[6]){
+				     return;}
+				
+				       else if(checkSpell != ans[6]) {
+		                  if (checkSpell == ans[7]){
+			
+		
+		               return;}
+		
+		                else if (checkSpell != ans[7]){
+			                if (checkSpell == ans[8]) {
+				
+				
+				          return;}
+				
+				          else if(checkSpell != ans[8]) {
+		                       if (checkSpell == ans[9]){
+				
+				             return;}
+				
+				            else if(checkSpell != ans[9]) {
+		                      if (checkSpell == ans[10]){
+				             return;}
+							 
+							 else if(checkSpell != ans[10]) {
+		                       if (checkSpell == ans[11]){
+				              return;}
+							  
+							   else if(checkSpell != ans[11]) {
+		                        if (checkSpell == ans[12]){
+				               return;}
+				
+				              else if(checkSpell != ans[12]) {
+		                  
+							   alert("There is a mistake in this answer. Check the spelling and if there is an extra space in the word/phrase you have written.");
+							   setTimeout(function() {
+    document.getElementById("q" + i).focus();
+}, 10);
+							 }
+		                    }
+						  }
+					  }
+		     		}
+				 }
+			 }
+	      }
+       }
+	}
+}
+}
+}
+}
+
+</script>
+
+
+   
+</HEAD>
+
+
+
+<BODY>
+<div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a> 
+       
+   </div><!-- /end #logo -->
+
+  <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+  
+<div id="navigation_css" ><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../../exercises/technology_web/technology_web_selectionpage.html">more tech English exercises</a></li> 
+     
+   <li><a href="../../../../../extras/exercise_menu.html">other exercises</a></li>
+   
+   <li><a href="../../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../../extras/contact_page.html">contact us</a></li>
+   
+    </ul>
+ 
+ </nav>
+ 
+  </div><!-- /end #navigation_css -->
+ 
+
+     
+   <div id="header">
+      <h1>English verbs of movement on computers exercise</h1>
+  </div><!-- /end #header -->
+   
+ 
+
+ 
+ 
+
+
+
+<div id="body">
+<div id="exerciseBody">
+   
+   <div id="introduction">
+
+<p class="openParaArticle">Although the majority of people learning English know how to do actions and move about in applications and web browsers on a computer, they often don't know how to describe/say the names of these movements in English. For example, what is the verb in English to move a photo from one side of a word document to the other?</p>
+<p>In this online exercise on computers, we will look at the English verbs that are used for doing/performing movements on a computer using a keyboard, mouse or with your finger on a screen. Knowing these verbs is essential when giving or receiving instructions on how to use a computer application.</p>
+
+<p>If you need to learn this vocabulary, another online exercise you will find useful is our one on '<a href="../../../../../exercises/technology_web/exercises/computers_keyboard_keys1/computers_keyboard_keys1.html"><b>computer keyboard key names</b></a>' or on the '<a href="../../../../../exercises/technology_web/exercises/web_page_essentials/web_page_essentials.html"><b>names for parts of a web page</b></a>'.</p>    
+
+</div> <!-- /end #introduction -->
+
+<hr>
+
+<div id="exercise_content">
+
+ <h2>Exercise: Adding information to a database</h2>
+ 
+ <p>Read the following conversation between Peter and Juan about how to add the details from a CV/resume on to a database for candidates applying for job vacancies in their company.</p>
+<p>From the context, try to guess what the meaning of the words/phrases in <strong>bold</strong> are. Then do the quiz at the end to check if you are right.</p>
+ 
+
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'For the vacancy in our department we have to enter all the CV details for the candidates on to the candidates database. Do you know how to do that?'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'No, I've never done it before.'
+    </span></p>
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'No problem, I'll show you how to complete the form in the database with the details. First of all, you'll need to have both the database and a copy of the CV open on the screen. Now, in the database <strong>click</strong> on the button that says 'new entry' using the mouse. This takes you to a new screen where you can enter the details.'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'Ok.'
+     </span></p>
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'Now, at the top you'll see a section called 'candidate details'. You have to enter the candidate's name, date of birth, address etc... here. So, to enter the name, click on the text box next to name, then <strong>type in</strong> the name using the keyboard. When you have done that, <strong>tab down</strong> to the next text box for date of birth using the tab key on the keyboard. And type in the date of birth. To move down to the next text box you need to <strong>press</strong> the tab key again. Continue doing that until you've filled all the text boxes in this section.'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'What next?'
+    </span></p>
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'To the right of the 'candidate details' section, there's a box called 'photo'. Go back to the copy of the CV and find the candidate's photo. Click on the photo and then <strong>drag</strong> or move the photo from the CV onto the candidate database and put it over the photo box and then <strong>drop</strong> it by taking your finger off the click button on the mouse. Now, the photo has been entered onto the database.'
+    </span></p>
+    
+               
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'Is that it?'
+    </span></p>
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'No, you have to enter the candidate's job history details. But you don't have to type it in. You can copy and paste it from the CV. But before you do that, you have to go to the 'job history' section on the database. You can't see this section on the screen, because it's at the bottom of the database form. So, you have to <strong>scroll</strong> down the form until this section is on the screen. Here it is.<br><br>Now, go back to the CV and <strong>highlight</strong> using the mouse all the text from the candidate's job history that you want to copy. You highlight or select the text by clicking on the mouse button and with the mouse button still pressed move the cursor to the end of the text that you want copied. Then <strong>release</strong> the mouse button.<br><br>To copy the highlighted or selected text, you can either press the right mouse button and click copy in the menu that appears or with the keyboard, <strong>hold down</strong> the control/Ctrl key and press the key 'C'. Then go back to the 'job history' section on the database and paste it into the text box there. After that, save the form and all the information is on the database.'
+    </span></p>
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'It seems simple. But how can I access the information on the database when I'm in an interview?'
+    </span></p>
+ 
+ <p><span class="names">Juan:</span><span class="exercise_dialogue">'Well, you can access all the information on the database on an iPad. To open the database on the iPad, you need to <strong>tap</strong> on this icon on the screen using your finger. Then, when the database opens, tap on the text box next to name and type in the candidate's full name and press or tap the enter icon and all the candidate's details will appear on the screen. To move or scroll up and down the details in the database, you just need to <strong>slide</strong> your finger up or down the screen.'
+   </span></p> 
+     
+ 
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'Perfect, thanks.'
+    </span></p>
+    
+
+    
+
+    
+   
+ 
+    
+    
+
+    
+
+ 
+ 
+
+ 
+
+ <br>
+ 
+   <div id="amazon_block">
+<div id="amazon_block_business_numbers">
+
+ 
+</div><!-- /end #amazon_block_business_number-->  
+</div><!-- /end #amazon_block -->
+<br> 
+
+
+<div id="siteAds">
+</div><!-- /end #siteAds -->    
+     
+ 
+ </div><!-- /end #exercise_content -->
+ 
+
+
+<div id="test">
+
+ 
+<hr> 
+ 
+<h2>Quiz:</h2>
+<p>Below is a definition/description of each of the words/phrases in <b>bold</b> from the above text (which you can also find in the grey box below). Answer each question with one of these words/phrases in <b>bold</b>. Only use one word/phrase once and write it as it is in the text. Click on the <b>"Check"</b> button at the bottom of the quiz to check your answers.</p>  
+<p>When the answer is correct, two icons will appear below the answer. The "<img src="../../../../../images/icons/info_icon.gif" class="testImage25" align="absmiddle" id="infoInstruct" />" icon contains <b>extra information</b> on the word/phrase. In the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon, you can listen to the <b>pronunciation</b> of the word/phrase.</p>
+<h3 id="QuizWordsBoxTitle">Words/phrases to use in the quiz</h3>   
+<div id="QuizWordsBox">
+
+</div><!-- /end #QuizWordsBox -->
+
+
+<FORM>
+<p>1. When you press a key or a mouse button for more than 1 second, you 
+<div id="textBoxPositioning1"><input  type="text" ID="q1" class="ansInput" onBlur="spell(1,this.value)"/><input type="text" id="autocomplete_q1" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img1"> &nbsp; &nbsp;
+<a href="javascript:showObject1();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info1" border="0" onClick="changeZindex('n1')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(1);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio1" border="0" onClick="changeZindex('p1')" /></a>
+<div id="n1">
+<table onMouseDown="changeZindex('n1')"> 
+<tr> 
+<td> 
+  <p><strong>Hold down:</strong><br><em>(phrasal verb)</em> 'to hold down' means to keep a key or a mouse button pressed (without releasing it) for more than one second. You normally 'hold down' the mouse button when copying some text and with keys on a keyboard to do shortcuts (a quicker way to do actions), e.g. 'hold down the control button and then press the key 'V' to paste'. It is a transitive phrasal verb (it has a direct object) and the verb and particle can be separated, e.g. 'hold the mouse button down'. In Spanish: <em><b>"mantener pulsada"</b></em>.</p>
+  <a href="javascript:hideObject1();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p1">
+<table onMouseDown="changeZindex('p1')"> 
+<tr > 
+<td id="table1">
+
+ <p><strong>Hold down</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/hold%20down1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/hold%20down1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(1);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>2. To move your finger while still touching the glass on a touch screen tablet/phone, is
+<div id="textBoxPositioning2"><input  type="text" ID="q2" class="ansInput" onBlur="spell(2,this.value)"/> <input  type="text" id="autocomplete_q2" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img2"> &nbsp; &nbsp;
+<a href="javascript:showObject2();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info2" border="0" onClick="changeZindex('n2')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(2);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio2" border="0" onClick="changeZindex('p2')" /></a>
+<div id="n2">
+<table onMouseDown="changeZindex('n2')"> 
+<tr> 
+<td>  
+  <p><strong>Slide:</strong><br><em>(verb)</em> 'to slide' is used to describe moving your finger along a touch screen device (e.g. iPad, Samsung Galaxy etc...) without removing contact with the screen. 'sliding' your finger up or down the screen, is the way to move/scroll up and down a web page. You also slide your thumb and finger apart to 'zoom in' on a web page and slide your thumb and finger apart (which is called 'to pinch') to 'zoom out'. In Spanish: <em><b>"deslizar"</b></em>.</p> 
+  <a href="javascript:hideObject2();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p2">
+<table onMouseDown="changeZindex('p2')"> 
+<tr > 
+<td id="table2">
+
+ <p><strong>Slide</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/slide1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/slide1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(2);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>3. To move through/down text boxes on an online form by the keyboard, you
+<div id="textBoxPositioning3"><input  type="text" ID="q3" class="ansInput" onBlur="spell(3,this.value)"/> <input  type="text" id="autocomplete_q3" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img3"> &nbsp; &nbsp;
+<a href="javascript:showObject3();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info3" border="0" onClick="changeZindex('n3')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(3);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio3" border="0" onClick="changeZindex('p3')" /></a>
+<div id="n3">
+<table onMouseDown="changeZindex('n3')">  
+<tr> 
+<td> 
+  <p><strong>Tab down:</strong><br><em>(phrasal verb)</em> 'to tab down' is a way of moving through or down text boxes/fields on a form or quiz by pressing the 'tab' key on the keyboard. It is a quicker way to move through text boxes than moving the cursor to each and clicking with the mouse. You can also use 'tab through' with the same meaning, e.g. 'you can tab through the answer boxes'. You can also 'tab up' by holding down the 'shift' key and pressing the 'tab' key. It can be used as both a transitive phrasal verb
+(it is followed by a direct object) or as an intransitive phrasal verb (it doesn't have an object), e.g. 'tab down the screen' or 'tab down'. In Spanish: <em><b>"desplazarse a bajo"</b></em>.</p> 
+  <a href="javascript:hideObject3();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p3">
+<table onMouseDown="changeZindex('p3')" > 
+<tr > 
+<td id="table3">
+
+ <p><strong>Tab down</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/tab%20down1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/tab%20down1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(3);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>4. A more common way to say 'press' a button on a mouse, is
+<div id="textBoxPositioning4"><input  type="text" ID="q4" class="ansInput" onBlur="spell(4,this.value)"/> <input  type="text" id="autocomplete_q4" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img4"> &nbsp; &nbsp;
+<a href="javascript:showObject4();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info4" border="0" onClick="changeZindex('n4')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(4);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio4" border="0" onClick="changeZindex('p4')" /></a>
+<div id="n4">
+<table onMouseDown="changeZindex('n4')"> 
+<tr> 
+<td>  
+  <p><strong>Click:</strong><br><em>(verb)</em> 'to click' means to press a button on a mouse or touch pad (for laptops). It is called 'to click' because of the sound it makes when pressed or clicked. On PCs, there are two mouse/touch pad buttons. It is common to just say 'click' to mean to press the left button, but you have to say 'right click' to mean to press the right button'. You can either 'single-click' or 'double-click' the buttons. When you 'double-click', it selects/highlights a word the cursor is over. The verb is often followed by the preposition 'on' when you say where on the screen you have to 'click', e.g. 'click on the save button/icon'. Although 'to click' is used with touch screen device (e.g. iPad, Samsung Galaxy etc...) it is better to use 'to tap' instead, e.g. 'tap the icon twice'.  In Spanish: <em><b>"hacer clic"</b></em>.</p> 
+  <a href="javascript:hideObject4();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p4">
+<table onMouseDown="changeZindex('p4')" > 
+<tr > 
+<td id="table4">
+
+ <p><strong>Click</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/click1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/click1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(4);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>5. When you select/click on an image or photo and then physically move it on the screen, you
+<div id="textBoxPositioning5"><input  type="text" ID="q5" class="ansInput" onBlur="spell(5,this.value)"/> <input  type="text" id="autocomplete_q5" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img5"> &nbsp; &nbsp;
+<a href="javascript:showObject5();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info5" border="0" onClick="changeZindex('n5')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(5);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio5" border="0" onClick="changeZindex('p5')"/></a>
+<div id="n5">
+<table onMouseDown="changeZindex('n5')"> 
+<tr> 
+<td> 
+  <p><strong>Drag:</strong><br><em>(verb)</em> 'to drag' means to physically move something (an image, photo, file etc...) on a screen after clicking on/selecting it. When you have 'dragged'/moved it to the position where you want it to be, you then 'drop' it by taking your finger off/releasing the mouse button. To 'drag and drop' are commonly used verbs in a lot of computer applications, e.g. Word, Excel, Pages etc... In Spanish: <em><b>"arrastrar"</b></em>.</p> 
+  <a href="javascript:hideObject5();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p5">
+<table onMouseDown="changeZindex('p5')" > 
+<tr > 
+<td id="table5">
+
+ <p><strong>Drag</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/drag1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/drag1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(5);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>6. When you stop holding down a key or mouse button, you
+<div id="textBoxPositioning6"><input  type="text" ID="q6" class="ansInput" onBlur="spell(6,this.value)"/> <input  type="text" id="autocomplete_q6" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img6"> &nbsp; &nbsp;
+<a href="javascript:showObject6();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info6" border="0" onClick="changeZindex('n6')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(6);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio6" border="0" onClick="changeZindex('p6')" /></a>
+<div id="n6">
+<table onMouseDown="changeZindex('n6')"> 
+<tr> 
+<td>  
+  <p><strong>Release:</strong><br><em>(verb)</em> 'to release' means when you stop holding down or pressing a key or mouse button. For example, when you 'drag and drop' a photo from one side of a word document to the other. First, you click on the photo you want to be moved and still holding down the mouse button, you move it to the other side of the document. Then you 'release' the mouse button to put/place the photo in its new position. In Spanish: <em><b>"soltar"</b></em>.</p> 
+  <a href="javascript:hideObject6();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p6">
+<table onMouseDown="changeZindex('p6')"> 
+<tr > 
+<td id="table6">
+
+ <p><strong>Release</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/release1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/release1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(6);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>7. A different way to say 'click' or 'press' on a touch screen device (e.g. iPad), is
+<div id="textBoxPositioning7"><input  type="text" ID="q7" class="ansInput" onBlur="spell(7,this.value)"/> <input  type="text" id="autocomplete_q7" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img7"> &nbsp; &nbsp;
+<a href="javascript:showObject7();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info7" border="0" onClick="changeZindex('n7')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(7);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio7" border="0" onClick="changeZindex('p7')" /></a>
+<div id="n7">
+<table onMouseDown="changeZindex('n7')"> 
+<tr> 
+<td>  
+  <p><strong>Tap:</strong><br><em>(verb)</em> 'to tap' means to 'to click' or 'to press' something on a touch screen device (e.g. iPad, Samsung Galaxy). 'to tap' means to touch something quickly and it doesn't move, e.g. 'tap the icon on the screen to open the application'. In fact, it is more correct to use 'to tap' or 'to touch' instead of 'to click' or 'to press' with a touch screen device, because 'to click' means that something physically makes a noise and 'to press' means that something physically moves when it is touched (e.g. like the keys on a keyboard). But both verbs are still used with touch screen devices. In Spanish: <em><b>"pulsar/presionar"</b></em>.</p> 
+  <a href="javascript:hideObject7();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p7">
+<table onMouseDown="changeZindex('p7')" > 
+<tr > 
+<td id="table7">
+
+ <p><strong>Tap</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/tap1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/tap1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(7);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>8. A verb that means to move up or down a web page or document, is
+<div id="textBoxPositioning8"><input  type="text" ID="q8" class="ansInput" onBlur="spell(8,this.value)"/> <input  type="text" id="autocomplete_q8" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img8">&nbsp; &nbsp;
+<a href="javascript:showObject8();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info8" border="0" onClick="changeZindex('n8')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(8);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio8" border="0" onClick="changeZindex('p8')" /></a>
+<div id="n8">
+<table onMouseDown="changeZindex('n8')"> 
+<tr> 
+<td> 
+  <p><strong>Scroll:</strong><br><em>(verb)</em> 'to scroll' is used when you want to see other parts of a web page, document or application that are not on the screen at that time. You normally say 'scroll up/down', which basically means to move up/down the web page or document, e.g. 'I want to see the end of the document, can you scroll down to it'. On a computer, you  normally use the scroll bar (on the left of the web page/document) and a mouse to 'scroll', but on a touch screen device (e.g. iPad, Samsung Galaxy) you 'scroll' by sliding your finger up or down. In Spanish: <em><b>"desplazar"</b></em>.</p> 
+  <a href="javascript:hideObject8();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p8">
+<table onMouseDown="changeZindex('p8')" > 
+<tr > 
+<td id="table8">
+
+ <p><strong>Scroll</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/scroll1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/scroll1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(8);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>9. After moving/dragging a photo on the screen, to put or place it in its new position, you
+<div id="textBoxPositioning9"><input  type="text" ID="q9" class="ansInput" onBlur="spell(9,this.value)"/> <input  type="text" id="autocomplete_q9" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img9">&nbsp; &nbsp;
+<a href="javascript:showObject9();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info9" border="0" onClick="changeZindex('n9')"/></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(9);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio9" border="0" onClick="changeZindex('p9')" /></a>
+<div id="n9">
+<table onMouseDown="changeZindex('n9')"> 
+<tr> 
+<td> 
+  <p><strong>Drop:</strong><br><em>(verb)</em> 'to drop' is used when putting/placing an image, photo or file in its new position after having moved/dragged it from its original position When you have dragged/moved it to the position where you want it to be, you then 'drop' it by taking your finger off/releasing the mouse button. To 'drag and drop' are commonly used verbs in a lot of computer applications, e.g. Word, Excel, Pages etc... In Spanish: <em><b>"soltar/depositar"</b></em>.</p> 
+  <a href="javascript:hideObject9();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p9">
+<table onMouseDown="changeZindex('p9')" > 
+<tr > 
+<td id="table9">
+
+ <p><strong>Drop</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/drop1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/drop1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(9);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>10. Another way to say 'enter' or 'write' words or numbers with a computer, is
+<div id="textBoxPositioning10"><input  type="text" ID="q10" class="ansInput" onBlur="spell(10,this.value)"/> <input  type="text" id="autocomplete_q10" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img10">&nbsp; &nbsp;
+<a href="javascript:showObject10();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info10" border="0" onClick="changeZindex('n10')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(10);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio10" border="0" onClick="changeZindex('p10')" /></a>
+<div id="n10">
+<table onMouseDown="changeZindex('n10')"> 
+<tr> 
+<td> 
+  <p><strong>Type in:</strong><br><em>(phrasal verb)</em> 'to type in' is a different way to say 'to enter' text into a document, web page, form using a computer, e.g. 'type your name in the text box for name'. You 'type in' the words or numbers using either a physical keyboard (on a desktop computer or laptop) or with the keyboard on the screen. It is transitive phrasal verb (it has a direct object) and the two parts of the phrasal verb can be separated, e.g. 'type it in'. In Spanish: <em><b>"escribir/introducir"</b></em>.</p>
+  <a href="javascript:hideObject10();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p10">
+<table onMouseDown="changeZindex('p10')" > 
+<tr > 
+<td id="table10">
+
+ <p><strong>Type in</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/type%20in1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/type%20in1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(10);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>11. To copy some of the text from a document, you first have to
+<div id="textBoxPositioning11"><input  type="text" ID="q11" class="ansInput" onBlur="spell(11,this.value)"/> <input  type="text" id="autocomplete_q11" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img11">&nbsp; &nbsp;
+<a href="javascript:showObject11();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info11" border="0" onClick="changeZindex('n11')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(11);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio11" border="0" onClick="changeZindex('p11')" /></a>
+<div id="n11">
+<table onMouseDown="changeZindex('n11')"> 
+<tr> 
+<td> 
+  <p><strong>Highlight:</strong><br><em>(verb)</em> 'to highlight' in this context means 'to select' a word or a part of the text from a document or web page. To 'highlight' text, you click and hold down the mouse button then you select all the text that you want to copy, cut, delete etc..., and then release the button. For most computers, the background of the 'highlighted' part will change to blue and the text will change to white. In Spanish: <em><b>"seleccionar"</b></em>.</p>
+  <a href="javascript:hideObject11();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p11">
+<table onMouseDown="changeZindex('p11')" > 
+<tr > 
+<td id="table11">
+
+ <p><strong>Highlight</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/highlight1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/highlight1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(11);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>12. To make the keys on a keyboard write letters, numbers etc..., you have to
+<div id="textBoxPositioning12"><input  type="text" ID="q12" class="ansInput" onBlur="spell(12,this.value)"/> <input  type="text" id="autocomplete_q12" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img12">&nbsp; &nbsp;
+<a href="javascript:showObject12();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info12" border="0" onClick="changeZindex('n12')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(12);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio12" border="0" onClick="changeZindex('p12')" /></a>
+<div id="n12">
+<table onMouseDown="changeZindex('n12')"> 
+<tr> 
+<td>
+  <p><strong>Press:</strong><br><em>(verb)</em> 'to press' means to touch keys on a keyboard or buttons (e.g. power button, mouse button etc...) with a finger and make it move down. You can't use a keyboard without 'pressing' the keys, e.g. 'to make a space between the words you press the space bar'. This verb is also used with touch screen devices (e.g. iPad, Samsung Galaxy), although 'to tap' or 'to touch' are more correct. In Spanish: <em><b>"pulsar/presionar"</b></em>.</p>
+   <a href="javascript:hideObject12();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p12">
+<table onMouseDown="changeZindex('p12')" > 
+<tr > 
+<td id="table12">
+
+ <p><strong>Press</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/press1.mp3">
+ <source src="../../../../../exercises/technology_web/exercises/computers_verbs_of_movement/pronunciation/press1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(12);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+
+
+<input class="submitResults" type=button onClick="Score()" value="Check">
+</CENTER>
+</FORM>
+</div> <!-- /end #test -->
+<br /><br />
+<div id="links">
+
+<!-- change to menu page of the section  -->
+<a href="../../../../../exercises/technology_web/technology_web_selectionpage.html"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more exercises on the web, technology & computer vocabulary</span></a>
+</div><!-- /end #links -->
+<br /><br />
+
+
+<h2>Practice</h2>
+<p>Now that you understand the meaning of the words/phrases and when to use them, practise using them by creating your own sentences with them in English. Also click on the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon under each correct answer and listen how each is pronounced correctly.</p>
+
+<div id="blairClassAd">
+</div><!-- /end #blairClassAd -->
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+<SCRIPT language="JavaScript" SRC="../../../../../javascript/box_call_write_1_autocomplete_mobile.js"></SCRIPT>
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+
+
+<script language="JavaScript">
+
+window.onload = function() {
+	attachEvents();
+}
+
+document.addEventListener("DOMContentLoaded", populateWordBox());
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/technology_web/exercises/computers_verbs_of_movement/computers_verbs_of_movement.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:52 GMT -->
+</html>

@@ -1,0 +1,732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/business/exercises/business-english-expressions-part-2/business-english-expressions-part-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:51 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="../../../../../exercises/business/exercises/business-english-expressions-part-2/business-english-expressions-part-2.html" >
+<title>Business English expressions online exercise part 2 | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Francois+One' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<meta name="description" content="Learn and remember the meaning of some more commonly used English expressions used in business." />
+
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/business/exercises/business-english-expressions-part-2/business-english-expressions-part-2.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+
+<script language="javascript">
+
+       var sAns = new Array;
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+var sYourAns = new Array;
+
+var correctAns = new Array;
+
+
+var score = 0;
+ans[1] = "We need to think outside the box";
+ans[2] = "we are on the right track";
+ans[3] = "the bottom line is";
+ans[4] = "You've hit the nail on the head";
+ans[5] = "I haven't got a clue";
+
+
+
+sAns[1] = "To say that you completely (100%) agree with what somebody has said";
+sAns[2] = "To introduce some serious/bad news";
+sAns[3] = "To be doing something in a way which you think will result in success";
+sAns[4] = "To be creative or original when thinking of how to do things";
+sAns[5] = "To have no idea about how to do something";	
+
+
+function Score(){
+yourAns[1]= document.getElementById("q1").value;
+yourAns[2]= document.getElementById("q2").value;
+yourAns[3]= document.getElementById("q3").value;
+yourAns[4]= document.getElementById("q4").value;
+yourAns[5]= document.getElementById("q5").value;
+
+
+
+
+
+for(i=1;i<=yourAns.length;i++){
+
+    if(ans[i]==yourAns[i]){ 
+
+	document.getElementById("img" + i).style.height = "18px";
+	document.getElementById("img" + i).style.width = "18px";
+		document.getElementById("img" + i).src = "../../../../../images/icons/tick.gif";
+		document.getElementById("img" + i).style.paddingRight = "2%";
+	document.getElementById("img" + i).style.paddingLeft = "2%";
+	document.getElementById("img" + i).style.display = "inline";
+
+	
+	
+  }
+  else{
+    
+	
+    document.getElementById("img" + i).src = "../../../../../images/icons/cross.gif";
+    document.getElementById("img" + i).style.height = "18px";
+	document.getElementById("img" + i).style.width = "18px";
+		document.getElementById("img" + i).style.paddingRight = "2%";
+	document.getElementById("img" + i).style.paddingLeft = "2%";
+	document.getElementById("img" + i).style.display = "inline";
+
+  }
+
+ 
+ 
+
+  
+  
+}
+}
+
+
+
+
+
+var radios = new Array;
+
+function Score1(){
+
+
+	
+	
+	
+sYourAns[1]= document.getElementById("s1").value;
+sYourAns[2]= document.getElementById("s2").value;
+sYourAns[3]= document.getElementById("s3").value;
+sYourAns[4]= document.getElementById("s4").value;
+sYourAns[5]= document.getElementById("s5").value;
+
+
+
+
+}
+
+var radios = new Array;
+function Score1(number){
+	
+	var number = number;
+	var clickedId = 0;
+	
+	
+	
+	radios = document.getElementsByName('s' + number);
+	
+	for (var i = 0, length = radios.length; i < length; i++) {
+		
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+		var value = radios[i].value;
+		clickedId = radios[i].id;
+		
+		
+		if(value!=sAns[number]){
+			document.getElementById("img" + clickedId).src = "../../../../../images/icons/cross.gif";
+			document.getElementById(clickedId).disabled = true;
+	        document.getElementById("quizLabel" + clickedId).style.opacity = "0.4";
+	        document.getElementById("quizLabel" + clickedId).style.textDecoration = "line-through";
+			
+		}else{
+			
+			document.getElementById("img" + clickedId).src = "../../../../../images/icons/tick.gif";
+				document.getElementById("info" + number).src = "../../../../../images/buttons/infobutton1.gif";
+	document.getElementById("info" + number).title = "Click here for extra info about this word/phrase";
+	document.getElementById("info" + number).style.display = "inherit";
+	document.getElementById("audio" + number).src = "../../../../../images/buttons/listenbutton1.gif";
+	document.getElementById("audio" + number).title = "Click here to listen and practise the pronunciation of this word/phrase";
+	document.getElementById("audio" + number).style.display = "inherit"
+	document.getElementById("nlink" + number).href = "javascript:showObject(" + number + ")"; 
+	document.getElementById("audiolink" + number).href = "javascript:showObjectAudio(" + number + ")";
+		}
+		
+		
+        
+
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+	
+}
+
+
+
+function showObject(number){
+var i = number;
+  
+  document.getElementById("n" + i).style.visibility = "visible"; 
+  
+  
+}
+
+
+function hideObject(number){
+var i = number;
+
+  document.getElementById("n" + i).style.visibility = "hidden";
+  }
+
+  
+
+ </script> 
+
+<style type="text/css">
+div.questionBody{
+	width: 95%;
+	margin-top: 30px;
+	}
+
+div.answerOptions {
+	width:78%;
+	display:inline-block;
+	margin-left: 2%;
+	vertical-align:middle;
+}
+
+div.tickbox {
+	width:10%;
+	display:inline-block;
+	vertical-align:middle;
+	
+	
+}
+
+div.questExample {
+		border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 10px 10px 5px #888;
+	border: 2px solid black;
+    padding-top:0px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color:#FFFFF0;
+    margin-bottom:40px;
+	margin-left: 0px;
+	font-size:1.1em;
+}
+
+span.colourNames {
+	color:#330;
+	text-decoration:underline; 
+	font-size:1em;
+}
+
+input[type="button"].buttonSpace {
+	margin-right: 60px;
+}
+
+input[type="radio"]{
+	vertical-align:middle;
+	
+}
+
+.radioBSeparator {
+	margin-bottom: 20px;
+}
+
+	
+</style>
+
+
+  
+</HEAD>
+
+
+
+<BODY>
+<div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a> 
+       
+   </div><!-- /end #logo -->
+
+ <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+   
+<div id="navigation_css"><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../../exercises/business/business_selectionpage.html">more business vocab exercises</a></li>
+   
+   <li><a href="../../../../../extras/exercise_menu.html">other exercises</a></li>
+   
+   <li><a href="../../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../../extras/contact_page.html">contact us</a></li>
+   
+  </ul>
+ 
+ </nav>
+ 
+ 
+ </div><!-- /end #navigation_css -->
+     
+   <div id="header">
+     <h1>Business English expressions exercise part 2</h1>
+  </div><!-- /end #header -->
+   
+ 
+
+
+
+
+
+<div id="body">
+<div id="exerciseBody">
+   
+   <div id="introduction">
+
+<p class="openParaArticle">In this second of two online exercises on English expressions/idioms, you will learn and remember more commonly used expressions used in business.</p> 
+
+
+<p>Before you learn the five expressions below, you need to know that many expressions in English can only be used in specific situations (e.g. when talking about problems, when talking about your job etc...). So if you want to use expressions correctly, you must know what these situations are. You will also learn this in the below exercise.</p>
+
+<p>If you haven't already done it, I would recommend that you also do <a href="../../../../../exercises/business/exercises/business-english-expressions-part-1/business-english-expressions-part-1.html"><b><u>the first part of this business English expression exercise</u></b></a>.</p>
+
+
+
+<p>To learn more business English vocabulary, look at our exercises in the <a href="../../../../../exercises/business/business_selectionpage.html"><b><u>general business English vocabulary exercise menu</u></b></a>.</p>    
+
+</div> <!-- /end #introduction -->
+
+
+
+<hr>
+
+<div id="exercise_content">
+
+<h2 class="sectionTitles">Part One: What they mean</h2>
+<p>In the first part, you will find five questions. In each question, you will find an expression in a sentence. You have to decide what the meaning of this expression is from the context of the sentence. There are three possible meanings below the sentence, only one is correct.</p>
+
+<p>When you have chosen one meaning, click on the "Check answer" button at the bottom of the question to see if you are correct.</p>
+<p>When the answer is correct, two icons will appear next to the question which you can press/click on. In the first icon, <img src="../../../../../images/buttons/infobutton1.gif" class="testImage25" align="absmiddle" id="infoInstruct" /> , you can find extra information about the expression (e.g. in what situations it is used in, how it is used etc...) and a Spanish translation. In the second, <img src="../../../../../images/buttons/listenbutton1.gif" class="testImage25" align="absmiddle" id="audioInstruct" /> , is where you can listen to the expression.</p><br><br>
+
+
+ 
+
+ 
+ 
+ 
+
+  
+<p><div class="questionBody"><span class="questNum">1.</span> What does '<strong>hit the nail on the head</strong>' mean in this situation?</p>
+<div class="questExample"><p>'I think that John <strong>hit the nail on the head</strong> when he said that the problem is caused by people being confused about what our company does.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="10"  value="To say that you completely (100%) agree with what somebody has said"><label id="quizLabel10" class="quiz" for="10"><div class="answerOptions">To say that you completely (100%) agree with what somebody has said</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img10" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="11"  value="To ask for people's opinions on how to solve a problem" ><label id="quizLabel11" class="quiz" for="11"><div class="answerOptions">To ask for people's opinions on how to solve a problem</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img11" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="12"  value="To say 'no' to a suggestion that somebody has made"><label id="quizLabel12" class="quiz" for="12"><div class="answerOptions">To say 'no' to a suggestion that somebody has made</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img12" ></div></div>
+</div>
+
+<input type=button onClick="Score1(1)" id="checkbutton2" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink1" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info1" border="0" onClick="changeZindex('n1')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink1" tabindex="-1" ><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio1" border="0" onClick="changeZindex('p1')" /></a></div></div></form>
+<div id="n1">
+<table onMouseDown="changeZindex('n1')"> 
+<tr> 
+<td> 
+  <p><strong>Hit the nail on the head:</strong><br><em>(expression) </em> Although this expression means you agree with what somebody has said, it is only used in situations where you are talking about problems. It is normally used when the other person has given their opinion on what the cause(s) of the problem are.
+<br><br>
+For example:
+<br><br>
+'I think there are too many things on the menu.'<br>
+'You've hit the nail on the head. It makes it difficult for people to choose.' 
+<br><br>In Spanish: <em><b>"dar en el clavo"</b></em>.</p>
+ <a href="javascript:hideObject(1);">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p1">
+<table onMouseDown="changeZindex('p1')"> 
+<tr > 
+<td id="table1">
+
+ <p><strong>Hit the nail on the head</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/hit%20the%20nail%20on%20the%20head.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/hit%20the%20nail%20on%20the%20head.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(1);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+
+<p><div class="questionBody"><span class="questNum">2.</span> What does '<strong>the bottom line is</strong>' mean in this situation?</p>
+<div class="questExample"><p>'I spoke about it in a meeting with my manager yesterday and <strong>the bottom line is</strong> we don't have the money to buy new computers in the company I'm afraid.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s2" class="q2" id="20"  value="To ask for help on something"/><label id="quizLabel20" class="quiz" for="20"><div class="answerOptions">To ask for help on something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img20"></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s2" class="q2" id="21"  value="To introduce some serious/bad news"/><label id="quizLabel21" class="quiz" for="21"><div class="answerOptions">To introduce some serious/bad news</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img21"></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s2" class="q2" id="22"  value="To say/admit you made a mistake"/><label id="quizLabel22" class="quiz" for="22"><div class="answerOptions">To say/admit you made a mistake</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img22"></div></div></div>
+
+<input type=button onClick="Score1(2)" id="checkbutton2" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink2" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info2" border="0" onClick="changeZindex('n2')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink2" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio2" border="0" onClick="changeZindex('p2')" /></a></div></div></form>
+<div id="n2">
+<table onMouseDown="changeZindex('n2')"> 
+<tr> 
+<td>  
+  <p><strong>The bottom line is:</strong><br><em>(expression)</em> In business English this expression is used mainly when a person wants to tell another person/people some very important information in a very direct way. In this context, it is normally always used when telling serious and negative news.
+<br><br>
+For example:
+<br><br>
+'The bottom line is if we don't improve sales, the business will close within 6 months.')
+<br><br>In Spanish: <em><b>"la conclusión es / lo más important"</b></em>.</p> 
+<a href="javascript:hideObject(2);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p2">
+<table onMouseDown="changeZindex('p2')"> 
+<tr > 
+<td id="table2">
+
+ <p><strong>The bottom line is</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/the%20bottom%20line%20is.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/the%20bottom%20line%20is.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(2);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+
+<p><div class="questionBody"><span class="questNum">3.</span> What does '<strong>on the right track</strong>' mean in this situation?</p>
+<div class="questExample"><p>'It is my opinion that our company is <strong>on the right track</strong> at the moment. The changes we have made will mean higher sales in the future.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s3" class="q3" id="30"  value="To be doing something in a way which will result in failure"><label id="quizLabel30" class="quiz" for="30"><div class="answerOptions">To be doing something in a way which will result in failure</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img30" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s3" class="q3" id="31"  value="To tell somebody that something has gone wrong"><label id="quizLabel31" class="quiz" for="31"><div class="answerOptions">To tell somebody that something has gone wrong</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img31" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s3" class="q3" id="32"  value="To be doing something in a way which you think will result in success"><label id="quizLabel32" class="quiz" for="32"><div class="answerOptions">To be doing something in a way which you think will result in success</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img32" ></div></div></div>
+
+<input type=button onClick="Score1(3)" id="checkbutton3" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink3" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info3" border="0" onClick="changeZindex('n3')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink3" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio3" border="0" onClick="changeZindex('p3')" /></a></div></div></form>
+<div id="n3">
+<table onMouseDown="changeZindex('n3')">  
+<tr> 
+<td> 
+  <p><strong>On the right track:</strong><br><em>(expression)</em> This is used in business to say that you believe the actions that a business or person is doing will result in them being successful (e.g. earning a good profit, getting a better job etc...).
+<br><br>
+This expression is used with the verb 'to be' in front of it.
+<br><br>
+For example:
+<br><br>
+'The company is on the right track.'
+<br><br>In Spanish: <em><b>"por el buen camino"</b></em>.</p> 
+  <a href="javascript:hideObject(3);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p3">
+<table onMouseDown="changeZindex('p3')" > 
+<tr > 
+<td id="table3">
+
+ <p><strong>On the right track</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/on%20the%20right%20track.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/on%20the%20right%20track.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(3);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+<p><div class="questionBody"><span class="questNum">4.</span> What does to '<strong>think outside the box</strong>' mean in this situation?</p>
+<div class="questExample"><p>'We can't keep doing things like both we and everybody else have always done. So I want you to <strong>think outside the box</strong> and think of some innovative ways that we can increase sales.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s4" class="q4" id="40"  value="To be creative or original when thinking of how to do things"><label id="quizLabel40" class="quiz" for="40"><div class="answerOptions">To be creative or original when thinking of how to do things</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img40" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s4" class="q4" id="41"  value="To say that you are not happy about a situation"><label id="quizLabel41" class="quiz" for="41"><div class="answerOptions">To say that you are not happy about a situation</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img41" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s4" class="q4" id="42"  value="To copy somebody else's idea on how to do something"><label id="quizLabel42" class="quiz" for="42"><div class="answerOptions">To copy somebody else's idea on how to do something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img42" ></div></div></div>
+
+<input type=button onClick="Score1(4)" id="checkbutton4" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink4" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info4" border="0" onClick="changeZindex('n4')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink4" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio4" border="0" onClick="changeZindex('p4')" /></a></div></div></form>
+<div id="n4">
+<table onMouseDown="changeZindex('n4')"> 
+<tr> 
+<td>  
+  <p><strong>Think outside the box:</strong><br><em>(expression) </em> This basically means that a person doesn't just copy how others do things, but comes up with innovative and original ways/methods to do them. This expression is often used when a business wants to find new ways to improve sales, because the ones they have used have not been successful.
+<br><br>
+This expression is often used with the verb 'need' and 'to' in front of it.
+<br><br>
+For example:
+<br><br>
+'We need to think outside the box.'
+<br><br>In Spanish: <em><b>"pensar fuera de la norma / de lo acostumbrado / lo usual"</b></em>.</p> 
+  <a href="javascript:hideObject(4);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p4">
+<table onMouseDown="changeZindex('p4')" > 
+<tr > 
+<td id="table4">
+
+ <p><strong>Think outside the box</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/think%20outside%20the%20box.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/think%20outside%20the%20box.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(4);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+<p><div class="questionBody"><span class="questNum">5.</span> What does '<strong>haven't got a clue</strong>' mean in this situation?</p>
+<div class="questExample"><p><span class="colourNames">Manager</span>: 'So, John. Can you think of anything we can do to solve this problem?'</p>
+
+<p><span class="colourNames">John</span>: 'Sorry, I <strong>haven't got a clue</strong>. I can't think of anything at the moment.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s5" class="q5" id="50"  value="To make a suggestion on how to do something"><label id="quizLabel50" class="quiz" for="50"><div class="answerOptions">To make a suggestion on how to do something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img50" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s5" class="q5" id="51"  value="To have no idea about how to do something"><label id="quizLabel51" class="quiz" for="51"><div class="answerOptions">To have no idea about how to do something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img51" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s5" class="q5" id="52"  value="To say you don't agree or have the same opinion as another person"><label id="quizLabel52" class="quiz" for="52"><div class="answerOptions">To say you don't agree or have the same opinion as another person</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img52" ></div></div></div>
+
+<input type=button onClick="Score1(5)" id="checkbutton5" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink5" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info5" border="0" onClick="changeZindex('n5')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink5" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio5" border="0" onClick="changeZindex('p5')"/></a></div></div></form>
+<div id="n5">
+<table onMouseDown="changeZindex('n5')"> 
+<tr> 
+<td> 
+  <p><strong>Haven't got a clue:</strong><br><em>(expression)</em> This can be used in two different ways. The first is when you want to say that you can't think of any way to solve a problem or improve something. The second meaning is when you don't know anything about a situation (e.g. where a person is) or how to do something (e.g. to use an application). 
+<br><br>In Spanish: <em><b>"no tener ninguna idea"</b></em>.</p> 
+  <a href="javascript:hideObject(5);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p5">
+<table onMouseDown="changeZindex('p5')" > 
+<tr > 
+<td id="table5">
+
+ <p><strong>Haven't got a clue</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/havent%20got%20a%20clue.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-2/pronunciation/havent%20got%20a%20clue.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(5);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+ <br>
+  <br>
+
+
+
+
+<h2 class="sectionTitles">Part Two: Use them</h2>
+
+<p>In the second part of the exercise you will use the expressions you learnt above to complete a text. In this text, the owner of a shop/store is talking with his two staff/employees (Sandra and Peter) about how to improve sales.</p>   
+
+<p>When deciding which expression to use, look at the context of the sentence to help you. Click on the "Check answers" button at the bottom of the quiz to check your answers.</p> 
+
+ 
+ <p><span class="names">Owner:</span><span class="exercise_dialogue">'As you know, sales at the shop haven't been very good this year. So we need to think of a new way we can sell more. Does anybody have any ideas?'
+</span></p>
+
+ <p><span class="names">Sandra:</span><span class="exercise_dialogue">'We could do more advertising in the local area, like on buses and in the local newspaper?'
+</span></p>
+
+ <p><span class="names">Owner:</span><span class="exercise_dialogue">'We've already done that and it didn't work. So we need to think of something that neither us or our competitors have done before. <select ID="q1" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="You've hit the nail on the head">You've hit the nail on the head</option>
+<option value="We need to think outside the box">We need to think outside the box</option>
+<option value="We are on the right track">We are on the right track</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img1">. So please tell me any ideas you have.'
+</span></p>
+
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'To be honest, I don't think we need to change anything. I think that <select ID="q2" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="you've hit the nail on the head">you've hit the nail on the head</option>
+<option value="I haven't got a clue">I haven't got a clue</option>
+<option value="we are on the right track">we are on the right track</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img2">. Sales are increasing. We just need to wait.'
+</span></p>
+
+ <p><span class="names">Owner:</span><span class="exercise_dialogue">'Yes, but they are increasing very slowly. I'm going to honest with you. I spoke to our accountant two days ago and <select ID="q3" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="the bottom line is">the bottom line is</option>
+<option value="he hit the nail on the head">he hit the nail on the head</option>
+<option value="we need to think outside the box">we need to think outside the box</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img3"> if we don't increase sales a lot in the next 6 months, the shop will close. So tell me any ideas you have to increase sales or what we are doing wrong.'
+</span></p>
+
+ <p><span class="names">Sandra:</span><span class="exercise_dialogue">'The problem is that people are buying more clothes on the internet than in shops these days because they are cheaper.'
+</span></p>
+
+ <p><span class="names">Owner:</span><span class="exercise_dialogue">'<select ID="q4" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="I haven't got a clue">I haven't got a clue</option>
+<option value="The bottom line is">The bottom line is</option>
+<option value="You've hit the nail on the head">You've hit the nail on the head</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img4">, Sandra. The main problem is that people are buying more clothes online. So how do we get them to buy from our shop instead? Do either of you have any ideas?'
+</span></p>
+
+ <p><span class="names">Peter:</span><span class="exercise_dialogue">'To be honest, <select ID="q5" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="You've hit the nail on the head">You've hit the nail on the head</option>
+<option value="I haven't got a clue">I haven't got a clue</option>
+<option value="The bottom line is">The bottom line is</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img5">. I can't think of anything we can do to get people to buy their clothes here, instead of buying them online.'
+</span></p>
+
+
+
+
+<br>
+
+<input type=button onClick="Score()" value="Check answers">
+
+ <br>
+ 
+ 
+     
+ 
+ </div><!-- /end #exercise_content -->
+ 
+
+
+
+
+ 
+
+ 
+<br />
+<div id="links">
+
+
+<a href="../../../../../exercises/business/business_selectionpage.html"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more general business exercises</span></a>
+</div><!-- /end #links -->
+<br /><br />
+
+
+
+
+
+<h2>Practice</h2>
+<p>Now that you understand the meaning of the expressions and when to use them, practise using them by creating your own sentences with them in English. Also click on the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon under each correct answer and listen how each is pronounced correctly.</p>
+<br>
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+<div id="blairClassAd">
+</div><!-- /end #blairClassAd -->
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+<SCRIPT language="JavaScript" SRC="../../../../../javascript/box_call_selectionlist_1_mobile.js"></SCRIPT>
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/business/exercises/business-english-expressions-part-2/business-english-expressions-part-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:51 GMT -->
+</html>

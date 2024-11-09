@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/cv_interviews/exercises/job-interview-questions-test/job-interview-questions-test.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:32:24 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="canonical" href="../../../../../exercises/cv_interviews/exercises/job-interview-questions-test/job-interview-questions-test.html" >
+<title>Job interview questions online practise test | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<meta name="description" content="Practise answering commonly asked and difficult job interview questions in this online interactive test." />
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/cv_interviews/exercises/job-interview-questions-test/job-interview-questions-test.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+
+
+<script language="javascript">
+
+var questions = new Array;
+
+var removedQuestions = new Array;
+
+questions[0] = "Why do you want to work for us?";
+questions[1] = "Can you tell us a little about yourself?";
+questions[2] = "How did you find out about the position?";
+questions[3] = "Why do you want this job?";
+questions[4] = "Tell us about a situation where you overcame a difficulty at work?";
+questions[5] = "What type of things do you enjoying doing in your free time?";
+questions[6] = "Why do you want to leave your current job?";
+questions[7] = "Why did you leave your last job?";
+questions[8] = "What would you do if there was a problem with a customer?";
+questions[9] = "Tell us about what you see as your weaknesses?";
+questions[10] = "Tell us about what you see as your strengths?";
+questions[11] = "How would you describe yourself?";
+questions[12] = "Where do you see yourself in 5 years time?";
+questions[13] = "What did you like least about your last job?";
+questions[14] = "What were the responsibilities of your last position?";
+questions[15] = "What do you know about our company?";
+questions[16] = "Are you willing to relocate?";
+questions[17] = "Do you have any questions for us?";
+questions[18] = "What was your greatest failure at work and what did you learn from it?";
+questions[19] = "Tell us about a time where you had to deal with conflict at work?";
+questions[20] = "Give us some examples of ideas you've had or implemented at work";
+questions[21] = "What do you think about your previous boss?";
+questions[22] = "What salary would you like to be paid?";
+questions[23] = "What do you find are the most difficult decisions to make?";
+questions[24] = "What relevant experience do you have for this type of position?";
+questions[25] = "Why should we hire you?";
+
+var counter = 0;
+var numberSelected = 0;
+var theEnd = 0;
+var bin = 0;
+ 
+var numbers = ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25'];
+ function getRandomArrayElements(arr, count) {
+	 
+	 if (theEnd == 26){
+		 
+		 var changeMessage = document.getElementById("endMessage");
+		 var button = document.getElementById("nextQuestion").style.display = "none";
+		 var button1 = document.getElementById("seequestion").style.visability = "none";
+		 var endMessage = "Congratulations, you have listened to all the job interview questions. You can see all the questions you've heard by pressing the 'See the Questions' button below. Now try to improve your answers to those questions where you feel you didn't give a good answer."
+		changeMessage.innerHTML = endMessage;
+	var finalMessage = document.getElementById("endMessage").style.display = "inherit";
+	var moveBox = document.getElementById("seeallquestionsBlock").style.paddingTop = "30px";
+	
+	 }
+	 
+	var text = 	document.getElementById("seeQuestion");
+	var change = "";
+	text.innerHTML = change;
+	text.style.display = "none";
+	
+	if (counter < 6){
+		
+	
+    var shuffled = arr.slice(0), i = arr.length, min = i - count, temp, index;
+    while (i-- > min) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+   
+   	var playme = document.getElementById('audioTrack'); 
+	playme.src="/exercises/cv_interviews/exercises/job-interview-questions-test/questions/job-interview-track" +  shuffled.slice(min) + ".mp3"; 
+	playme.load();
+numbers.splice(index, 1);
+    numberSelected = shuffled.slice(min);
+	removedQuestions.splice(theEnd, 0, questions[numberSelected]);
+	
+	QuesCount();	
+
+	}else{
+		var button = document.getElementById("nextQuestion").style.display = "none";
+		var message = document.getElementById("endMessage").style.display = "inherit";
+		var questionNum = 	document.getElementById("interviewQuestion");
+	var change = "Question 1";
+	questionNum.innerHTML = change;
+	}
+
+}
+
+function QuesCount() {
+	counter++;
+	theEnd++;
+	setTimeout('changeText()',500);
+}
+
+function changeText() {
+	if (counter < 7){
+	var text = 	document.getElementById("interviewQuestion");
+	var change = "Question " + counter;
+	text.innerHTML = change;
+	}else{
+		return;
+	}
+}
+	
+function arrayLength(){
+	alert(numbers.length);
+}
+
+function displayQuestion() {
+	var text = 	document.getElementById("seeQuestion");
+	var change = questions[numberSelected];
+	text.innerHTML = change;
+	text.style.display = "inherit";
+}
+
+function doTestAgain() {
+	    counter = 0;
+		var button = document.getElementById("nextQuestion").style.display = "inline-block";
+		var message = document.getElementById("endMessage").style.display = "none";
+		
+		getRandomArrayElements(numbers, 1);
+		
+}
+
+function seeNewArray() {
+	alert (removedQuestions.toString());
+}
+
+function showAllQuestionsAsked() {
+	var box = document.getElementById("questionsAskedBox");
+	var askedQuestions = removedQuestions.toString();
+	var list = '<br>';
+	for(i=0;i<removedQuestions.length;i++){
+		
+
+		var fish = '<li>' + removedQuestions[i] + '</li>';
+		
+		if (removedQuestions[i] == undefined) {
+			bin = fish;}else{
+		
+		list += fish;}
+	}
+	
+	
+	var hide = document.getElementById("questionsAskedBoxContainer").style.display = "inherit";
+	var message = document.getElementById("questionsAskedBox").style.display = "inherit";
+	box.innerHTML = list;
+
+
+}
+
+function hideQuestionsAskedBox() {
+	var hide = document.getElementById("questionsAskedBoxContainer").style.display = "none";
+	var message = document.getElementById("questionsAskedBox").style.display = "none";
+}
+
+
+</script>  
+</HEAD>
+
+
+<BODY>
+ <div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a>
+       
+   </div><!-- /end #logo -->
+
+ <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+   
+<div id="navigation_css"><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../../exercises/cv_interviews/cv_interview_selectionpage.html">more cv & job interview exercises</a></li>
+   
+   <li><a href="../../../../../extras/exercise_menu.html">other exercises</a></li>
+   
+   <li><a href="../../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../../extras/contact_page.html">contact us</a></li>
+   
+   
+ </ul>
+ 
+ </nav>
+ 
+ 
+ </div><!-- /end #navigation_css --> 
+     
+   <div id="header">
+    <h1>Job interview questions practise test</h1>
+ </div><!-- /end #header -->
+   
+
+
+<div id="body">
+<div id="exerciseBody">
+ 
+ <div id="introduction">
+<p class="openParaArticle">If you have a job interview, you need to be both prepared for the possible questions you'll be asked and be able to express your answers clearly and confidently.</p> 
+
+<p>Although it is impossible to prepare for every possible question you could be asked (there are possibly hundreds), fortunately most of them are not difficult to answer well. But there are some questions that you could be asked which are.</p> 
+
+<p>The best way to know how well your answers to questions are is to practise answering them (as you would in the interview itself). Although you could get a friend to do this for you, they will normally only you asks questions which you've prepared for. But to be really prepared for the job interview, you need to be asked questions which haven't prepared for as well.</p>  
+
+<p>To see how well prepared you are for answering the questions you'll be asked in your job interview, I have created the below test. This test will both help you practise answering and make you aware of questions which you may have to improve your answers for before you go to the interview.</p>
+
+<p>You will find the test below.</p>
+
+
+
+</div> <!-- /end #introduction -->
+
+<hr>
+
+
+
+<div id="exercise_content">
+
+ <h2 class="sectionTitles">Test:</h2>
+ 
+
+ 
+ <p>In this test, you will be first asked 6 randomly selected questions which are either commonly asked in job interviews or are difficult to answer. To hear each question press the play button on the audio player. When you have heard the question, give your answer for it. To hear the next question, press the 'next question' button below the audio player.</p>
+
+<p>When you have heard and answered the first 6 questions, you have the option to hear another 6 questions and so on.</p>
+
+
+ 
+ 
+<div id="interviewQuestBox" style="position:relative;margin-top: 30px; margin-bottom: 30px; padding-top:10px; padding-bottom:30px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; background-color:#FFFFF0; border: 2px solid #666;">
+<h2 id="interviewQuestion" style="font-size:2.3em; background-color:#FFFFF0; color:#333333; 
+	margin-top: 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-align:center; letter-spacing: 1.5px;">Question 1</h2>
+    
+  <p id="endMessage" style="text-align:center; border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	font-family: Georgia, Georgia, 'Times New Roman', Times, serif;
+	font-size:20px;
+    font-weight:bold;
+    border: 2px solid black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color:#FFFFB0;
+    
+    margin-bottom:10px;
+	margin-left: 0px;
+    width:90%;
+    display: none;
+    margin:auto;
+    margin-top: 20px;
+    position:absolute;
+    z-index: 10;
+    top: -10px;
+    left: 2%;
+	">Well done! That's the end of the questions in this part of the test. To hear more job interview questions and test your ability at answering them, click the below button:<br><br>
+    <a href="javascript:doTestAgain();"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ></a>
+     </p>    
+
+<div>
+ <audio style="margin-left: 3%;" class="audioplayer" id="audioTrack" preload="none" controls="controls">
+ <source  src="../../../../../exercises/cv_interviews/exercises/job-interview-questions-test/questions/job-interview-track0.mp3">
+ <source src="../../../../../exercises/cv_interviews/exercises/job-interview-questions-test/questions/job-interview-track0.ogg">
+ 
+</audio>
+</div>
+
+
+
+<input style="width: 40%;
+	height: 40px;
+	font-weight:bold;
+	font-size:1em; margin-left: 5%; margin-top:20px; margin-bottom:20px;"  type=button onClick="displayQuestion()" id="seequestion" value="See Question">
+
+<input style="width: 40%;
+	height: 40px;
+	font-weight:bold;
+	font-size:1em; margin-left: 5%; margin-right: 5%; margin-top:20px; margin-bottom:20px; display:inline-block;" id="nextQuestion" type=button onClick="getRandomArrayElements(numbers, 1)" value="Next Question">
+ 
+    
+    <p id="seeQuestion" style="text-align:center; border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	font-family: Georgia, Georgia, 'Times New Roman', Times, serif;
+	font-size:20px;
+    font-weight:bold;
+    border: 2px solid black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color:#FFFFB0;
+    
+    margin-bottom:10px;
+	margin-left: 0px;
+    width:90%;
+    display: none;
+    margin:auto;
+    margin-top: 10px;
+	"></p>
+
+</div> <!-- /end #interviewQuestBox -->
+
+
+
+
+
+
+
+<div id="seeallquestionsBlock">
+<h2>See all the questions you've been asked</h2>
+
+<p>If you want to see all the questions you've been asked in this test, press the below button and you will see them.</p>
+
+<input type=button style="width: 50%;
+	height: 40px;
+	font-weight:bold;
+	font-size:1.1em; margin-left: 0px; margin-top:20px; margin-bottom:20px;" onClick="showAllQuestionsAsked()" value="See the Questions">
+
+<div id="questionsAskedBoxContainer" style="margin-top: 30px; margin-bottom: 30px; padding-top:0px; padding-bottom:30px; padding-left: 20px; padding-right:20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; background-color:#FFFFB0; border: 3px solid #666; display:none; 	font-family: Georgia, Georgia, 'Times New Roman', Times, serif;
+	font-size:20px;">
+<ol id="questionsAskedBox" style="margin-top:-10px;"></ol>
+
+  <a style="padding-left:20px; font-weight:bold;" href="javascript:hideQuestionsAskedBox();">Close</a>
+     
+
+</div> 
+</div><!-- /end #seeAllQuestionsBlock-->   
+ 
+<br><br>
+
+<h2>Exercises to help you answer job interview questions</h2>
+
+<p>Below are some of our online exercises (with example answers) to help you improve how you answer some questions you will probably be asked in a job interview:</p>
+ <div id="linkImage" style="float:left; width:90%;">
+<ul><strong>
+
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/why_work_for_us/why_work_for_us.html">Why do you want to work for us?</a></li>
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/why_leave_job/why_leave_job.html">Why do you want to leave your current job?</a></li>
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/dealing_with_problems/dealing_with_problems.html">How do you deal with problems?</a></li>
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/answering-hypothetical-questions/answering-hypothetical-questions.html">Answering questions about hypothetical situations</a></li>
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/where-you-see-yourself-in-future/where-you-see-yourself-in-future.html">Where do you see yourself in the future?</a></li>
+
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/why-did-you-leave-job/why-did-you-leave-job.html">Explaining why you left an old job</a></li>
+
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/exercises/describing_yourself1/describing_yourself1.html">How to describe yourself in a job interview part 1</a></li>
+<li style="margin-bottom:8px; margin-left:-5%;"><a href="../../../../../exercises/cv_interviews/cv_interview_selectionpage.html">Other exercises on improving your CV/resume and job interview technique and vocabulary</a></li>
+</strong>
+</ul>
+</div>
+<br><br>
+      
+          
+             
+    <script type="text/javascript">
+window.onload = function() {
+getRandomArrayElements(numbers, 1);
+};
+</script>              
+
+ 
+   <div id="amazon_block">
+<div id="amazon_block_business_numbers">
+
+ 
+</div><!-- /end #amazon_block_business_number--> 
+</div><!-- /end #amazon_block -->
+
+<div id="siteAds">
+</div><!-- /end #siteAds -->
+
+ 
+ 
+   
+ </div><!-- /end #exercise_content -->
+ 
+</div><!-- /end extra added!!! -->
+
+
+<div id="test">
+
+
+
+
+<div id="blairClassAd">
+</div><!-- /end #blairClassAd -->
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/cv_interviews/exercises/job-interview-questions-test/job-interview-questions-test.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:32:24 GMT -->
+</html>

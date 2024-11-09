@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/articles/general_articles/method-remembering-english-vocabulary.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:34:03 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="../../../articles/general_articles/method-remembering-english-vocabulary.html" >
+<title>A Method for Remembering Vocabulary in English | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Francois+One' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../openingpage1responsive.css" />
+<link rel="stylesheet" href="../../../javascript/SlickNav/slicknav.css" />
+<meta name="description" content="Learn a simple method/way of learning English vocabulary that will make you remember the meaning of new words and phrases and improve your level in the language." />
+
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../articles/general_articles/method-remembering-english-vocabulary.html";
+  }
+  //-->
+</script>
+
+
+<script language="javascript">
+
+
+
+       var sAns = new Array;
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+var sYourAns = new Array;
+
+var correctAns = new Array;
+
+
+
+
+
+
+sAns[1] = "2";
+sAns[2] = "3";
+sAns[3] = "1";
+sAns[4] = "3";
+sAns[5] = "2";	
+
+
+
+
+
+
+
+
+var radios = new Array;
+
+function Score1(){
+
+
+	
+	
+	
+sYourAns[1]= document.getElementById("s1").value;
+sYourAns[2]= document.getElementById("s2").value;
+sYourAns[3]= document.getElementById("s3").value;
+sYourAns[4]= document.getElementById("s4").value;
+sYourAns[5]= document.getElementById("s5").value;
+
+
+
+
+}
+
+var radios = new Array;
+function Score1(number){
+	
+	var number = number;
+	var clickedId = 0;
+	
+
+	
+	radios = document.getElementsByName('s' + number);
+	
+	for (var i = 0, length = radios.length; i < length; i++) {
+		
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+		var value = radios[i].value;
+		clickedId = radios[i].id;
+		
+		
+		if(value!=sAns[number]){
+			document.getElementById("img" + clickedId).src = "../../../images/icons/cross.gif";
+			document.getElementById(clickedId).disabled = true;
+	        document.getElementById("quizLabel" + clickedId).style.opacity = "0.4";
+	        document.getElementById("quizLabel" + clickedId).style.textDecoration = "line-through";
+						
+		}else{
+			
+			document.getElementById("img" + clickedId).src = "../../../images/icons/tick.gif";
+			document.getElementById("checkbutton" + number).style.display = "none";
+			
+			
+			
+			for (var p = 0, length = radios.length; p < length; p++) {
+			var nom = number.toString();
+			
+				if(document.getElementById(nom + p).value!=sAns[number]){
+			
+			document.getElementById("img" + nom + p).src = "../../../images/icons/cross.gif";
+			document.getElementById("quizLabel" + nom + p).style.opacity = "0.4";
+	        document.getElementById("quizLabel" + nom + p).style.textDecoration = "line-through";}
+			}
+			
+			setTimeout('showMess()',300);
+			
+			
+			
+		}
+		
+		
+        
+
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+	
+}
+
+
+
+
+
+function showObject(number){
+var i = number;
+  
+  document.getElementById("n" + i).style.visibility = "visible"; 
+  
+  
+}
+
+
+function hideObject(number){
+var i = number;
+
+  document.getElementById("n" + i).style.visibility = "hidden";
+  }
+
+ function showMess(){
+	alert("Well done! Now create your own sentence using this meaning of the word.");
+} 
+
+
+
+function showMeanings(num) {
+	document.getElementById("meanings" + num).style.display = "inherit";
+	document.getElementById("boxMean" + num).style.display = "none";
+
+	
+}
+
+
+ </script> 
+
+      <script async src="../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+<style type="text/css">
+div.questionBody{
+	width: 95%;
+	margin-top: 30px;
+	}
+
+div.answerOptions {
+	width:78%;
+	display:inline-block;
+	margin-left: 2%;
+	vertical-align:middle;
+}
+
+div.tickbox {
+	width:10%;
+	display:inline-block;
+	vertical-align:middle;
+	
+	
+}
+
+div.questExample {
+		border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 10px 10px 5px #888;
+	border: 2px solid black;
+    padding-top:0px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color:#FFFFF0;
+    margin-bottom:40px;
+	margin-left: 0px;
+	font-size:1.1em;
+}
+
+span.colourNames {
+	color:#330;
+	text-decoration:underline; 
+	font-size:1em;
+}
+
+input[type="button"].buttonSpace {
+	margin-right: 60px;
+}
+
+input[type="radio"]{
+	vertical-align:middle;
+	
+}
+
+.radioBSeparator {
+	margin-bottom: 20px;
+}
+
+p.boxMean {
+	font-size:1.1em; color:#800000; font-weight:bold;  
+    
+    width:70%;
+	max-width:260px;
+    text-align:center; margin-left:0px; 	background-color:#006;
+	color: #FFF;
+    
+	
+	letter-spacing: 1px;
+	margin-left: 2%;
+	padding: 10px 8px 10px 8px;
+	font-family:         Arial, sans-serif;
+	text-decoration: none;
+	border-radius: 5px;
+    border-bottom: 5px solid  black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}	
+</style>
+
+
+</HEAD>
+
+
+
+<BODY>
+
+<div id="exercisepage">
+
+  <div id="logo">  
+    <a href="../../../index.html"><img src="../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a> 
+       
+  </div><!-- /end #logo -->
+
+  <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+  
+<div id="navigation_css" ><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../index.html">home</a></li>
+
+<li><a href="../../../articles/general_articles/english-articles/english_article_selectionpage.html">other improve English articles</a></li>
+   
+   <li><a href="../../../extras/exercise_menu.html">exercises</a></li>
+   
+   <li><a href="../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../extras/contact_page.html">contact us</a></li>
+   
+   <li><a href="../../../shop/the-shop.html">the shop</a></li>
+   
+    </ul>
+ 
+ </nav>
+
+ 
+ 
+ </div><!-- /end #navigation_css -->      
+     
+   <div id="header">
+    <h1>A method for remembering vocabulary in English</h1>
+  </div><!-- /end #header -->
+   
+  
+
+
+
+<div id="body">
+<div id="exerciseBody">
+   
+   <div id="introduction">
+ 
+<p class="openParaArticle">One of the biggest problems that many people learning English have is forgetting what words and phrases they have learnt mean.</p> 
+
+
+<p>The reason why they have this problem is not really about ability, but about what they do when they learn new words and phrases in English.</p>
+
+
+<p>When many people see or hear a new word in English, they just look its meaning up in a dictionary or ask their teacher (if in class) what it means and when to use it. Although you will learn its meaning by doing either of these, you are very unlikely to remember it in the future.</p>
+
+   
+
+
+
+
+<p>And the reason why is because of <a href="../../../articles/general_articles/learn-remember-english-vocabulary.html"><strong><u>how our brains remember things</u></strong></a>. Basically, the more we think about a word and see or hear it, the more likely are brains are going to remember what it means and when we should use it.</p>
+
+
+<p>So, what should you do to make sure that you remember the meaning and use of new vocabulary you see in English?</p>
+
+<p>You need a method to use when you learn it. And a method I recommend you use is this:</p>
+
+<ul style="list-style:none;">
+<li style="margin-bottom:20px;"><span style="font-size:1.2em; ">First,</span> <span style="font-size:1.6em;font-weight:bold;color:#571526;">Guess</span></li>
+
+<li style="margin-bottom:20px;"><span style="font-size:1.2em;">Then,</span> <span style="font-size:1.6em;font-weight:bold;color:#571526;">Check</span></li>
+
+<li style="margin-bottom:20px;"><span style="font-size:1.2em;">And then,</span> <span style="font-size:1.6em;font-weight:bold;color:#571526;">Use</span></li> 
+</ul>
+
+
+<p>By doing this, it will help you to both remember the meaning and the use of new words and phrases you learn in English. And below, I will explain what exactly you have to do when you use each part of this method.</p> 
+
+
+
+
+<p>In addition, after the explanation of the method you will find a quiz where you can try using the method yourself.</p> 
+
+<p>This is a method that I have been using with my students for the last 6 years and it has helped them to remember and improve their knowledge and use of English vocabulary.</p>
+
+<p>Before you read this method, I recommend that you learn more about how our brains do and don't remember vocabulary by reading my article on '<a href="../../../articles/general_articles/learn-remember-english-vocabulary.html"><strong><u>how to remember new vocabulary in English</u></strong></a>'. It will help you to understand why you have to do the things in the below method better.</p>
+
+</div> <!-- /end #introduction -->
+
+<hr>
+
+<div id="exercise_content">
+
+
+<h2 style="font-size:210%;">The method</h2>
+
+
+<p>Before you start to read this method you need to know that this method isn't quick. It will take you around 3 minutes for each word or phrase. But it is doing this which will help you to remember any English word or expression.</p>
+
+
+<h2 style="color:#571526">Step 1: Guess the meaning</h2>
+
+
+<p>When you are reading and you see a word or phrase in English you don't know or are unsure what it means, the first thing you need to do is to work out/discover by yourself (without using a dictionary or getting somebody to tell you) what it means.</p> 
+
+
+<p>It is this process of having to think about what the word means and seeing when and where it is used that is fundamental for making sure you will remember both the meaning and when it is used.</p> 
+
+
+
+
+<p>To do this, look at the context which the word or phrase is being used in (both from the sentence it is in and from the topic/subject of the whole text) and guess what it means.</p> 
+
+
+
+
+<p>So now, guess what the meaning of 'check it out' is from the context you find it in the below sentence:</p>
+
+<div class="questExample">
+<p>A new clothes shop has opened in the high street. We're going to <strong>check it out</strong> tonight. Do you want to come with us?</p>
+</div>  
+
+
+
+
+
+
+<h2 style="color:#571526">Step 2: Check the meaning in a dictionary</h2>
+
+
+<p>Most of the times that you do this (around 80%), you should be able to correctly guess from the context what the meaning of the word or phrase is. But in some sentences the context may not help you to guess correctly what the word or phrase actually means. More than one possible meaning could be used for it and the sentence would still make sense.</p>
+
+
+<p>So in order to make 100% sure that you know the correct meaning of the word or phrase in the sentence, after you have guessed the meaning, you always need to look it up in a dictionary.</p>
+
+<p>Words in English often have more one than meaning (and sometimes these meanings are very different). So when you are looking in the dictionary, you will more than likely see many different definitions/meanings for the word.</p>
+
+
+<p>To make it quicker for you to find the correct meaning of the word for the sentence you've read it in, make sure you know what type of word it is (a verb, adjective, a noun etc...) and then look at what the different meanings there are for it for this type of word. Then decide from the context of the sentence which of the meanings you see is the right one.</p>
+
+
+<p>For example, '<strong>check out</strong>' is used in the sentence you read before as a verb (it is in fact a phrasal verb). And as a verb, it can be used with 3 different meanings. So, now decided which one of these 3 meanings is it being used with in the example sentence you looked at before?</p>
+
+<div class="questExample">
+<ol>
+<li>To leave and pay for a hotel room</li>
+<li>To investigate if something is true</li>
+<li>To have a look at something</li>
+</ol>
+</div>
+
+<p>In the sentence, 'check out' is used with the meaning of 'to have a look'. From the context of the sentence, the other two meanings don't make any sense.</p>
+
+
+<p>When you are doing this yourself, it won't be difficult or take you long to find the correct meaning of the word in the dictionary.</p>
+
+
+<p>If you find when looking in the dictionary that you didn't correctly guess the meaning, don't worry. It won't mean that you will find it more difficult to remember it than if you did. And this is because of what you will do next.</p>
+
+
+<h2 style="color:#571526">Step 3: Use the word in a sentence</h2>
+
+
+<p>Once you know the meaning of the word or phrase, use it by creating a new sentence (in your own words) with it in. Then say this out loud. You can also write this down in a notebook or on a sheet (like a word document) that you have for new English vocabulary (along with what the meaning of the word or phrase is).</p>
+
+
+<p>With my own students, I recommend that the day following learning the new word or phrase that they write a sentence using it. By writing it down and using it the next day, it will help you to remember it more.</p>
+
+
+<h2 style="color:#571526">Always use it in the same context you read it in</h2>
+
+
+<p>One common mistake that learners of English make is to learn a new word in English, translate it to their own language and then use that English word every time they would do in their own language. This doesn't work. A word which can be used in many situations/contexts in another language, cannot always be used in all the same ones in English. So, it is important that when you are creating your own sentence with the word, that the sentence has the same (or has a very similar) context to what you read it in originally.</p><br>
+
+
+<p>That's the method that I recommend you use to remember the meaning of words and phrases in English and improve your knowledge of vocabulary.</p>
+
+
+<p>So now you know it, I'd like you to practise using it (so, you don't forget) with the 5 words in the below quiz.</p><br>
+
+<!-- save this if article has books -->
+  <div id="amazon_block">
+
+ </div><!-- /end #amazon_block -->
+ 
+ <div id="siteAds">
+</div><!-- /end #siteAds -->
+ 
+ </div><!-- /end #exercise_content -->
+ 
+<br>
+<div id="links">
+<!-- change to menu page of the section  -->
+<a href="../../../articles/general_articles/english-articles/english_article_selectionpage.html"><img src="../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more articles to improve your English</span></a>
+</div><!-- /end #links -->
+<br>
+
+
+ <div id="test">
+
+
+<hr>
+
+<h2 style="font-size:210%;">Quiz</h2> 
+
+
+<p>For each of the 5 questions below, I'd like you to:</p>
+<div id="indentInstruct" style="margin-right:5%; margin-left:5%; margin-bottom:40px;">
+<p>First, read the sentence(s) and guess the meaning of the word which is in <strong><u>bold and underlined</u></strong> from the context.</p>
+<p>Then press the button called '<strong>Click to see the meanings</strong>' and select which one of the three possible meanings of the word is the correct one being used in the sentence.</p>
+<p>Then after this, create your own sentence using the word.</p>
+</div>
+
+  
+<p><div class="questionBody"><span class="questNum">1.</span> Guess what '<strong>taking off</strong>' means in this situation?</p>
+<div class="questExample"><p><span class="colourNames">John</span>: 'What are you doing this weekend?'</p>
+
+<p><span class="colourNames">Sally</span>: 'We're going to Rome. I'm <strong><u>taking off</u></strong> Friday, so we can spend three nights there. We're flying out on Thursday evening and coming back on Sunday evening.'</p>
+</div>
+
+<p id="boxMean1" class="boxMean" style="" onClick="showMeanings(1)">Click to see the meanings</p>
+    
+
+<div id="meanings1" style="display:none;">
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<p>Select the meaning of '<strong>take off</strong>' which is used above.</p>
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="10"  value="1"><label id="quizLabel10" class="quiz" for="10"><div class="answerOptions">When a plane leaves an airport and starts flying</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img10" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="11"  value="2" ><label id="quizLabel11" class="quiz" for="11"><div class="answerOptions">When you use a day as a holiday and don't go to work</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img11" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="12"  value="3"><label id="quizLabel12" class="quiz" for="12"><div class="answerOptions">To remove a piece of clothing from your body</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img12" ></div></div>
+</div>
+
+<input type=button onClick="Score1(1)" id="checkbutton1" class="buttonSpace" value="Check answer">
+
+</form></div></div></div>
+
+
+
+
+
+
+<p><div class="questionBody"><span class="questNum">2.</span> Guess what '<strong>figure</strong>' means in this situation?</p>
+<div class="questExample"><p>'In a 2011 survey by the Washington News, moms were reported to be planning to spend an average of $441 per child. By 2015, this <strong><u>figure</u></strong> had increased to $534 on average per child.'</p>
+
+
+</div>
+
+<p id="boxMean2" class="boxMean" style="" onClick="showMeanings(2)">Click to see the meanings</p>
+    
+
+<div id="meanings2" style="display:none;">
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<p>Select the meaning of '<strong>figure</strong>' which is used above.</p>
+<div class="radioBSeparator"><input type="radio" name="s2" class="q1" id="20"  value="1"><label id="quizLabel20" class="quiz" for="20"><div class="answerOptions">Human bodies in a painting or a drawing</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img20" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s2" class="q1" id="21"  value="2" ><label id="quizLabel21" class="quiz" for="21"><div class="answerOptions">Drawings or diagrams in a book or a magazine that are used to give information on or explain something</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img21" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s2" class="q1" id="22"  value="3"><label id="quizLabel22" class="quiz" for="22"><div class="answerOptions">A quantity/amount of something that is shown as a number</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img22" ></div></div>
+</div>
+
+<input type=button onClick="Score1(2)" id="checkbutton2" class="buttonSpace" value="Check answer">
+
+</form></div></div></div>
+
+<p><div class="questionBody"><span class="questNum">3.</span> Guess what '<strong>manage</strong>' means in this situation?</p>
+<div class="questExample"><p>'But if people started to live a lot longer, it would be very unlikely that we could <strong><u>manage</u></strong> to house and feed everybody as well as we can today.'</p>
+
+
+</div>
+
+<p id="boxMean3" class="boxMean" style="" onClick="showMeanings(3)">Click to see the meanings</p>
+    
+
+<div id="meanings3" style="display:none;">
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<p>Select the meaning of '<strong>manage</strong>' which is used above.</p>
+<div class="radioBSeparator"><input type="radio" name="s3" class="q1" id="30"  value="1"><label id="quizLabel30" class="quiz" for="30"><div class="answerOptions">To successfully do something which is difficult</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img30" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s3" class="q1" id="31"  value="2" ><label id="quizLabel31" class="quiz" for="31"><div class="answerOptions">To run/be in charge of something (e.g. a football team, a company etc...)</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img31" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s3" class="q1" id="32"  value="3"><label id="quizLabel32" class="quiz" for="32"><div class="answerOptions">To be responsible for looking after the career and life of somebody (e.g. a sportsman, an actor/actress etc...)</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img32" ></div></div>
+</div>
+
+<input type=button onClick="Score1(3)" id="checkbutton3" class="buttonSpace" value="Check answer">
+
+</form></div></div></div>
+
+
+<p><div class="questionBody"><span class="questNum">4.</span> Guess what '<strong>added</strong>' mean in this situation?</p>
+<div class="questExample"><p>'Sue Smith said that many of her students struggle doing simple tasks when they first return from school holidays. She <strong><u>added</u></strong> that for the first four to six weeks of the new school year, she has to focus on re-teaching her students...'</p>
+
+
+</div>
+
+<p id="boxMean4" class="boxMean" style="" onClick="showMeanings(4)">Click to see the meanings</p>
+    
+
+<div id="meanings4" style="display:none;">
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<p>Select the meaning of '<strong>add</strong>' which is used above.</p>
+<div class="radioBSeparator"><input type="radio" name="s4" class="q1" id="40"  value="1"><label id="quizLabel40" class="quiz" for="40"><div class="answerOptions">To do a type of mathematical calculation where you combine two numbers together (e.g. 2 + 2)</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img40" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s4" class="q1" id="41"  value="2" ><label id="quizLabel41" class="quiz" for="41"><div class="answerOptions">To put in an ingredient (e.g. salt, water etc...) when cooking</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img41" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s4" class="q1" id="42"  value="3"><label id="quizLabel42" class="quiz" for="42"><div class="answerOptions">To say something more to what you have already said</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img42" ></div></div>
+</div>
+
+<input type=button onClick="Score1(4)" id="checkbutton4" class="buttonSpace" value="Check answer">
+
+</form></div></div></div>
+
+
+<p><div class="questionBody"><span class="questNum">5.</span> Guess what '<strong>committed</strong>' mean in this situation?</p>
+<div class="questExample"><p>'During the last month of summer holidays, the police in Spain have reported that the rates of vandalism and street crime <strong><u>committed</u></strong> by young people increase by over 50%.'</p>
+
+
+</div>
+
+<p id="boxMean5" class="boxMean" style="" onClick="showMeanings(5)">Click to see the meanings</p>
+    
+
+<div id="meanings5" style="display:none;">
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<p>Select the meaning of '<strong>commit</strong>' which is used above.</p>
+<div class="radioBSeparator"><input type="radio" name="s5" class="q1" id="50"  value="1"><label id="quizLabel50" class="quiz" for="50"><div class="answerOptions">When a person is sent to a psychiatric hospital because they are mentally unwell</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img50" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s5" class="q1" id="51"  value="2" ><label id="quizLabel51" class="quiz" for="51"><div class="answerOptions">Used to say that you 'did' something which is illegal/against the law</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img51" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s5" class="q1" id="52"  value="3"><label id="quizLabel52" class="quiz" for="52"><div class="answerOptions">To say that you will definitely do something</div></label><div class="tickbox"><img src="../../../images/icons/blank.gif" class="testImage20" ID="img52" ></div></div>
+</div>
+
+<input type=button onClick="Score1(5)" id="checkbutton5" class="buttonSpace" value="Check answer">
+
+</form></div></div></div>
+
+
+
+ <br><br>
+ 
+ <h2>Use it and keep reading</h2>
+<p>Now that you understand how to use this method, start using it when you see new words or phrases when you are reading in English. Although this method will help you to remember the meaning of vocabulary, it is essential that you keep regularly reading or listening to things in English as well. Because of the way our brains work, the longer we don't see, hear or use a word or phrase, the less we remember about what it means and how we use it correctly. So <strong>keep reading in English!</strong>
+</p>
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+
+
+
+
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/articles/general_articles/method-remembering-english-vocabulary.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:34:03 GMT -->
+</html>

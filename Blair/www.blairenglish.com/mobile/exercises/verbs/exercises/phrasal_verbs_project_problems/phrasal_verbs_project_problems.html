@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/verbs/exercises/phrasal_verbs_project_problems/phrasal_verbs_project_problems.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:51 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="canonical" href="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/phrasal_verbs_project_problems.html" >
+<title>English phrasal verbs for explaining problems online exercise part 2 | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<meta name="description" content="Online exercise that looks at the phrasal verbs in English that are used when discussing problems/issues and giving updates in business and other situations." />
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/phrasal_verbs_project_problems.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+<script language="javascript">
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+var correctAns = new Array;
+
+var quizWords = new Array;  
+ 
+quizWords[1] = "knuckle down";
+quizWords[2] = "run into";
+quizWords[3] = "broke down";
+quizWords[4] = "figured out";
+quizWords[5] = "sorted out";
+quizWords[6] = "figured on";
+quizWords[7] = "find out";
+quizWords[8] = "come up with";
+quizWords[9] = "rule out";
+quizWords[10] = "go ahead";
+quizWords[11] = "hold off";
+
+
+var score = 0;
+ans[1] = "COME UP WITH";
+ans[2] = "FIGURED ON";
+ans[3] = "HOLD OFF";
+ans[4] = "KNUCKLE DOWN";
+ans[5] = "FIGURED OUT";
+ans[6] = "BROKE DOWN";
+ans[7] = "FIND OUT";
+ans[8] = "SORTED OUT";
+ans[9] = "GO AHEAD";
+ans[10] = "RUN INTO";
+ans[11] = "RULE OUT";
+
+function Score(){
+yourAns[1]= document.getElementById("q1").value;
+yourAns[2]= document.getElementById("q2").value;
+yourAns[3]= document.getElementById("q3").value;
+yourAns[4]= document.getElementById("q4").value;
+yourAns[5]= document.getElementById("q5").value;
+yourAns[6]= document.getElementById("q6").value;
+yourAns[7]= document.getElementById("q7").value;
+yourAns[8]= document.getElementById("q8").value;
+yourAns[9]= document.getElementById("q9").value;
+yourAns[10]= document.getElementById("q10").value;
+yourAns[11]= document.getElementById("q11").value;
+
+setTimeout('Press(ans,yourAns )',1000);
+
+
+for(i=1;i<=yourAns.length;i++){
+   yourAns[i]=yourAns[i].trim();	
+   yourAns[i]=yourAns[i].toUpperCase();
+   
+ if(ans[i]!=yourAns[i]){
+    
+	document.getElementById("img" + i).src = "../../../../../images/icons/cross.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("info" + i).title ="";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/blank.gif";
+	document.getElementById("audio" + i).title ="";
+  }
+  else{
+    
+    document.getElementById("img" + i).src = "../../../../../images/icons/tick.gif";
+	document.getElementById("info" + i).src = "../../../../../images/icons/info_icon.gif";
+	document.getElementById("info" + i).style.display = "inherit";
+	document.getElementById("info" + i).title = "Click here for extra info about this word/phrase";
+	document.getElementById("audio" + i).src = "../../../../../images/icons/audio_icon111.gif";
+	document.getElementById("audio" + i).style.display = "inherit";
+	document.getElementById("audio" + i).title = "Click here to listen and practise the pronunciation of this word/phrase";
+	
+    var answer = ans[i];
+	answer = answer.toLowerCase();
+	
+	var thespan = document.getElementById(answer);
+	thespan.textContent = "";
+	
+  }
+}
+}
+
+function spell(question,text) {
+	
+	var i = question;
+	var checkSpell = text;
+	checkSpell = checkSpell.trim();
+	checkSpell = checkSpell.toUpperCase();
+	
+	if (checkSpell == ""){
+		
+		return;}
+		
+		else if (checkSpell != ""){
+	
+	if (checkSpell == ans[1]){
+		
+		
+		return;
+	}
+	else if (checkSpell != ans[1]) {
+		if (checkSpell == ans[2]){
+			
+		
+		return;}
+		
+		else if (checkSpell != ans[2]){
+			if (checkSpell == ans[3]) {
+				
+				
+				return;}
+				
+				else if(checkSpell != ans[3]) {
+		            if (checkSpell == ans[4]){
+			
+		
+		         return;}
+		
+		           else if (checkSpell != ans[4]){
+			             if (checkSpell == ans[5]) {
+				
+				
+				  return;}
+				
+				     else if(checkSpell != ans[5]) {
+		                 if (checkSpell == ans[6]){
+				     return;}
+				
+				       else if(checkSpell != ans[6]) {
+		                  if (checkSpell == ans[7]){
+			
+		
+		               return;}
+		
+		                else if (checkSpell != ans[7]){
+			                if (checkSpell == ans[8]) {
+				
+				
+				          return;}
+				
+				          else if(checkSpell != ans[8]) {
+		                       if (checkSpell == ans[9]){
+				
+				             return;}
+				
+				            else if(checkSpell != ans[9]) {
+		                      if (checkSpell == ans[10]){
+				             return;}
+							 
+							   else if(checkSpell != ans[10]) {
+		                        if (checkSpell == ans[11]){
+				               return;}
+				
+				             else if(checkSpell != ans[11]) {
+		                  
+						       document.getElementById("q" + i).focus();
+							   alert("There is a mistake in this answer. Make sure you are using a word/phrase in bold from the above exercise text and that the spelling is the same.");
+							 }
+		                    }
+						  }
+					  }
+		     		}
+				 }
+			 }
+	      }
+       }
+	}
+}
+}
+}
+
+
+
+</script>
+
+
+
+						       
+
+      
+</HEAD>
+
+
+<BODY itemscope itemtype="http://schema.org/CreativeWork">
+<meta itemprop="interactivityType" content="active">
+<meta itemprop="educationalUse" content="Independent Use">
+<meta itemprop="timeRequired" content="P20M">
+ <div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a>
+       
+   </div><!-- /end #logo -->
+
+  <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+  
+<div id="navigation_css" ><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../../exercises/projects/projects_selectionpage.html">more project exercises</a></li> 
+     
+   <li><a href="../../../../../extras/exercise_menu.html">other exercises</a></li>
+   
+   <li><a href="../../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../../extras/contact_page.html">contact us</a></li>
+   
+   </ul>
+ 
+ </nav>
+
+ 
+ 
+ </div><!-- /end #navigation_css -->   
+     
+   <div id="header">
+    <h1 id="header_smaller"><span itemprop="headline">English phrasal verbs for explaining problems exercise part 2</span></h1>
+ </div><!-- /end #header -->
+   
+
+
+<div id="body">
+<div id="exerciseBody">
+ 
+ <div id="introduction">
+<p class="openParaArticle">Projects in business never go as well as planned. Unexpected problems and issues often happen during the length of a project. So, it's important to know how to describe what you did and what you will do. There are a lot of different phrasal verbs in English which are commonly used to do this.</p> 
+<p><span itemprop="description">In this second of two <span itemprop="learningResourceType">online exercise</span>s on phrasal verbs for problems, you will learn phrasal verbs in English which are used when talking about and trying to resolve problems at work and when providing a progress update for a project.</span> Many of these phrasal verbs can be used in other non-business situations as well with the same meaning.</p>
+
+ <p>After you have done this exercise, you can also improve your knowledge of the English vocabulary used in <a href="../../../../../exercises/meetings/meetingselectionpage.html"><strong>meetings</strong></a> or <a href="../../../../../exercises/projects/projects_selectionpage.html"><strong>projects</strong></a> in our online exercises on these topics. In addition, you can also do our exercises on <a href="../../../../../exercises/verbs/exercises/use_phrasal_verbs1/use_phrasal_verbs1.html"><strong>how to correctly use phrasal verbs</strong></a> or look at all the exercises we have on <a href="../../../../../exercises/verbs/verbs_selectionpage.html"><strong>verbs and phrasal verbs in English</strong></a>.</p> 
+
+<p><a href="../../../../../exercises/verbs/exercises/phrasal_verbs_meeting_problems/phrasal_verbs_meeting_problems.html"><strong>Click here to see the first part of this exercise on phrasal verbs for explaining problems</strong></a>.</p>
+
+</div> <!-- /end #introduction -->
+
+
+
+<hr>
+
+<div id="exercise_content">
+
+ <h2>Exercise: A project update</h2>
+ 
+ <p>Read the following project update meeting which is discussing the current situation with a project which is installing a luggage delivery system in an airport for an external client.</p>
+ 
+<p>From the context, try to guess what the meaning of the words/phrases in <strong>bold</strong> are. Then do the quiz at the end to check if you are right.</p>
+ 
+ 
+ <p><span class="names">Director of Projects:</span><span class="exercise_dialogue">'How's the installation of the first of the luggage delivery systems going at Skipton Airport? I hope to hear good news. You know that we're still three weeks behind schedule. If we're going to meet the deadline we're going to have to <strong>knuckle down</strong>, to work harder and longer.'
+   </span></p>
+ 
+ <p><span class="names">Project Manager:</span><span class="exercise_dialogue">'Well, we've <strong>run into</strong> a few problems I'm afraid. As you know we've already installed the first of the conveyor belts to carry the passengers' luggage and there have been some problems.'
+   </span></p>
+ 
+ <p><span class="names">Director of Projects:</span><span class="exercise_dialogue">'In what way?'
+    </span></p>
+ 
+ <p><span class="names">Project Manager:</span><span class="exercise_dialogue">'In two ways. During the first week of testing, the conveyor belt <strong>broke down</strong> three times. Each time we had to replace a number of parts in order to make it work again. But we have <strong>figured out</strong> what was causing the problem. There was a faulty cable and since we replaced it, it hasn't broken down since.'
+   </span></p>
+ 
+ <p><span class="names">Director of Projects:</span><span class="exercise_dialogue">'So that's been <strong>sorted out</strong> and it's working fine now, good. And the second problem?'
+   </span></p>
+ 
+ <p><span class="names">Project Manager:</span><span class="exercise_dialogue">'The second problem is with the delivery rate for the luggage delivery system. When we were designing it, we <strong>figured on</strong> each of the conveyor belts would move 50 bags per minute, but now the client is saying that he wants 100 bags to be moved by it per minute. Although it does seem easy to simply increase the speed of the system, the whole system is only designed to move a maximum of 90 bags per minute.'
+   </span></p>
+
+ 
+ <p><span class="names">Director of Projects:</span><span class="exercise_dialogue">'How did you <strong>find out</strong> about them now wanting 100 bags per minute? The client agreed in the contract to a maximum of between 70-80 bags per minute.'
+   </span></p>
+ 
+ <p><span class="names">Project Manager:</span><span class="exercise_dialogue">'The airport manager told us that they want 100 bags per minute when he came to look at the conveyor belt earlier this week.'
+   </span></p>
+ 
+ <p><span class="names">Director of Projects:</span><span class="exercise_dialogue">'Can it be done?'
+   </span></p>
+ 
+ 
+ <p><span class="names">Project Manager:</span><span class="exercise_dialogue">'Well, we've been looking into it over the last couple of days and we've <strong>come up with</strong> an idea which should mean that it can move 100 bags a minutes. We haven't tested it yet. Although we can <strong>rule out</strong> the possibility that this change will be a risk to any of the passengers or operators who use the system - we've installed luggage delivery systems at other places with a similar velocity without any problems, we can't exclude the possibility that if we implement this idea, it won't damage the machinery and cause the system to frequently break down. The machinery wasn't designed for that velocity.'
+    </span></p>
+ 
+ <p><span class="names">Director of Projects:</span><span class="exercise_dialogue">'Before you <strong>go ahead</strong> with doing the testing, I have to speak with the client. So, can you <strong>hold off</strong> doing anything for the moment. It's best to wait before we do anything. I'm going to tell her what you've told me. I'll try to speak to her this afternoon and let you know what the outcome of it is.'
+  </span></p>
+    
+
+    
+<br>
+
+
+
+ 
+ 
+   
+ </div><!-- /end #exercise_content -->
+ 
+
+
+
+<div id="test">
+
+
+<hr>
+<h2>Quiz:</h2>
+<p>Below is a definition or description of each of the phrasal verbs in <b>bold</b> from the above text (which you can also find in the grey box below). Answer each question with one of these phrasal verbs in <b>bold</b>. Only use one phrasal verb once and write it as it is in the text. Click on the <b>"Check"</b> button at the bottom of the quiz to check your answers.</p>
+<p>When the answer is correct, two icons will appear next to the question. The first is an Additional Information Icon "<img src="../../../../../images/icons/info_icon.gif" class="testImage25" align="absmiddle" id="infoInstruct" />". Click on this for <b>extra information</b> on the word/phrase and for a <b>translation</b>. The second is a Pronunciation Icon "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />". Click on this to listen to the <b>pronunciation</b> of the phrasal verb.</p>
+<h3 id="QuizWordsBoxTitle">Words/phrases to use in the quiz</h3>  
+<div id="QuizWordsBox">
+
+</div><!-- /end #QuizWordsBox -->
+
+<FORM>
+<p>1. A phrasal verb that means that you have thought of/found a way to improve something, is 
+<div id="textBoxPositioning1"><input  type="text" ID="q1" class="ansInput" onBlur="spell(1,this.value)"/><input type="text" id="autocomplete_q1" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img1"> &nbsp; &nbsp;
+<a href="javascript:showObject1();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info1" border="0" onClick="changeZindex('n1')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(1);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio1" border="0" onClick="changeZindex('p1')" /></a>
+<div id="n1">
+<table onMouseDown="changeZindex('n1')"> 
+<tr> 
+<td> 
+  <p><strong>Come up with:</strong><br><em>(phrasal verb)</em> The infinitive is 'to come up with something'. In this context it means to have thought of or found a solution to a problem or a way to improve something. It is often followed by 'an idea' or 'a way to', e.g. 'they have come up with a way to save money'. This is a Type 4 Phrasal Verb (transitive and inseparable with two particle).  In Spanish: <em><b>"proponer/sugerir"</b></em>.</p>
+  <a href="javascript:hideObject1();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p1">
+<table onMouseDown="changeZindex('p1')"> 
+<tr > 
+<td id="table1">
+
+ <p><strong>Come up with</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/come%20up%20with1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/come%20up%20with1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(1);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>2. A phrasal verb which means to expect something to happen, is 
+<div id="textBoxPositioning2"><input  type="text" ID="q2" class="ansInput" onBlur="spell(2,this.value)"/> <input  type="text" id="autocomplete_q2" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img2"> &nbsp; &nbsp;
+<a href="javascript:showObject2();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info2" border="0" onClick="changeZindex('n2')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(2);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio2" border="0" onClick="changeZindex('p2')" /></a>
+<div id="n2">
+<table onMouseDown="changeZindex('n2')"> 
+<tr> 
+<td>  
+  <p><strong>Figured on:</strong><br><em>(phrasal verb)</em> The infinitive is 'to figure on something'.  In this context it means to expect/plan for something happening. It is more commonly used in the negative, e.g. 'we didn't figure on the price of oil going up so much'. It is commonly used in business with projects, negotiations, meetings etc... This is a Type 2 Phrasal Verb (transitive and inseparable with one particle). In Spanish: <em><b>"contar con"</b></em>.</p> 
+  <a href="javascript:hideObject2();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p2">
+<table onMouseDown="changeZindex('p2')"> 
+<tr > 
+<td id="table2">
+
+ <p><strong>Figured on</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/figured%20on1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/figured%20on1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(2);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>3. A phrasal verb that asks somebody to wait and not do anything, is 
+<div id="textBoxPositioning3"><input  type="text" ID="q3" class="ansInput" onBlur="spell(3,this.value)"/> <input  type="text" id="autocomplete_q3" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img3"> &nbsp; &nbsp;
+<a href="javascript:showObject3();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info3" border="0" onClick="changeZindex('n3')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(3);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio3" border="0" onClick="changeZindex('p3')" /></a>
+<div id="n3">
+<table onMouseDown="changeZindex('n3')">  
+<tr> 
+<td> 
+  <p><strong>Hold off:</strong><br><em>(phrasal verb)</em> The infinitive is 'to hold off something'.  In this context it means to stop starting or doing something (like a project, email, change etc...) and wait. It is often used as a polite order. It is generally followed by a gerund (e.g. 'talking') and then often by 'until', e.g. 'hold off doing anything until I tell you'. It is a Type 2 Phrasal Verb (transitive and inseparable with one particle). In Spanish: <em><b>"esperar/no hacer nada"</b></em>.</p> 
+  <a href="javascript:hideObject3();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p3">
+<table onMouseDown="changeZindex('p3')" > 
+<tr > 
+<td id="table3">
+
+ <p><strong>Hold off</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/hold%20off1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/hold%20off1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(3);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>4. A phrasal verb that means to work harder, is 
+<div id="textBoxPositioning4"><input  type="text" ID="q4" class="ansInput" onBlur="spell(4,this.value)"/> <input  type="text" id="autocomplete_q4" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img4"> &nbsp; &nbsp;
+<a href="javascript:showObject4();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info4" border="0" onClick="changeZindex('n4')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(4);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio4" border="0" onClick="changeZindex('p4')" /></a>
+<div id="n4">
+<table onMouseDown="changeZindex('n4')"> 
+<tr> 
+<td>  
+  <p><strong>Knuckle down:</strong><br><em>(phrasal verb)</em> The infinitive is 'to knuckle down'. In this context it means to work harder and possibly longer. It is commonly used in business English and is normally used as an order or suggestion, e.g. 'we have a lot to do, so we have to knuckle down'. It is never used in the negative. This is a Type 1 Phrasal Verb (intransitive and inseparable with one particle).  In Spanish: <em><b>"ponerse a trabajar en serio"</b></em>.</p> 
+  <a href="javascript:hideObject4();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p4">
+<table onMouseDown="changeZindex('p4')" > 
+<tr > 
+<td id="table4">
+
+ <p><strong>Knuckle down</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/knuckle%20down1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/knuckle%20down1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(4);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>5. A phrasal verb that means to find a solution to a problem, is 
+<div id="textBoxPositioning5"><input  type="text" ID="q5" class="ansInput" onBlur="spell(5,this.value)"/> <input  type="text" id="autocomplete_q5" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img5"> &nbsp; &nbsp;
+<a href="javascript:showObject5();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info5" border="0" onClick="changeZindex('n5')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(5);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio5" border="0" onClick="changeZindex('p5')"/></a>
+<div id="n5">
+<table onMouseDown="changeZindex('n5')"> 
+<tr> 
+<td> 
+  <p><strong>Figured out:</strong><br><em>(phrasal verb)</em> The infinitive is 'to figure something out'. In this context it means to find a solution or find the cause of a problem, e.g. 'we can't figure it out, do you have any ideas?'. It is similar to 'work out'. It is a Type 3 Phrasal Verb (transitive and separable with one particle). It can also be followed by 'why' and then details of the problem, e.g. 'we figured out why the car isn't working'. In Spanish: <em><b>"resolver/entender"</b></em>.</p> 
+  <a href="javascript:hideObject5();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p5">
+<table onMouseDown="changeZindex('p5')" > 
+<tr > 
+<td id="table5">
+
+ <p><strong>Figured out</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/figured%20out1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/figured%20out1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(5);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>6. A phrasal verb that means that a machine isn't working, is 
+<div id="textBoxPositioning6"><input  type="text" ID="q6" class="ansInput" onBlur="spell(6,this.value)"/> <input  type="text" id="autocomplete_q6" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img6"> &nbsp; &nbsp;
+<a href="javascript:showObject6();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info6" border="0" onClick="changeZindex('n6')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(6);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio6" border="0" onClick="changeZindex('p6')" /></a>
+<div id="n6">
+<table onMouseDown="changeZindex('n6')"> 
+<tr> 
+<td>  
+  <p><strong>Broke down:</strong><br><em>(phrasal verb)</em> The infinitive is 'to break down'. It's a phrasal verb with many different uses. In this context it means that a machine  (e.g. car, fridge etc...) or a computer isn't working. This is normally used when you expect or hope that the machine or computer can be fixed or repaired, e.g. 'the washing machine has broken down again'. This is a Type 1 Phrasal Verb (intransitive and inseparable with one particle). In Spanish: <em><b>"estropearse"</b></em>.</p> 
+  <a href="javascript:hideObject6();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p6">
+<table onMouseDown="changeZindex('p6')"> 
+<tr > 
+<td id="table6">
+
+ <p><strong>Broke down</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/broke%20down1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/broke%20down1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(6);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+<p>7. A phrasal verb that means to discover or learn/hear about some information, is 
+<div id="textBoxPositioning7"><input  type="text" ID="q7" class="ansInput" onBlur="spell(7,this.value)"/> <input  type="text" id="autocomplete_q7" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img7"> &nbsp; &nbsp;
+<a href="javascript:showObject7();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info7" border="0" onClick="changeZindex('n7')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(7);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio7" border="0" onClick="changeZindex('p7')" /></a>
+<div id="n7">
+<table onMouseDown="changeZindex('n7')"> 
+<tr> 
+<td>  
+  <p><strong>Find out:</strong><br><em>(phrasal verb)</em> The infinitive is 'to find out'. It's a phrasal verb with different uses. In this context it means to discover or learn/about some information that you didn't know before. This is a Type 1 Phrasal Verb (intransitive and inseparable with one particle). An 'about' follows this phrasal verb  if you want to say what the information is, e,g, 'How did you find out about the merger? Who told you?' In Spanish: <em><b>"averiguar"</b></em>.</p> 
+  <a href="javascript:hideObject7();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p7">
+<table onMouseDown="changeZindex('p7')" > 
+<tr > 
+<td id="table7">
+
+ <p><strong>Find out</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/find%20out1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/find%20out1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(7);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>8. A phrasal verb that means a problem has been solved or fixed, is 
+<div id="textBoxPositioning8"><input  type="text" ID="q8" class="ansInput" onBlur="spell(8,this.value)"/> <input  type="text" id="autocomplete_q8" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img8">&nbsp; &nbsp;
+<a href="javascript:showObject8();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info8" border="0" onClick="changeZindex('n8')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(8);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio8" border="0" onClick="changeZindex('p8')" /></a>
+<div id="n8">
+<table onMouseDown="changeZindex('n8')"> 
+<tr> 
+<td> 
+  <p><strong>Sorted out:</strong><br><em>(phrasal verb)</em> The infinitive is 'to sort something out'. It's a phrasal verb with different uses. In this context it means to fix something that was causing problems or a machine that had broken down, e.g. 'We've sorted the situation out, so there won't be any more problems'. Although in this case it is a Type 3 Phrasal Verb (transitive and separable with one particle), it can also be used as a Type 1 Phrasal Verb (intransitive and inseparable with one particle) when the subject is the problem or issue, e.g. 'don't worry the problem is sorted out now'. But it is only used as this type in the passive. In Spanish: <em><b>"arreglar/solucionar"</b></em>.</p> 
+  <a href="javascript:hideObject8();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p8">
+<table onMouseDown="changeZindex('p8')" > 
+<tr > 
+<td id="table8">
+
+ <p><strong>Sorted out</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/sorted%20out1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/sorted%20out1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(8);">Close</a> 
+</td> 
+
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>9. A phrasal verb that means that something can proceed or start, is 
+<div id="textBoxPositioning9"><input  type="text" ID="q9" class="ansInput" onBlur="spell(9,this.value)"/> <input  type="text" id="autocomplete_q9" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img9">&nbsp; &nbsp;
+<a href="javascript:showObject9();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info9" border="0" onClick="changeZindex('n9')"/></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(9);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio9" border="0" onClick="changeZindex('p9')" /></a>
+<div id="n9">
+<table onMouseDown="changeZindex('n9')"> 
+<tr> 
+<td> 
+  <p><strong>Go ahead:</strong><br><em>(phrasal verb)</em> The infinitive is 'to go ahead'. It's a phrasal verb with different uses, some very similar. In this context it means to proceed or start a plan, task, project etc... It is only used with this meaning in business and professional English.  A 'with' follows this phrasal verb  if you want to include details of the plan, tasks etc..., e.g. 'Can we go ahead with the changes now?'. This is a Type 1 Phrasal Verb (intransitive and inseparable with one particle). In Spanish: <em><b>"avanzar/seguir adelante"</b></em>.</p> 
+  <a href="javascript:hideObject9();">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p9">
+<table onMouseDown="changeZindex('p9')" > 
+<tr > 
+<td id="table9">
+
+ <p><strong>Go ahead</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/go%20ahead1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/go%20ahead1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(9);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>10. A phrasal verb that means you have encountered some problems, is 
+<div id="textBoxPositioning10"><input  type="text" ID="q10" class="ansInput" onBlur="spell(10,this.value)"/> <input  type="text" id="autocomplete_q10" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img10">&nbsp; &nbsp;
+<a href="javascript:showObject10();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info10" border="0" onClick="changeZindex('n10')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(10);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio10" border="0" onClick="changeZindex('p10')" /></a>
+<div id="n10">
+<table onMouseDown="changeZindex('n10')"> 
+<tr> 
+<td> 
+  <p><strong>Run into:</strong><br><em>(phrasal verb)</em> The infinitive is 'to run into something'. It's a phrasal verb with different uses. In this context it means to have encountered some problems when you were doing something. The phrasal verb is generally followed  by 'problem', 'issue' or 'difficulty', e.g. 'we have run into some difficulties with the production'. This is a Type 3 Phrasal Verb (transitive and separable with one particle). In Spanish: <em><b>"tropezar con"</b></em>.</p>
+  <a href="javascript:hideObject10();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p10">
+<table onMouseDown="changeZindex('p10')" > 
+<tr > 
+<td id="table10">
+
+ <p><strong>Run into</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/run%20into1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/run%20into1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(10);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<p>11. A phrasal verb that means that you can exclude something as a possibility, is 
+<div id="textBoxPositioning11"><input  type="text" ID="q11" class="ansInput" onBlur="spell(11,this.value)"/> <input  type="text" id="autocomplete_q11" tabindex="-1"/></div> &nbsp; <img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img11">&nbsp; &nbsp;
+<a href="javascript:showObject11();" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info11" border="0" onClick="changeZindex('n11')" /></a>&nbsp; &nbsp; <a href="javascript:showObjectAudio(11);" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio11" border="0" onClick="changeZindex('p11')" /></a>
+<div id="n11">
+<table onMouseDown="changeZindex('n11')"> 
+<tr> 
+<td> 
+  <p><strong>Rule out:</strong><br><em>(phrasal verb)</em> The infinitive is 'to rule something out'. In this context it means to exclude the possibility that something happened or will happen. It is used with predictions. This phrasal verb is normally used with the verb 'can' or 'can't'. In fact, 'can't rule out' is more commonly used in English and means that you can't exclude something as a possibility, e.g. 'we can't rule this out, it could happen'. This is a Type 3 Phrasal Verb (transitive and separable with one particle). In Spanish: <em><b>"descartar/excluir"</b></em>.</p>
+  <a href="javascript:hideObject11();">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p11">
+<table onMouseDown="changeZindex('p11')" > 
+<tr > 
+<td id="table11">
+
+ <p><strong>Rule out</strong>:</p>
+ <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/rule%20out1.mp3">
+ <source src="../../../../../exercises/verbs/exercises/phrasal_verbs_project_problems/pronunciation/rule%20out1.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(11);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+</p>
+
+<input class="submitResults" type=button onClick="Score()" value="Check">
+</CENTER>
+</FORM>
+</div> <!-- /end #test -->
+<br /><br />
+<div id="links">
+
+<a href="../../../../../exercises/verbs/verbs_selectionpage.html"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more online exercises on English verbs and phrasal verbs</span></a>
+</div><!-- /end #links -->
+<br /><br />
+
+
+<h2>Practice</h2>
+<p>Now that you understand the meaning of the phrasal verbs and when to use them, practise using them by creating your own sentences with them in English. Also click on the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon under each correct answer and listen how each is pronounced correctly.</p>
+<br>
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+<SCRIPT language="JavaScript" SRC="../../../../../javascript/box_call_write_1_autocomplete_mobile.js"></SCRIPT>
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+
+<script language="JavaScript">
+
+window.onload = function() {
+	attachEvents();
+}
+
+document.addEventListener("DOMContentLoaded", populateWordBox());
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/verbs/exercises/phrasal_verbs_project_problems/phrasal_verbs_project_problems.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:51 GMT -->
+</html>

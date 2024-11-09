@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/business/exercises/business-english-expressions-part-1/business-english-expressions-part-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:51 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="../../../../../exercises/business/exercises/business-english-expressions-part-1/business-english-expressions-part-1.html" >
+<title>Business English expressions online exercise part 1 | Blair English</title>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Francois+One' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link type="text/css" rel="stylesheet" href="../../../../../openingpage1responsive.css" />
+<meta name="description" content="Learn and remember the meaning of some commonly used English expressions used in business." />
+
+
+<script type="text/javascript">
+  <!--
+  if (screen.width > 599) {
+    window.location = "../../../../../exercises/business/exercises/business-english-expressions-part-1/business-english-expressions-part-1.html";
+  }
+  //-->
+</script>
+
+<script async src="../../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4521038358613181",
+    enable_page_level_ads: true
+  });
+</script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMN7Y09XF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMN7Y09XF7');
+</script>
+
+
+
+<script language="javascript">
+
+       var sAns = new Array;
+
+       var ans = new Array;
+
+var yourAns = new Array;
+
+var sYourAns = new Array;
+
+var correctAns = new Array;
+
+
+var score = 0;
+ans[1] = "dropped the ball";
+ans[2] = "you are not pulling your weight";
+ans[3] = "We don't see eye to eye";
+ans[4] = "That is out of the question";
+ans[5] = "My hands are tied";
+
+
+
+sAns[1] = "To say 'no' to a suggestion that somebody has made";
+sAns[2] = "To work as hard as other people on something";
+sAns[3] = "To say you can't do something about a decision/situation";
+sAns[4] = "To say/admit you made a mistake";
+sAns[5] = "To say you don't agree with or have the same opinion as another person";	
+
+
+function Score(){
+yourAns[1]= document.getElementById("q1").value;
+yourAns[2]= document.getElementById("q2").value;
+yourAns[3]= document.getElementById("q3").value;
+yourAns[4]= document.getElementById("q4").value;
+yourAns[5]= document.getElementById("q5").value;
+
+
+
+
+
+for(i=1;i<=yourAns.length;i++){
+
+    if(ans[i]==yourAns[i]){ 
+
+	document.getElementById("img" + i).style.height = "18px";
+	document.getElementById("img" + i).style.width = "18px";
+		document.getElementById("img" + i).src = "../../../../../images/icons/tick.gif";
+		document.getElementById("img" + i).style.paddingRight = "2%";
+	document.getElementById("img" + i).style.paddingLeft = "2%";
+	document.getElementById("img" + i).style.display = "inline";
+
+	
+	
+  }
+  else{
+    
+	
+    document.getElementById("img" + i).src = "../../../../../images/icons/cross.gif";
+    document.getElementById("img" + i).style.height = "18px";
+	document.getElementById("img" + i).style.width = "18px";
+		document.getElementById("img" + i).style.paddingRight = "2%";
+	document.getElementById("img" + i).style.paddingLeft = "2%";
+	document.getElementById("img" + i).style.display = "inline";
+
+  }
+
+ 
+ 
+
+  
+  
+}
+}
+
+
+
+
+
+var radios = new Array;
+
+function Score1(){
+
+
+	
+	
+	
+sYourAns[1]= document.getElementById("s1").value;
+sYourAns[2]= document.getElementById("s2").value;
+sYourAns[3]= document.getElementById("s3").value;
+sYourAns[4]= document.getElementById("s4").value;
+sYourAns[5]= document.getElementById("s5").value;
+
+
+
+
+}
+
+var radios = new Array;
+function Score1(number){
+	
+	var number = number;
+	var clickedId = 0;
+	
+	
+	
+	radios = document.getElementsByName('s' + number);
+	
+	for (var i = 0, length = radios.length; i < length; i++) {
+		
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+		var value = radios[i].value;
+		clickedId = radios[i].id;
+		
+		
+		if(value!=sAns[number]){
+			document.getElementById("img" + clickedId).src = "../../../../../images/icons/cross.gif";
+			document.getElementById(clickedId).disabled = true;
+	        document.getElementById("quizLabel" + clickedId).style.opacity = "0.4";
+	        document.getElementById("quizLabel" + clickedId).style.textDecoration = "line-through";
+			
+		}else{
+			
+			document.getElementById("img" + clickedId).src = "../../../../../images/icons/tick.gif";
+				document.getElementById("info" + number).src = "../../../../../images/buttons/infobutton1.gif";
+	document.getElementById("info" + number).title = "Click here for extra info about this word/phrase";
+	document.getElementById("info" + number).style.display = "inherit";
+	document.getElementById("audio" + number).src = "../../../../../images/buttons/listenbutton1.gif";
+	document.getElementById("audio" + number).title = "Click here to listen and practise the pronunciation of this word/phrase";
+	document.getElementById("audio" + number).style.display = "inherit"
+	document.getElementById("nlink" + number).href = "javascript:showObject(" + number + ")"; 
+	document.getElementById("audiolink" + number).href = "javascript:showObjectAudio(" + number + ")";
+		}
+		
+		
+        
+
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+	
+}
+
+
+
+function showObject(number){
+var i = number;
+  
+  document.getElementById("n" + i).style.visibility = "visible"; 
+  
+  
+}
+
+
+function hideObject(number){
+var i = number;
+
+  document.getElementById("n" + i).style.visibility = "hidden";
+  }
+
+  
+
+ </script> 
+
+<style type="text/css">
+div.questionBody{
+	width: 95%;
+	margin-top: 30px;
+	}
+
+div.answerOptions {
+	width:78%;
+	display:inline-block;
+	margin-left: 2%;
+	vertical-align:middle;
+}
+
+div.tickbox {
+	width:10%;
+	display:inline-block;
+	vertical-align:middle;
+	
+	
+}
+
+div.questExample {
+		border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 10px 10px 5px #888;
+	border: 2px solid black;
+    padding-top:0px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color:#FFFFF0;
+    margin-bottom:40px;
+	margin-left: 0px;
+	font-size:1.1em;
+}
+
+span.colourNames {
+	color:#330;
+	text-decoration:underline; 
+	font-size:1em;
+}
+
+input[type="button"].buttonSpace {
+	margin-right: 60px;
+}
+
+input[type="radio"]{
+	vertical-align:middle;
+	
+}
+
+.radioBSeparator {
+	margin-bottom: 20px;
+}
+
+	
+</style>
+
+
+  
+</HEAD>
+
+
+
+<BODY>
+<div id="exercisepage">
+ 
+  <div id="logo">  
+    <a href="../../../../../index.html"><img src="../../../../../images/logos/logoname_240_130.gif" alt="Blair English Logo"  title="Click to go to the home page" border="0" /></a> 
+       
+   </div><!-- /end #logo -->
+
+ <div id="newhomepage1_search"> 
+
+</div><!-- /end #newhomepage1_search --> 
+   
+<div id="navigation_css"><nav>    
+  <ul id="menu">
+   
+   <li><a href="../../../../../index.html">home</a></li>
+   
+   <li><a href="../../../../../exercises/business/business_selectionpage.html">more business vocab exercises</a></li>
+   
+   <li><a href="../../../../../extras/exercise_menu.html">other exercises</a></li>
+   
+   <li><a href="../../../../../articles/general_article_selectionpage.html">articles</a></li> 
+  
+   <li><a href="../../../../../teachers/teacher-article-worksheet-selectionpage.html">for teachers</a></li>
+   
+   <li><a href="../../../../../extras/about_page.html">about</a></li>
+    
+   <li><a href="../../../../../extras/contact_page.html">contact us</a></li>
+   
+   </ul>
+ 
+ </nav>
+ 
+ 
+ </div><!-- /end #navigation_css -->
+     
+   <div id="header">
+     <h1>Business English expressions exercise part 1</h1>
+  </div><!-- /end #header -->
+   
+ 
+
+ 
+
+
+
+
+
+<div id="body">
+<div id="exerciseBody">
+   
+   <div id="introduction">
+
+<p class="openParaArticle">People in business use a lot of expressions/idioms when both speaking and writing (e.g. 'my hands are tied'). If you are in a meeting or having a conversation in English, it can be very difficult to understand what the other person/people are saying when they use expressions. Which could result in you making mistakes or looking stupid/incompetent in front of the other people.</p>
+
+<p>So, it's really important that you understand what these mean.</p> 
+
+<p>To help you to learn common expressions used in business English, I have created the below exercise. Through first deciding what the meaning of 5 different English expressions are and then adding them to a text, you'll not only understand what these expressions mean, but more importantly, you'll remember them.</p>
+
+<p>Before you learn the five expressions below, you need to know that many expressions in English can only be used in specific situations (e.g. when talking about problems, when talking about your job etc...). So if you want to use expressions correctly, you must know what these situations are. You will also learn this in the below exercise.</p>
+
+
+
+<p>After you have done this exercise, I would recommend that you do <a href="../../../../../exercises/business/exercises/business-english-expressions-part-2/business-english-expressions-part-2.html"><b><u>the second part of this exercise to learn more expressions used in business English</u></b></a>.</p> 
+
+<p>To learn more business English vocabulary, look at our exercises in the <a href="../../../../../exercises/business/business_selectionpage.html"><b><u>general business English vocabulary exercise menu</u></b></a>.</p>     
+
+</div> <!-- /end #introduction -->
+
+
+
+<hr>
+
+<div id="exercise_content">
+
+<h2 class="sectionTitles">Part One: What they mean</h2>
+<p>In the first part, you will find five questions. In each question, you will find an expression in a sentence. You have to decide what the meaning of this expression is from the context of the sentence. There are three possible meanings below the sentence, only one is correct.</p>
+
+<p>When you have chosen one meaning, click on the "Check answer" button at the bottom of the question to see if you are correct.</p>
+<p>When the answer is correct, two icons will appear next to the question which you can press/click on. In the first icon, <img src="../../../../../images/buttons/infobutton1.gif" class="testImage25" align="absmiddle" id="infoInstruct" /> , you can find extra information about the expression (e.g. in what situations it is used in, how it is used etc...) and a Spanish translation. In the second, <img src="../../../../../images/buttons/listenbutton1.gif" class="testImage25" align="absmiddle" id="audioInstruct" /> , is where you can listen to the expression.</p><br><br>
+
+
+ 
+
+ 
+ 
+ 
+
+  
+<p><div class="questionBody"><span class="questNum">1.</span> What does '<strong>It's out of the question</strong>' mean in this situation?</p>
+<div class="questExample"><p><span class="colourNames">Shop Assistant</span>: 'Can I go home early today?</p>
+
+<p><span class="colourNames">Manager</span>: '<strong>It's out of the question</strong>. We're very busy today and we need everybody here.'</p></div>
+<div class="questionBoxes">
+
+
+
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="10"  value="To ask somebody to work longer"><label id="quizLabel10" class="quiz" for="10"><div class="answerOptions">To ask somebody to work longer</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img10" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="11"  value="To say 'no' to a suggestion that somebody has made" ><label id="quizLabel11" class="quiz" for="11"><div class="answerOptions">To say 'no' to a suggestion that somebody has made</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img11" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s1" class="q1" id="12"  value="To tell somebody they have to work harder than they currently are"><label id="quizLabel12" class="quiz" for="12"><div class="answerOptions">To tell somebody they have to work harder than they currently are</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img12" ></div></div>
+</div>
+
+<input type=button onClick="Score1(1)" id="checkbutton2" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink1" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info1" border="0" onClick="changeZindex('n1')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink1" tabindex="-1" ><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio1" border="0" onClick="changeZindex('p1')" /></a></div></div></form>
+<div id="n1">
+<table onMouseDown="changeZindex('n1')"> 
+<tr> 
+<td> 
+  <p><strong>It's out of the question:</strong><br><em>(expression) </em> This is normally used in business English when a person has suggested doing something and you tell them 'no'. But this is stronger than just saying 'no'. By using this expression you are saying that the thing the person has suggested 'will never happen' or 'must not happen'. So if you want to be polite, don't use it.
+<br><br>
+It can also be used with the meaning of saying that something is 'impossible'.
+<br><br>In Spanish: <em><b>"estar fuera de toda consideración"</b></em>.</p>
+ <a href="javascript:hideObject(1);">Close</a> 
+</td> 
+</tr> 
+</table> 
+</div>
+<div id="p1">
+<table onMouseDown="changeZindex('p1')"> 
+<tr > 
+<td id="table1">
+
+ <p><strong>It's out of the question</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/Its%20out%20of%20the%20question.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/Its%20out%20of%20the%20question.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(1);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+
+<p><div class="questionBody"><span class="questNum">2.</span> What does '<strong>pull your weight</strong>' mean in this situation?</p>
+<div class="questExample"><p>'Simon, people in your team are complaining that you are being lazy and letting people do things that you should be doing. You can't do this, you have to <strong>pull your weight</strong>.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s2" class="q2" id="20"  value="To work as hard as other people on something"/><label id="quizLabel20" class="quiz" for="20"><div class="answerOptions">To work as hard as other people on something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img20"></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s2" class="q2" id="21"  value="To say that you think what somebody has said is correct"/><label id="quizLabel21" class="quiz" for="21"><div class="answerOptions">To say that you think what somebody has said is correct</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img21"></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s2" class="q2" id="22"  value="To not be aggressive with people"/><label id="quizLabel22" class="quiz" for="22"><div class="answerOptions">To not be aggressive with people</label> &nbsp; &nbsp;<img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img22"></div></div></div>
+
+<input type=button onClick="Score1(2)" id="checkbutton2" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink2" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info2" border="0" onClick="changeZindex('n2')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink2" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio2" border="0" onClick="changeZindex('p2')" /></a></div></div></form>
+<div id="n2">
+<table onMouseDown="changeZindex('n2')"> 
+<tr> 
+<td>  
+  <p><strong>Pull your weight:</strong><br><em>(expression)</em> This is used to tell somebody that they are not working as hard as they should be on something and that they have to work harder. It is normally used as a warning. 
+<br><br>
+When telling somebody they have to work harder, you use 'have/has to' or 'need to' in front of the expression.
+<br><br>
+For example:
+<br><br>
+'He has to pull his weight on the project.'
+<br><br>
+To tell somebody they are not working as hard as others, you normally use the verb 'to be' + 'not' in front of it.
+<br><br>
+For example: 
+<br><br>
+'He is not pulling his weight on the project.'
+<br><br>In Spanish: <em><b>"cumplir/hacer tu parte"</b></em>.</p> 
+<a href="javascript:hideObject(2);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p2">
+<table onMouseDown="changeZindex('p2')"> 
+<tr > 
+<td id="table2">
+
+ <p><strong>Pull your weight</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/pull%20your%20weight.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/pull%20your%20weight.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(2);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+
+<p><div class="questionBody"><span class="questNum">3.</span> What does <strong>my hands are tied</strong> mean in this situation?</p>
+<div class="questExample"><p>'I know you don't like this decision and I wish I could change it, but <strong>my hands are tied</strong>. I have no control over the decision.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s3" class="q3" id="30"  value="To tell a person they have to do something"><label id="quizLabel30" class="quiz" for="30"><div class="answerOptions">To tell a person they have to do something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img30" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s3" class="q3" id="31"  value="To suggest that somebody does something"><label id="quizLabel31" class="quiz" for="31"><div class="answerOptions">To suggest that somebody does something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img31" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s3" class="q3" id="32"  value="To say you can't do something about a decision/situation"><label id="quizLabel32" class="quiz" for="32"><div class="answerOptions">To say you can't do something about a decision/situation</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img32" ></div></div></div>
+
+<input type=button onClick="Score1(3)" id="checkbutton3" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink3" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info3" border="0" onClick="changeZindex('n3')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink3" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio3" border="0" onClick="changeZindex('p3')" /></a></div></div></form>
+<div id="n3">
+<table onMouseDown="changeZindex('n3')">  
+<tr> 
+<td> 
+  <p><strong>My hands are tied:</strong><br><em>(expression)</em> This expression is used to tell somebody that you are not able to change something you are telling them about. It is used in situations when the person/people are not happy with what you are telling them and they want you to change it.
+ <br><br>
+Normally, the reason why you can't do anything ('your hands are tired') is because somebody more important than you has decided what you are telling them or because of procedures or regulations which have to be followed.
+<br><br>
+For example:
+<br><br>
+ 'My hands are tied. All customer complaints have to be passed to the human resources department.'
+<br><br>
+A similar expression to this is 'it is out of my hands'.
+<br><br>In Spanish: <em><b>"tengo las manos atados"</b></em>.</p> 
+  <a href="javascript:hideObject(3);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p3">
+<table onMouseDown="changeZindex('p3')" > 
+<tr > 
+<td id="table3">
+
+ <p><strong>My hands are tied</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/my%20hands%20are%20tied.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/my%20hands%20are%20tied.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(3);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+<p> <div class="questionBody"><span class="questNum">4.</span> What does <strong>dropped the ball</strong> mean in this situation?</p>
+<div class="questExample"><p>'Sorry, it was me. I <strong>dropped the ball</strong>. I told him the wrong time for the meeting.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s4" class="q4" id="40"  value="To say/admit you made a mistake"><label id="quizLabel40" class="quiz" for="40"><div class="answerOptions">To say/admit you made a mistake</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img40" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s4" class="q4" id="41"  value="To say you didn't make a mistake"><label id="quizLabel41" class="quiz" for="41"><div class="answerOptions">To say you didn't make a mistake</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img41" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s4" class="q4" id="42"  value="To say you know nothing about what happened"><label id="quizLabel42" class="quiz" for="42"><div class="answerOptions">To say you know nothing about what happened</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img42" ></div></div></div>
+
+<input type=button onClick="Score1(4)" id="checkbutton4" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink4" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info4" border="0" onClick="changeZindex('n4')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink4" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio4" border="0" onClick="changeZindex('p4')" /></a></div></div></form>
+<div id="n4">
+<table onMouseDown="changeZindex('n4')"> 
+<tr> 
+<td>  
+  <p><strong>Dropped the ball:</strong><br><em>(expression) </em> This is a commonly used way to say that you 'made a mistake' or 'did something badly' and often used in the past tense. Normally, this is used for serious/important mistakes. 
+<br><br>
+For example:
+<br><br>
+ 'I dropped the ball. I should have checked the report before I sent it out.'
+<br><br>In Spanish: <em><b>"dejar caer la pelota / hacer un fallo"</b></em>.</p> 
+  <a href="javascript:hideObject(4);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p4">
+<table onMouseDown="changeZindex('p4')" > 
+<tr > 
+<td id="table4">
+
+ <p><strong>Dropped the ball</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/dropped%20the%20ball.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/dropped%20the%20ball.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(4);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+<p><div class="questionBody"><span class="questNum">5.</span> What does <strong>we don't see eye to eye</strong> mean in this situation?</p>
+<div class="questExample"><p>'<strong>We don't see eye to eye</strong> on what we should do next. Simon thinks we should tell the customer about the problem and I don't.'</p></div>
+<div class="questionBoxes">
+<div class="radioButtonsSection">
+<form>
+<div class="radioBSeparator"><input type="radio" name="s5" class="q5" id="50"  value="To explain a problem to somebody"><label id="quizLabel50" class="quiz" for="50"><div class="answerOptions">To explain a problem to somebody</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img50" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s5" class="q5" id="51"  value="To say you don't agree with or have the same opinion as another person"><label id="quizLabel51" class="quiz" for="51"><div class="answerOptions">To say you don't agree with or have the same opinion as another person</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img51" ></div></div>
+
+<div class="radioBSeparator"><input type="radio" name="s5" class="q5" id="52"  value="To offer to help somebody to finish something"><label id="quizLabel52" class="quiz" for="52"><div class="answerOptions">To offer to help somebody to finish something</div></label><div class="tickbox"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="img52" ></div></div></div>
+
+<input type=button onClick="Score1(5)" id="checkbutton5" class="buttonSpace" value="Check answer">
+
+<a href="javascript:void(0);" id="nlink5" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="info5" border="0" onClick="changeZindex('n5')" /></a>&nbsp; &nbsp; <a href="javascript:void(0);" id="audiolink5" tabindex="-1"><img src="../../../../../images/icons/blank.gif" class="testImage20" ID="audio5" border="0" onClick="changeZindex('p5')"/></a></div></div></form>
+<div id="n5">
+<table onMouseDown="changeZindex('n5')"> 
+<tr> 
+<td> 
+  <p><strong>We don't see eye to eye:</strong><br><em>(expression)</em> This is used to say that you and another person disagree on something. Normally, it is used you don't have the same opinion on how to do something (e.g. how to solve a problem, run a team etc...). Normally, you would follow this expression with 'on' and what you disagree on.
+<br><br>
+For example:
+<br><br>
+'Me and Simon don't see eye to eye on how to do the project.'
+<br><br>In Spanish: <em><b>"no estar de acuerdo"</b></em>.</p> 
+  <a href="javascript:hideObject(5);">Close</a> 
+</td> 
+</tr> 
+</table>
+</div>
+<div id="p5">
+<table onMouseDown="changeZindex('p5')" > 
+<tr > 
+<td id="table5">
+
+ <p><strong>We don't see eye to eye</strong>:</p>
+  <audio class="audioplayer" preload="none" controls="controls">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/we%20dont%20see%20eye%20to%20eye.mp3">
+ <source src="../../../../../exercises/business/exercises/business-english-expressions-part-1/pronunciation/we%20dont%20see%20eye%20to%20eye.ogg">
+</audio>
+
+</td>
+</tr>
+<tr><td>
+  <a href="javascript:hideObjectAudio(5);">Close</a> 
+</td> 
+</tr> 
+</table>  
+</div>
+ <br>
+  <br>
+
+ 
+
+<h2 class="sectionTitles">Part Two: Use them</h2>
+
+<p>In the second part of the exercise you will use the expressions you learnt above to complete a text. In this text, a senior manager (Sally) is speaking to one of her team (Tom) about a complaint she has received on a project he is running/in control of.</p>
+
+<p>When deciding which expression to use, look at the context of the sentence to help you. Click on the "Check answers" button at the bottom of the quiz to check your answers.</p>  
+
+ 
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'So Tom, how are things going with the project you are working on?'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'It's going well.'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'That's not what I am hearing.'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'Oh really?'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'I've received a complaint about the project. Do you know what this would be about?'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'Would that be from Simon?'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'Yes, it is.'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'Let me explain the situation. About three weeks ago, Simon <select ID="q1" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="didn't see eye to eye with me">didn't see eye to eye with me</option>
+<option value="was out of the question">was out of the question</option>
+<option value="dropped the ball">dropped the ball</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img1"> in a meeting with the customer. He forgot to bring a report that the customer had asked for to the meeting. I told him that can't make mistakes like that again.'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'He told me that <select ID="q2" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="it is out of the question">it is out of the question</option>
+<option value="you are not pulling your weight">you are not pulling your weight</option>
+<option value="his hands were tied">his hands were tied</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img2"> on the project. The rest of the team is working very hard on the project and you aren't.'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'That's not right. I'm working harder than anybody else on the team on this. To be honest, I don't think that's the real reason why he complained. <select ID="q3" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="We don't see eye to eye">We don't see eye to eye</option>
+<option value="He drops the ball">He drops the ball</option>
+<option value="He doesn't pull his weight">He doesn't pull his weight</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img3">  on doing parts of the project. He thinks we should be doing it one way and I think we should be doing it another.'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'To be honest, I understand it can be difficult managing a team. But I would like you to do something.'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'What's that?'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'I'd like you to share responsibility for managing the project with Simon.'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'<select ID="q4" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="My hands are tired">My hands are tired</option>
+<option value="I dropped the ball">I dropped the ball</option>
+<option value="That is out of the question">That is out of the question</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img4">. I will never run this project with Simon. Not only because he doesn't know what to do, but also because having two people in charge will make the project impossible to do.'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'I'm afraid you have to do it.'
+</span></p>
+
+ <p><span class="names">Tom:</span><span class="exercise_dialogue">'Why?'
+</span></p>
+
+ <p><span class="names">Sally:</span><span class="exercise_dialogue">'My manager's told me that you have to run the project together. <select ID="q5" onClick="Engine(1)" > 
+<option value="1"></option>
+<option value="He dropped the ball">He dropped the ball</option>
+<option value="He doesn't pull his weight">He doesn't pull his weight</option>
+<option value="My hands are tied">My hands are tied</option>
+</select>  <img src="../../../../../images/icons/blank.gif" style="display:none;" ID="img5">, it's him who decides who is charge of projects, not me.'
+</span></p> 
+
+<br>
+
+<input type=button onClick="Score()" value="Check answers">
+
+ <br>
+ 
+<p>Now that you know these business expresssions, <a href="../../../../../exercises/business/exercises/business-english-expressions-part-2/business-english-expressions-part-2.html"><b><u>do the second part of this exercise to learn more</u></b></a>.</p> 
+ 
+   <div id="amazon_block">
+<div id="amazon_block_business_numbers">
+
+ 
+</div><!-- /end #amazon_block_business_number-->  
+</div><!-- /end #amazon_block -->
+<br>
+
+
+
+
+<div id="siteAds">
+</div><!-- /end #siteAds -->    
+     
+ 
+ </div><!-- /end #exercise_content -->
+ 
+
+
+
+
+ 
+
+ 
+<br />
+<div id="links">
+
+
+<a href="../../../../../exercises/business/business_selectionpage.html"><img src="../../../../../images/buttons/linksbutton.gif" border="0" class="exerciseButtons" align="absmiddle" ><span class="exerciseButtons_descrip">Click to see more general business exercises</span></a>
+</div><!-- /end #links -->
+<br /><br />
+
+
+
+
+
+<h2>Practice</h2>
+<p>Now that you understand the meaning of the expressions and when to use them, practise using them by creating your own sentences with them in English. Also click on the "<img src="../../../../../images/icons/audio_icon111.gif" class="testImage25" align="absmiddle" id="audioInstruct" />" icon under each correct answer and listen how each is pronounced correctly.</p>
+
+<div id="blairClassAd">
+</div><!-- /end #blairClassAd -->
+
+<div id="social_links_section">
+<h4>Follow us on</h4>
+<p class="social_links"><a href="http://www.facebook.com/pages/BlairEnglishcom/189660021063710" target="_TOP" title="BlairEnglish.com" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/facebookIconSmall.gif" title="Click here to see Blair English's facebook page" alt="facebook icon link." border="0"  name="facebook icon"/></a><a target="_blank" href="https://twitter.com/blair_english" rel="nofollow"><img class="fbPageBadge" src="../../../../../images/icons/twitter.png" title="Click here to see Blair English's tweets" alt="Twitter icon link." border="0"  name="Twitter icon"/></a><!-- Place this code where you want the badge to render. -->
+ </p>
+</div><!-- /end #social_links_section -->
+
+
+</div> <!-- /end #exerciseBody -->
+</div> <!-- /end #body -->
+ <div id="homepage_footer">
+ <br />
+   <p align="center">&copy;2024, Blair English</p>
+
+ </div> <!-- /end #homepage_footer -->
+</div> <!-- /end #exercisepage -->
+
+<script language="JavaScript" src="../../../../../javascript/jquery/jquery-1.10.2.js"></script>
+<script language="JavaScript" src="../../../../../javascript/SlickNav/jquery.slicknav.min.js"></script>
+
+
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+<SCRIPT language="JavaScript" SRC="../../../../../javascript/box_call_selectionlist_1_mobile.js"></SCRIPT>
+
+</body>
+
+<!-- Mirrored from www.blairenglish.com/mobile/exercises/business/exercises/business-english-expressions-part-1/business-english-expressions-part-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2024 00:33:51 GMT -->
+</html>
